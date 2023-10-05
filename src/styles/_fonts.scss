@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Tektur';
+    src:
+        url('../../public/fonts/Tektur/Tektur Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Roboto Mono Thin';
+    src:
+        url('../../public/fonts/RobotoMono/RobotoMono-Thin.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'FreeMono';
+    src:
+        url('../../public/fonts/FreeMono/FreeMono.ttf') format('truetype');
+
+}
+
+
+
+@font-face {
+    font-family: 'Codename Coder Free 4F';
+    src: local('Codename Coder Free 4F Bold'), local('CodenameCoderFree4F-Bold'),
+        url('../../public/fonts/Codename Coder Free 4F/CodenameCoderFree4F-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/fonts/Codename Coder Free 4F/CodenameCoderFree4F-Bold.woff2') format('woff2'),
+        url('../../public/fonts/Codename Coder Free 4F/CodenameCoderFree4F-Bold.woff') format('woff'),
+        url('../../public/fonts/Codename Coder Free 4F/CodenameCoderFree4F-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Starseed Pro';
+    src: url('../../public/fonts/Starseed Pro/StarseedPro-Regular.eot');
+    src: local('../../public/fonts/Starseed Pro/StarseedPro-Regular'),
+        url('../../public/fonts/Starseed Pro/StarseedPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../public/fonts/Starseed Pro/StarseedPro-Regular.woff2') format('woff2'),
+        url('../../public/fonts/Starseed Pro/StarseedPro-Regular.woff') format('woff'),
+        url('../../public/fonts/Starseed Pro/StarseedPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+//fonts
+// $font-header: 'AR One Sans';
+$font-big-pixel: 'Starseed Pro';
+$font-angular: 'Tektur';
+$font-code: 'Codename Coder Free 4F';
+$font-main: 'Roboto Mono Thin';
+$font-code-thin: 'FreeMono';
+
+
+// $main-font: 'REM Light',
+//     sans-serif;
+// $cursive-font: 'great_vibesregular',
+//     cursive;
+
+//font sizes
+$size-huge: 24pt;
+$size-header: 18pt;
+
+$size-p: 14pt;
