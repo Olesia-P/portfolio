@@ -12,18 +12,18 @@
 
     nav {
         background-color: grey;
-        width: 70%;
+        width: 80%;
         height: 100%;
         @include dfc;
         padding: 0 68px;
 
         &:before {
-            left: 15%;
+            left: 10%;
             background: url(/notch-white-xxl-left.png) no-repeat 0 0;
         }
 
         &:after {
-            right: 15%;
+            right: 10%;
             background: transparent url(/notch-white-xxl-right.png) no-repeat 0 0;
         }
 
@@ -42,21 +42,17 @@
             @include dfc;
             padding-left: 0;
             margin: 0;
-            justify-content: space-around;
+            justify-content: space-evenly;
 
             li {
                 list-style: none;
                 padding: 0.3rem 0.5rem;
                 color: white;
-                // height: 100%;
+                width: 9.2rem;
+                text-align: center;
                 border-radius: $standart-b-radius;
-                border: 5px solid $asphalt;
-                transition: all ease-in 0.2s;
-
-                &:hover {
-                    box-shadow: $hover-shadow;
-                    border: 5px solid rgb(225, 225, 225);
-                }
+                border: 5px ridge $asphalt;
+                @include hover;
 
                 &.red {
                     background-color: $red;
@@ -85,35 +81,91 @@
 
 @include laptop {
     .container {
-        //         position: fixed;
-        //         @include dfc;
-        //         width: 100%;
-        //         height: 3rem;
-        //         padding-top: 0;
-        //         font-size: $size-header;
-        //         font-family: $font-angular;
-
-        //         // font-weight: 600;
-        //         line-height: 1;
-
         nav {
-            //             background-color: grey;
             width: 100%;
-            //             height: 100%;
-            //             @include dfc;
-            //             padding: 0 68px;
 
             &:before {
                 left: 0;
-                //                 background: url(/notch-white-xxl-left.png) no-repeat 0 0;
             }
 
             &:after {
                 right: 0;
-                //                 background: transparent url(/notch-white-xxl-right.png) no-repeat 0 0;
             }
+        }
+    }
+}
 
+.containerMobile {
+    position: fixed;
+
+    .iconContainer {
+        display: block;
+        margin: 0.5rem;
+        height: 4rem;
+        width: 4rem;
+        border: 5px ridge $asphalt;
+        border-radius: 2rem;
+        transition: all ease-in 0.2s;
+        @include hover;
+
+        .icon {
+            height: 100%;
+            width: 100%;
+            border-radius: 2rem;
+        }
+    }
+
+    nav {
+        width: 10rem;
+        position: relative;
+        font-size: $size-header;
+        font-family: $font-angular;
+        transform: translateX(-110%);
+        transition: transform 0.2s ease-in;
+
+        &.open {
+            transform: translateX(0);
+            transition: transform 0.2s ease-in;
         }
 
+        ul {
+            width: 100%;
+            height: 100%;
+            @include dfcc;
+            padding-left: 0;
+            margin: 0;
+            justify-content: space-around;
+
+            li {
+                list-style: none;
+                padding: 0.3rem 0.5rem;
+                color: white;
+                width: 100%;
+                text-align: center;
+                border-radius: $standart-b-radius;
+                border: 5px ridge $asphalt;
+                @include hover;
+
+                &.red {
+                    background-color: $red;
+                }
+
+                &.orange {
+                    background-color: $orange;
+                }
+
+                &.yellow {
+                    background-color: $yellow;
+                }
+
+                &.green {
+                    background-color: $green;
+                }
+
+                &.blue {
+                    background-color: $blue;
+                }
+            }
+        }
     }
 }

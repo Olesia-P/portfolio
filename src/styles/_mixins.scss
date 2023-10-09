@@ -10,3 +10,13 @@
     align-items: center;
     flex-direction: column;
 }
+
+@mixin hover {
+    transition: all ease-in 0.2s;
+
+    &:hover {
+        box-shadow: $hover-shadow;
+        filter: brightness(120%);
+        border: 5px ridge rgb(195, 193, 193);
+    }
+}
