@@ -12,11 +12,13 @@
 }
 
 @mixin hover {
-    transition: all ease-in 0.2s;
+    transition: box-shadow ease-in 0.2s, filter ease-in 0.2s, border-color ease-in 0.2s;
+    // transition: all ease-in 0.2s;
 
     &:hover {
         box-shadow: $hover-shadow;
         filter: brightness(120%);
-        border: 5px ridge rgb(195, 193, 193);
+        border-color: rgb(195, 193, 193);
+        transition: all ease-in 0.2s;
     }
 }

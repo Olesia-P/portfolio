@@ -9,6 +9,7 @@
     font-size: $size-header;
     font-family: $font-angular;
     line-height: 1;
+    font-weight: 600;
 
     nav {
         background-color: grey;
@@ -53,6 +54,7 @@
                 border-radius: $standart-b-radius;
                 border: 5px ridge $asphalt;
                 @include hover;
+                cursor: pointer;
 
                 &.red {
                     background-color: $red;
@@ -79,7 +81,7 @@
     }
 }
 
-@include laptop {
+@include desktop {
     .container {
         nav {
             width: 100%;
@@ -99,23 +101,60 @@
     position: fixed;
 
     .iconContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
         display: block;
         margin: 0.5rem;
         height: 4rem;
         width: 4rem;
-        border: 5px ridge $asphalt;
-        border-radius: 2rem;
-        transition: all ease-in 0.2s;
-        @include hover;
+        // border: 5px ridge $asphalt;
+        // border-radius: 2rem;
+        transition: all ease-in-out 0.3s;
+        z-index: 1;
 
         .icon {
             height: 100%;
             width: 100%;
-            border-radius: 2rem;
+            filter: grayscale(20%);
+            // filter: brightness(90%);
+
+            // border-radius: 2rem;
+        }
+
+        &.open {
+            transform: rotate(180deg);
+            opacity: 0;
+            z-index: 0;
+        }
+    }
+
+    .iconContainerOpened {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 5rem;
+        width: 4rem;
+        margin: 0.5rem;
+        z-index: 0;
+        opacity: 0;
+        transition: all ease-in-out 0.3s;
+
+        .iconOpened {
+            height: 100%;
+            width: 100%;
+        }
+
+        &.open {
+            transform: rotateX(360deg);
+            opacity: 1;
+            z-index: 1;
         }
     }
 
     nav {
+        margin-top: 6rem;
         width: 10rem;
         position: relative;
         font-size: $size-header;
@@ -144,7 +183,7 @@
                 text-align: center;
                 border-radius: $standart-b-radius;
                 border: 5px ridge $asphalt;
-                @include hover;
+                cursor: pointer;
 
                 &.red {
                     background-color: $red;

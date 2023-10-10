@@ -7,7 +7,7 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import { changeIsMobileMenuOpen } from '../../store/modules/openingsSlice';
 
 export default function Navbar() {
-  const isMobile = useMediaQuery(850);
+  const isMobile = useMediaQuery(480);
   const { isMobileMenuOpen } = useSelector(({ openings }) => openings);
   const dispatch = useDispatch();
 
@@ -29,13 +29,26 @@ export default function Navbar() {
       {isMobile && (
         <div className={css.containerMobile}>
           <i
-            className={css.iconContainer}
+            className={cx(css.iconContainer, isMobileMenuOpen && css.open)}
             onClick={() => dispatch(changeIsMobileMenuOpen(!isMobileMenuOpen))}
           >
             <img
               src="/pokeball.png"
               alt="mobileMenuIcon"
               className={css.icon}
+            />
+          </i>{' '}
+          <i
+            className={cx(
+              css.iconContainerOpened,
+              isMobileMenuOpen && css.open,
+            )}
+            onClick={() => dispatch(changeIsMobileMenuOpen(!isMobileMenuOpen))}
+          >
+            <img
+              src="/opened-pokeball.png"
+              alt="mobileMenuIcon"
+              className={css.iconOpened}
             />
           </i>
           <nav

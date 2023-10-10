@@ -19,8 +19,6 @@
 
 }
 
-
-
 @font-face {
     font-family: 'Codename Coder Free 4F';
     src: local('Codename Coder Free 4F Bold'), local('CodenameCoderFree4F-Bold'),
@@ -46,21 +44,13 @@
 
 
 //fonts
-// $font-header: 'AR One Sans';
 $font-big-pixel: 'Starseed Pro';
 $font-angular: 'Tektur';
 $font-code: 'Codename Coder Free 4F';
 $font-main: 'Roboto Mono Thin';
 $font-code-thin: 'FreeMono';
 
-
-// $main-font: 'REM Light',
-//     sans-serif;
-// $cursive-font: 'great_vibesregular',
-//     cursive;
-
 //font sizes
 $size-huge: 24pt;
-$size-header: 18pt;
-
+$size-header: 16pt;
 $size-p: 14pt;
