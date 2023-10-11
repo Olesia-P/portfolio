@@ -4,8 +4,12 @@ $orange: #EE6B2F;
 $yellow: #E6BC2F;
 $green: #4DAD5B;
 $blue: #30A7D7;
+$dark-blue: #1B53BA;
+$purple: rgb(208, 3, 208);
 $grey: #919191;
-$asphalt: #59585e;
+// $asphalt: #59585e;
+$asphalt: #595959;
+$white: #F2F2F2;
 $hover-white: rgb(225, 225, 225);
 
 //border
@@ -13,3 +17,5 @@ $standart-b-radius: 0.5rem;
 
 //shadows
 $hover-shadow: rgba(255, 255, 255, 0.676) 0px 22px 70px 4px;
+$main-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;

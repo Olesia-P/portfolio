@@ -6,13 +6,14 @@
     width: 100%;
     height: 3rem;
     padding-top: 0;
-    font-size: $size-header;
+    font-size: $size-p;
     font-family: $font-angular;
     line-height: 1;
     font-weight: 600;
+    z-index: 3;
 
     nav {
-        background-color: grey;
+        background-color: $grey;
         width: 80%;
         height: 100%;
         @include dfc;
@@ -53,8 +54,9 @@
                 width: 9.2rem;
                 text-align: center;
                 border-radius: $standart-b-radius;
-                border: 5px ridge $asphalt;
+                border: 5px solid $asphalt;
                 cursor: pointer;
+                box-shadow: $main-shadow;
 
                 &:hover {
                     @include hover;
@@ -183,8 +185,9 @@
                 width: 100%;
                 text-align: center;
                 border-radius: $standart-b-radius;
-                border: 5px ridge $asphalt;
+                border: 5px solid $asphalt;
                 cursor: pointer;
+                box-shadow: $main-shadow;
 
                 &.red {
                     background-color: $red;

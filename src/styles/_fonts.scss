@@ -6,11 +6,13 @@
 }
 
 @font-face {
-    font-family: 'Roboto Mono Thin';
+    font-family: 'Roboto Mono';
     src:
-        url('../../public/fonts/RobotoMono/RobotoMono-Thin.ttf') format('truetype');
+        url('../../public/fonts/RobotoMono/RobotoMono-Regular.ttf') format('truetype');
 
 }
+
+
 
 @font-face {
     font-family: 'FreeMono';
@@ -47,10 +49,10 @@
 $font-big-pixel: 'Starseed Pro';
 $font-angular: 'Tektur';
 $font-code: 'Codename Coder Free 4F';
-$font-main: 'Roboto Mono Thin';
+$font-main: 'Roboto Mono';
 $font-code-thin: 'FreeMono';
 
 //font sizes
 $size-huge: 24pt;
-$size-header: 16pt;
+$size-header: 18pt;
 $size-p: 14pt;

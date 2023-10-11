@@ -1,0 +1,138 @@
+@import "../../styles/main";
+
+.card {
+    // background: linear-gradient(306deg, rgb(252, 115, 156) 0%, rgb(246, 244, 244) 0%, rgb(233, 139, 118) 97%);
+    background-color: $white;
+    height: 28rem;
+    width: 50rem;
+    border: 0.5rem solid $asphalt;
+    // outline: 0.2rem solid $asphalt;
+    border-radius: $standart-b-radius;
+    margin: 1rem;
+    padding: 0.5rem;
+    box-shadow: $main-shadow;
+    font-family: $font-main;
+    font-weight: 400;
+    // font-family: $font-code;
+    // font-family: $font-code-thin;
+    font-size: $size-p;
+    line-height: 1;
+
+
+
+
+
+    .container {
+        @include dfc;
+        height: 100%;
+        width: 100%;
+
+
+        .leftSection {
+            height: 100%;
+            width: 30%;
+            // @include dfcc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            // background-color: rgb(197, 176, 218);
+
+            h1 {
+                font-family: $font-angular;
+                font-size: $size-huge;
+                margin: 0.5rem 0 0.7rem 0;
+                // text-align: center;
+                // text-decoration: underline;
+            }
+
+            // .avatarWrap {
+            //     height: 5rem;
+            //     width: 5rem;
+            //     
+
+            .avatar {
+                height: 12rem;
+                width: 12rem;
+                // background-color: aquamarine;
+                border: 0.2rem solid $asphalt;
+                // outline: 0.1rem solid $blue;
+                // margin-left: 25%;
+                background-color: white;
+                box-shadow: $main-shadow;
+            }
+
+            // }
+
+        }
+
+        .rightSection {
+            position: relative;
+            height: 100%;
+            width: 70%;
+            // background-color: grey;
+            display: flex;
+            flex-direction: column;
+
+            margin-left: 1rem;
+
+            .age {
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-family: $font-code;
+                font-size: $size-huge;
+                padding: 0.2rem 0.3rem;
+                background-color: $yellow;
+                border-radius: 2rem;
+                border: 0.2rem solid black;
+
+            }
+
+            .jobTitle {
+                font-size: $size-huge;
+                font-weight: 100;
+                // width: 100%;
+                padding: 0 1.7rem 0.3rem 1.7rem;
+                margin: 0 auto 0 0;
+                text-align: center;
+
+                // background-color: $asphalt;
+                background: radial-gradient(rgb(246, 244, 245) 0%, rgb(168, 164, 164) 100%);
+                // color: white;
+                border: 0.3rem solid $grey;
+                font-family: $font-big-pixel;
+            }
+
+            .textWrap {
+                margin: 1rem 0 0 0;
+
+
+                .title {
+                    text-decoration: underline;
+                    // display: inline;
+                    margin: 0.2rem 0;
+
+                    font-size: $size-header;
+                    font-weight: 900;
+
+
+                }
+
+                .text {
+                    font-size: $size-p;
+                    line-height: 1.1;
+
+                    strong {
+                        background-color: rgb(206, 237, 249);
+                    }
+                }
+            }
+
+
+
+
+        }
+
+    }
+}

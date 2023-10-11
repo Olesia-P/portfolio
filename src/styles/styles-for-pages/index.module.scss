@@ -1,0 +1,13 @@
+@import "../main";
+
+.container {
+    height: 200rem;
+    padding-top: 4rem;
+    // @include dfcc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/forms-pattern.png");
+    background-repeat: repeat;
+
+}
