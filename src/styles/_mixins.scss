@@ -22,3 +22,31 @@
         transition: all ease-in 0.2s;
     }
 }
+
+@mixin hangAnimation {
+    animation: hang 1.3s infinite alternate cubic-bezier(0.11, 0, 0.5, 0);
+
+    &::after {}
+
+    @keyframes hang {
+        0% {
+            transform: translateY(0.2rem);
+        }
+
+        25% {
+            transform: translateY(0rem);
+        }
+
+        50% {
+            transform: translateY(0.2rem);
+        }
+
+        100% {
+            transform: translateY(0rem);
+        }
+
+        ;
+    }
+
+
+}

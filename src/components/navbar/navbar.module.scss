@@ -24,7 +24,8 @@
         }
 
         &:after {
-            right: 10%;
+            right: 9.9%;
+            top: 0.1%;
             background: transparent url(/notch-white-xxl-right.png) no-repeat 0 0;
         }
 
@@ -53,8 +54,12 @@
                 text-align: center;
                 border-radius: $standart-b-radius;
                 border: 5px ridge $asphalt;
-                @include hover;
+                // transition: all ease-in 0.2s;
                 cursor: pointer;
+
+                &:hover {
+                    @include hangAnimation;
+                }
 
                 &.red {
                     background-color: $red;
