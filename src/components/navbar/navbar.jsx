@@ -4,7 +4,7 @@ import cx from 'classnames';
 import css from './navbar.module.scss';
 import { navEng } from '../../utils/language-objects';
 import useMediaQuery from '../../hooks/useMediaQuery';
-import { changeIsMobileMenuOpen } from '../../store/modules/openingsSlice';
+import { changeIsMobileMenuOpen } from '../../store/modules/openings-slice';
 
 export default function Navbar() {
   const isMobile = useMediaQuery(480);

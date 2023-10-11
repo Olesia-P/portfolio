@@ -54,12 +54,10 @@
                 text-align: center;
                 border-radius: $standart-b-radius;
                 border: 5px ridge $asphalt;
-                // transition: all ease-in 0.2s;
                 cursor: pointer;
 
                 &:hover {
-                    @include hangAnimation;
-                    filter: brightness(120%);
+                    @include hover;
                 }
 
                 &.red {
@@ -103,29 +101,32 @@
     }
 }
 
+
+
 .containerMobile {
     position: fixed;
 
-    .iconContainer {
+    .iconContainer,
+    .iconContainerOpened {
         position: absolute;
         top: 0;
         left: 0;
         display: block;
         margin: 0.5rem;
+        transition: all ease-in-out 0.3s;
+
+    }
+
+    .iconContainer {
+        display: block;
         height: 4rem;
         width: 4rem;
-        // border: 5px ridge $asphalt;
-        // border-radius: 2rem;
-        transition: all ease-in-out 0.3s;
         z-index: 1;
 
         .icon {
             height: 100%;
             width: 100%;
             filter: grayscale(20%);
-            // filter: brightness(90%);
-
-            // border-radius: 2rem;
         }
 
         &.open {
@@ -136,16 +137,10 @@
     }
 
     .iconContainerOpened {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
         height: 5rem;
         width: 4rem;
-        margin: 0.5rem;
         z-index: 0;
         opacity: 0;
-        transition: all ease-in-out 0.3s;
 
         .iconOpened {
             height: 100%;
