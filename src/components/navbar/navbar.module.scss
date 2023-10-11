@@ -59,6 +59,7 @@
 
                 &:hover {
                     @include hangAnimation;
+                    filter: brightness(120%);
                 }
 
                 &.red {
