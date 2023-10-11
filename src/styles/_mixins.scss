@@ -30,19 +30,19 @@
 
     @keyframes hang {
         0% {
-            transform: translateY(0.2rem);
+            transform: translateX(0.2rem);
         }
 
         25% {
-            transform: translateY(0rem);
+            transform: translateX(0rem);
         }
 
         50% {
-            transform: translateY(0.2rem);
+            transform: translateX(0.2rem);
         }
 
         100% {
-            transform: translateY(0rem);
+            transform: translateX(0rem);
         }
 
         ;
