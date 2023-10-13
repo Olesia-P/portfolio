@@ -12,3 +12,10 @@ export const navUa = [
   { name: 'Контакти', color: 'green' },
   { name: 'Резюме', color: 'blue' },
 ];
+export const qualitiesEng = [
+  { name: 'Team player', icon: '/pokemon-icons/snorlax-icon.png' },
+  { name: 'Responsible', icon: '/pokemon-icons/bulbasaur-icon.png' },
+  { name: 'Communicative', icon: '/pokemon-icons/jigglypuff-icon.png' },
+  { name: 'Quick learner', icon: '/pokemon-icons/meowth-icon.png' },
+  { name: 'Likes order', icon: '/pokemon-icons/charmander-icon.png' },
+];

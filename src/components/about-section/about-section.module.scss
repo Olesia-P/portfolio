@@ -1,138 +1,125 @@
 @import "../../styles/main";
 
 .card {
-    // background: linear-gradient(306deg, rgb(252, 115, 156) 0%, rgb(246, 244, 244) 0%, rgb(233, 139, 118) 97%);
     background-color: $white;
-    height: 28rem;
+    height: 30rem;
     width: 50rem;
     border: 0.5rem solid $asphalt;
-    // outline: 0.2rem solid $asphalt;
     border-radius: $standart-b-radius;
-    margin: 1rem;
+    margin: 1rem 10rem 1rem 0;
     padding: 0.5rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
-    font-weight: 400;
-    // font-family: $font-code;
-    // font-family: $font-code-thin;
-    font-size: $size-p;
-    line-height: 1;
-
-
-
-
 
     .container {
         @include dfc;
         height: 100%;
         width: 100%;
 
-
         .leftSection {
             height: 100%;
-            width: 30%;
-            // @include dfcc;
+            width: 35%;
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            // background-color: rgb(197, 176, 218);
-
-            h1 {
+            h2 {
                 font-family: $font-angular;
                 font-size: $size-huge;
-                margin: 0.5rem 0 0.7rem 0;
-                // text-align: center;
-                // text-decoration: underline;
+                margin: 0 0 0.2rem 0;
             }
-
-            // .avatarWrap {
-            //     height: 5rem;
-            //     width: 5rem;
-            //     
 
             .avatar {
-                height: 12rem;
-                width: 12rem;
-                // background-color: aquamarine;
+                height: 11rem;
+                width: 11rem;
                 border: 0.2rem solid $asphalt;
-                // outline: 0.1rem solid $blue;
-                // margin-left: 25%;
                 background-color: white;
                 box-shadow: $main-shadow;
+                @include wavingAnimation;
             }
 
-            // }
+            aside {
+                background-color: white;
+                border: 0.5rem solid lightblue;
+                outline: 0.2rem solid black;
+                border-radius: $standart-b-radius;
+                padding: 0.2rem 0.7rem;
+                margin: 1rem 0 0 0;
+                font-size: $size-p;
+                width: 90%;
+                box-shadow: $main-shadow;
 
+                h2 {
+                    margin: 0.1rem 0 0.3rem 0;
+                    font-size: $size-small-header;
+                }
+
+                .qualitiesList {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 0.2rem;
+                        text-decoration: underline;
+
+                        .qualityIcon {
+                            height: 1.5rem;
+                            width: 1.5rem;
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
         }
 
         .rightSection {
             position: relative;
             height: 100%;
-            width: 70%;
-            // background-color: grey;
+            width: 65%;
             display: flex;
             flex-direction: column;
-
-            margin-left: 1rem;
+            margin: 0 1rem;
 
             .age {
                 position: absolute;
                 right: 0;
                 top: 0;
-                font-family: $font-code;
+                font-family: $font-game;
                 font-size: $size-huge;
                 padding: 0.2rem 0.3rem;
                 background-color: $yellow;
                 border-radius: 2rem;
                 border: 0.2rem solid black;
-
-            }
-
-            .jobTitle {
-                font-size: $size-huge;
-                font-weight: 100;
-                // width: 100%;
-                padding: 0 1.7rem 0.3rem 1.7rem;
-                margin: 0 auto 0 0;
-                text-align: center;
-
-                // background-color: $asphalt;
-                background: radial-gradient(rgb(246, 244, 245) 0%, rgb(168, 164, 164) 100%);
-                // color: white;
-                border: 0.3rem solid $grey;
-                font-family: $font-big-pixel;
             }
 
             .textWrap {
-                margin: 1rem 0 0 0;
-
+                margin: 1.5rem 0 0 0;
 
                 .title {
-                    text-decoration: underline;
-                    // display: inline;
+                    display: inline;
                     margin: 0.2rem 0;
-
-                    font-size: $size-header;
+                    text-decoration: underline;
+                    font-size: $size-small-header;
                     font-weight: 900;
-
-
                 }
 
                 .text {
                     font-size: $size-p;
-                    line-height: 1.1;
 
                     strong {
-                        background-color: rgb(206, 237, 249);
+                        background-color: rgb(165, 217, 165);
                     }
                 }
             }
 
-
-
-
+            .flag {
+                height: 3rem;
+                width: 3rem;
+                margin-left: auto;
+            }
         }
-
     }
 }

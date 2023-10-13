@@ -12,12 +12,10 @@
 
 }
 
-
-
 @font-face {
-    font-family: 'FreeMono';
+    font-family: 'Onest Regular';
     src:
-        url('../../public/fonts/FreeMono/FreeMono.ttf') format('truetype');
+        url('../../public/fonts/Onest/Onest-Regular.ttf') format('truetype');
 
 }
 
@@ -44,15 +42,16 @@
     font-style: normal;
 }
 
-
 //fonts
 $font-big-pixel: 'Starseed Pro';
 $font-angular: 'Tektur';
-$font-code: 'Codename Coder Free 4F';
-$font-main: 'Roboto Mono';
-$font-code-thin: 'FreeMono';
+$font-game: 'Codename Coder Free 4F';
+$font-code: 'Roboto Mono';
+$font-main: 'Onest Regular';
+
 
 //font sizes
 $size-huge: 24pt;
 $size-header: 18pt;
-$size-p: 14pt;
+$size-small-header: 16pt;
+$size-p: 15pt;

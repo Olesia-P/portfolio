@@ -21,24 +21,73 @@
     }
 }
 
-@mixin hangAnimation {
-    animation: hang 1.3s infinite alternate cubic-bezier(0.11, 0, 0.5, 0);
+@mixin hangingAnimation {
+    animation: hanging 1.3s infinite alternate cubic-bezier(0.11, 0, 0.5, 0);
 
-    @keyframes hang {
+
+    @keyframes hanging {
         0% {
-            transform: translateX(0.2rem);
+            transform: translateY(0.2rem);
+
         }
 
         25% {
-            transform: translateX(0rem);
+            transform: translateY(0rem);
         }
 
         50% {
-            transform: translateX(0.2rem);
+            transform: translateY(0.2rem);
         }
 
         100% {
-            transform: translateX(0rem);
+            transform: translateY(0rem);
+        }
+
+        ;
+    }
+}
+
+@mixin shadowForHangingAnimation {
+    animation: shadowForHanging 1.3s infinite alternate cubic-bezier(0.11, 0, 0.5, 0);
+
+
+    @keyframes shadowForHanging {
+        0% {
+            height: 1.5rem;
+            width: 15rem;
+
+        }
+
+        25% {
+            height: 1rem;
+            width: 14rem;
+        }
+
+        50% {
+            height: 1.5rem;
+            width: 15rem;
+        }
+
+        100% {
+            height: 1rem;
+            width: 14rem;
+        }
+
+        ;
+    }
+}
+
+@mixin wavingAnimation {
+    animation: waving 2.5s infinite alternate cubic-bezier(0.11, 0, 0.5, 0);
+
+
+    @keyframes waving {
+        0% {
+            transform: rotate(4deg);
+        }
+
+        100% {
+            transform: rotate(-4deg);
         }
 
         ;
