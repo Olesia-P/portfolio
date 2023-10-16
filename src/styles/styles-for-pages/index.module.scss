@@ -9,6 +9,8 @@
     align-items: center;
     background-image: url("/forms-pattern.png");
     background-repeat: repeat;
+    position: relative;
+    z-index: -1;
 
     .jobTitle {
         position: relative;

@@ -51,8 +51,6 @@ export default function AboutSection() {
               used all tools possible: from docs and forums to YouTube and chat
               GPT.
             </p>
-            {/* <hr /> */}
-            {/* <h3 className={css.title}> I am loking for a job</h3> */}
           </div>
           <img src="/ua_icon.png" className={css.flag} alt="ua-flag" />
         </section>

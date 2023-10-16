@@ -1,12 +1,16 @@
 @import "../../styles/main";
 
 .container {
-    // background-color: pink;
+
     position: fixed;
-    right: 2rem;
-    top: 35%;
-    height: 12rem;
-    width: 18rem;
+    right: 10rem;
+    top: 16rem;
+    // height: 12rem;
+    // width: 18rem;
+    // min-width: 15%;
+    // max-width: 25%;
+    // height: 30%;
+    width: 20%;
 
 
     .tv {
@@ -16,9 +20,44 @@
 
     .gifWhiteNoise {
         position: absolute;
-        top: 24%;
+        top: 45%;
         left: 8%;
-        height: 7.9rem;
-        width: 14.95rem;
+        // height: 7.9rem;
+        // width: 14.95rem;
+        width: 84%;
+        height: 47%;
+
+    }
+}
+
+@include ultra {
+    .container {
+
+        // position: fixed;
+        right: 22rem;
+        // top: 22rem;
+        // // height: 12rem;
+        // // width: 18rem;
+        // // min-width: 15%;
+        // // max-width: 25%;
+        // // height: 30%;
+        width: 16%;
+
+
+        .tv {
+            // height: 100%;
+            // width: 100%;
+        }
+
+        .gifWhiteNoise {
+            // position: absolute;
+            // top: 23%;
+            // left: 8%;
+            // // height: 7.9rem;
+            // // width: 14.95rem;
+            // width: 84%;
+            // height: 66%;
+
+        }
     }
 }

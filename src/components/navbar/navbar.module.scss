@@ -14,18 +14,18 @@
 
     nav {
         background-color: $grey;
-        width: 80%;
+        width: 76%;
         height: 100%;
         @include dfc;
         padding: 0 68px;
 
         &:before {
-            left: 10%;
+            left: 12%;
             background: url(/notch-white-xxl-left.png) no-repeat 0 0;
         }
 
         &:after {
-            right: 9.9%;
+            right: 12%;
             top: 0.1%;
             background: transparent url(/notch-white-xxl-right.png) no-repeat 0 0;
         }
@@ -87,7 +87,24 @@
     }
 }
 
-@include desktop {
+@include ultra {
+    .container {
+        nav {
+            width: 66%;
+
+
+            &:before {
+                left: 17%;
+            }
+
+            &:after {
+                right: 17%;
+            }
+        }
+    }
+}
+
+@include laptop {
     .container {
         nav {
             width: 100%;
