@@ -1,0 +1,113 @@
+@import "../../styles/main";
+
+.cardMobile {
+    background-color: $white;
+    max-width: 95%;
+    border: 0.5rem solid $asphalt;
+    border-radius: $standart-b-radius;
+    padding: 1rem;
+    box-shadow: $main-shadow;
+    font-family: $font-main;
+
+    .mobileSection {
+        @include dfcc;
+        position: relative;
+
+        .age {
+            position: absolute;
+            right: -0.5rem;
+            top: -0.5rem;
+            font-family: $font-game;
+            font-size: $size-header;
+            padding: 0.2rem 0.3rem;
+            background-color: $yellow;
+            border-radius: 2rem;
+            border: 0.2rem solid black;
+        }
+
+        .flag {
+            position: absolute;
+            height: 3rem;
+            width: 3rem;
+            left: -0.7rem;
+            top: -1rem;
+        }
+
+        .name {
+            font-family: $font-angular;
+            font-size: $size-huge;
+            margin: 1.5rem 0 0.2rem 0;
+        }
+
+        .avatar {
+            height: 11rem;
+            width: 11rem;
+            border: 0.2rem solid $asphalt;
+            background-color: white;
+            box-shadow: $main-shadow;
+            @include wavingAnimation;
+        }
+
+    }
+
+    .textWrap {
+        margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+        line-height: 1.5;
+
+        .title {
+            display: inline;
+            margin: 0.2rem 0;
+            text-decoration: underline;
+            font-size: $size-small-header;
+            font-weight: 900;
+        }
+
+        .text {
+            font-size: $size-p;
+
+            strong {
+                background-color: rgb(165, 217, 165);
+            }
+        }
+    }
+
+    .qualities {
+        background-color: white;
+        border: 0.5rem solid lightblue;
+        outline: 0.2rem solid black;
+        border-radius: $standart-b-radius;
+        padding: 0.2rem 0.7rem;
+        margin: 0 0 0 0;
+        font-size: $size-p;
+        width: 90%;
+        box-shadow: $main-shadow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .qualitiesHeader {
+            margin: 0.1rem 0 0.3rem 0;
+            font-size: $size-small-header;
+        }
+
+        .qualitiesList {
+            padding: 0;
+            margin: 0;
+
+            .qualitiesListItem {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.2rem;
+                text-decoration: underline;
+
+                .qualityIcon {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+}

@@ -7,7 +7,7 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import { changeIsMobileMenuOpen } from '../../store/modules/openings-slice';
 
 export default function Navbar() {
-  const isMobile = useMediaQuery(480);
+  const isMobile = useMediaQuery(1024);
   const { isMobileMenuOpen } = useSelector(({ openings }) => openings);
   const dispatch = useDispatch();
 

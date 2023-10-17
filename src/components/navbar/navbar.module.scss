@@ -57,6 +57,7 @@
                 border: 5px solid $asphalt;
                 cursor: pointer;
                 box-shadow: $main-shadow;
+                text-shadow: $text-shadow;
 
                 &:hover {
                     @include hover;
@@ -124,6 +125,7 @@
 
 .containerMobile {
     position: fixed;
+    z-index: 3;
 
     .iconContainer,
     .iconContainerOpened {
@@ -138,8 +140,8 @@
 
     .iconContainer {
         display: block;
-        height: 4rem;
-        width: 4rem;
+        height: 5rem;
+        width: 5rem;
         z-index: 1;
 
         .icon {
@@ -205,6 +207,7 @@
                 border: 5px solid $asphalt;
                 cursor: pointer;
                 box-shadow: $main-shadow;
+                text-shadow: $text-shadow;
 
                 &.red {
                     background-color: $red;

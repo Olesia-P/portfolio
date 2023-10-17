@@ -2,10 +2,7 @@
 
 .card {
     background-color: $white;
-    // height: 30rem;
-    // width: 50rem;
-    // min-width: 50%;
-    max-width: 50%;
+    max-width: 55%;
     border: 0.5rem solid $asphalt;
     border-radius: $standart-b-radius;
     margin: 1rem 14rem 1rem 0;
@@ -25,10 +22,11 @@
             flex-direction: column;
             align-items: center;
 
-            h2 {
+            .name {
                 font-family: $font-angular;
                 font-size: $size-huge;
                 margin: 0 0 0.2rem 0;
+                text-align: center;
             }
 
             .avatar {
@@ -40,7 +38,7 @@
                 @include wavingAnimation;
             }
 
-            aside {
+            .qualities {
                 background-color: white;
                 border: 0.5rem solid lightblue;
                 outline: 0.2rem solid black;
@@ -49,13 +47,12 @@
                 margin: 1rem 0 0 0;
                 font-size: $size-p;
                 width: 90%;
-                // max-width: 18rem;
                 box-shadow: $main-shadow;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                h2 {
+                .qualitiesHeader {
                     margin: 0.1rem 0 0.3rem 0;
                     font-size: $size-small-header;
                 }
@@ -64,8 +61,7 @@
                     padding: 0;
                     margin: 0;
 
-
-                    li {
+                    .qualitiesListItem {
                         list-style: none;
                         display: flex;
                         align-items: center;
@@ -100,6 +96,7 @@
                 background-color: $yellow;
                 border-radius: 2rem;
                 border: 0.2rem solid black;
+
             }
 
             .textWrap {
@@ -134,144 +131,58 @@
     }
 }
 
+
 @include ultra {
     .card {
-        //         background-color: $white;
-        //         // height: 30rem;
-        //         // width: 50rem;
-        //         // min-width: 50%;
-        max-width: 45%;
-        //         border: 0.5rem solid $asphalt;
-        //         border-radius: $standart-b-radius;
-        margin: 1rem 16rem 1rem 0;
-        //         padding: 1rem;
-        //         box-shadow: $main-shadow;
-        //         font-family: $font-main;
+        max-width: 50%;
+        margin: 1rem 18rem 1rem 0;
 
         .container {
-            //             @include dfc;
-            //             height: 100%;
-            //             width: 100%;
-
             .leftSection {
-                //                 height: 100%;
-                //                 width: 35%;
-                //                 display: flex;
-                //                 flex-direction: column;
-                //                 align-items: center;
 
-                h2 {
-                    //                     font-family: $font-angular;
-                    //                     font-size: $size-huge;
+                .name {
                     font-size: calc($size-huge + 4pt);
-                    //                     margin: 0 0 0.2rem 0;
                 }
 
-                .avatar {
-                    //                     height: 11rem;
-                    //                     width: 11rem;
-                    //                     border: 0.2rem solid $asphalt;
-                    //                     background-color: white;
-                    //                     box-shadow: $main-shadow;
-                    //                     @include wavingAnimation;
-                }
-
-                aside {
-                    //                     background-color: white;
-                    //                     border: 0.5rem solid lightblue;
-                    //                     outline: 0.2rem solid black;
-                    //                     border-radius: $standart-b-radius;
-                    //                     padding: 0.2rem 0.7rem;
-                    //                     margin: 1rem 0 0 0;
-                    //                     font-size: $size-p;
+                .qualities {
                     font-size: calc($size-p + 4pt);
-                    //                     width: 90%;
-                    //                     // max-width: 18rem;
-                    //                     box-shadow: $main-shadow;
-                    //                     display: flex;
-                    //                     flex-direction: column;
-                    //                     align-items: center;
 
-                    h2 {
-                        //                         margin: 0.1rem 0 0.3rem 0;
-                        //                         font-size: $size-small-header;
+                    .qualitiesHeader {
                         font-size: calc($size-small-header + 4pt);
-                    }
-
-                    .qualitiesList {
-                        //                         padding: 0;
-                        //                         margin: 0;
-
-
-                        li {
-                            //                             list-style: none;
-                            //                             display: flex;
-                            //                             align-items: center;
-                            //                             margin-bottom: 0.2rem;
-                            //                             text-decoration: underline;
-
-                            .qualityIcon {
-                                //                                 height: 1.5rem;
-                                //                                 width: 1.5rem;
-                                //                                 margin-right: 0.5rem;
-                            }
-                        }
                     }
                 }
             }
 
             .rightSection {
-                //                 position: relative;
-                //                 height: 100%;
-                //                 width: 65%;
-                //                 display: flex;
-                //                 flex-direction: column;
-                //                 margin: 0 2rem;
-
                 .age {
-                    //                     position: absolute;
-                    //                     right: -2rem;
-                    //                     top: 0;
-                    //                     font-family: $font-game;
-                    //                     font-size: $size-huge;
                     font-size: calc($size-huge + 4pt);
-                    //                     padding: 0.2rem 0.3rem;
-                    //                     background-color: $yellow;
-                    //                     border-radius: 2rem;
-                    //                     border: 0.2rem solid black;
                 }
 
                 .textWrap {
-                    //                     margin: 1.5rem 0;
-                    //                     line-height: 1.2;
 
                     .title {
-                        //                         display: inline;
-                        //                         margin: 0.2rem 0;
-                        //                         text-decoration: underline;
-                        //                         font-size: $size-small-header;
                         font-size: calc($size-small-header + 4pt);
-                        //                         font-weight: 900;
                     }
 
                     .text {
-                        //                         font-size: $size-p;
                         font-size: calc($size-p + 4pt);
-
-                        strong {
-                            //                             background-color: rgb(165, 217, 165);
-                        }
                     }
-                }
-
-                .flag {
-                    //                     position: absolute;
-                    //                     height: 3rem;
-                    //                     width: 3rem;
-                    //                     right: -2rem;
-                    //                     bottom: 0;
                 }
             }
         }
+    }
+}
+
+@include laptop {
+    .card {
+        max-width: 70%;
+        margin: 1rem 16rem 1rem 0;
+    }
+}
+
+@include tablet {
+    .card {
+        max-width: 90%;
+        margin: 1rem;
     }
 }

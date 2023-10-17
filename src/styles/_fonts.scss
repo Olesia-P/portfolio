@@ -55,3 +55,9 @@ $size-huge: 26pt;
 $size-header: 20pt;
 $size-small-header: 18pt;
 $size-p: 16pt;
+
+//text-shadow
+$text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
