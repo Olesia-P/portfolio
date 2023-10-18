@@ -15,7 +15,7 @@ export default function AboutSection() {
               <h2 className={css.name}>Olesia Pryhun</h2>
               <img src="/avatar.png" alt="my-avatar" className={css.avatar} />
               <aside className={css.qualities}>
-                <h2 className={css.qualitiesHeader}>Personal qualities:</h2>
+                <h3 className={css.qualitiesHeader}>Personal qualities:</h3>
                 <ul className={css.qualitiesList}>
                   {qualitiesEng.map((element) => (
                     <li className={css.qualitiesListItem} key={element.icon}>

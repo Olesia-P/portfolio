@@ -10,7 +10,7 @@
     font-family: $font-angular;
     line-height: 1;
     font-weight: 600;
-    z-index: 3;
+    z-index: 5;
 
     nav {
         background-color: $grey;
@@ -125,7 +125,7 @@
 
 .containerMobile {
     position: fixed;
-    z-index: 3;
+    z-index: 5;
 
     .iconContainer,
     .iconContainerOpened {

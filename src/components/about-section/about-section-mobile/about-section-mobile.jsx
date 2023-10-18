@@ -34,7 +34,7 @@ export default function AboutSectionMobile() {
           </p>
         </div>
         <aside className={css.qualities}>
-          <h2 className={css.qualitiesHeader}>Personal qualities:</h2>
+          <h3 className={css.qualitiesHeader}>Personal qualities:</h3>
           <ul className={css.qualitiesList}>
             {qualitiesEng.map((element) => (
               <li className={css.qualitiesListItem} key={element.icon}>

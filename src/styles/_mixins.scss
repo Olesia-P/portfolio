@@ -103,3 +103,24 @@
         ;
     }
 }
+
+@mixin risingAnimation {
+    animation: rising 1.5s ease;
+
+
+    @keyframes rising {
+        0% {
+            transform: translateY(40rem)
+        }
+
+        75% {
+            transform: translateY(8.5rem)
+        }
+
+        100% {
+            transform: translateY(10.5rem)
+        }
+
+        ;
+    }
+}
