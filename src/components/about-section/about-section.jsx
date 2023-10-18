@@ -2,7 +2,7 @@ import React from 'react';
 import css from './about-section.module.scss';
 import { qualitiesEng } from '../../utils/language-objects';
 import useMediaQuery from '../../hooks/useMediaQuery';
-import AboutSectionMobile from '../about-secction-mobile/about-section-mobile';
+import AboutSectionMobile from './about-section-mobile/about-section-mobile';
 
 export default function AboutSection() {
   const isLowTablet = useMediaQuery(767);
@@ -18,7 +18,7 @@ export default function AboutSection() {
                 <h2 className={css.qualitiesHeader}>Personal qualities:</h2>
                 <ul className={css.qualitiesList}>
                   {qualitiesEng.map((element) => (
-                    <li className={css.qualitiesListItem}>
+                    <li className={css.qualitiesListItem} key={element.icon}>
                       <img
                         src={element.icon}
                         alt={element.name}

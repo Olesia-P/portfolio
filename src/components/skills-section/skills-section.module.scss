@@ -1,0 +1,12 @@
+@import "../../styles/main";
+
+.card {
+    background-color: $asphalt;
+    max-width: 55%;
+    // border: 0.5rem solid $asphalt;
+    border-radius: $standart-b-radius;
+    margin: 1rem 14rem 1rem 0;
+    padding: 1rem;
+    box-shadow: $main-shadow;
+    font-family: $font-main;
+}

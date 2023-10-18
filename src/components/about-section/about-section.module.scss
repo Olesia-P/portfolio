@@ -3,7 +3,7 @@
 .card {
     background-color: $white;
     max-width: 55%;
-    border: 0.5rem solid $asphalt;
+    @include mb ($asphalt);
     border-radius: $standart-b-radius;
     margin: 1rem 14rem 1rem 0;
     padding: 1rem;
@@ -32,7 +32,7 @@
             .avatar {
                 height: 11rem;
                 width: 11rem;
-                border: 0.2rem solid $asphalt;
+                @include sb ($asphalt);
                 background-color: white;
                 box-shadow: $main-shadow;
                 @include wavingAnimation;
@@ -40,7 +40,7 @@
 
             .qualities {
                 background-color: white;
-                border: 0.5rem solid lightblue;
+                @include mb (lightblue);
                 outline: 0.2rem solid black;
                 border-radius: $standart-b-radius;
                 padding: 0.2rem 0.7rem;
@@ -95,7 +95,7 @@
                 padding: 0.2rem 0.3rem;
                 background-color: $yellow;
                 border-radius: 2rem;
-                border: 0.2rem solid black;
+                @include sb (black);
 
             }
 

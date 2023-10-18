@@ -11,6 +11,16 @@
     flex-direction: column;
 }
 
+@mixin mb ($color) {
+    border: 0.5rem solid $color;
+}
+
+@mixin sb ($color) {
+    border: 0.2rem solid $color;
+}
+
+
+
 @mixin hover {
     transition: all ease-in 0.2s;
 

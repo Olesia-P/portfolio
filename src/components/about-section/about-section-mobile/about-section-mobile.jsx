@@ -1,5 +1,5 @@
 import React from 'react';
-import { qualitiesEng } from '../../utils/language-objects';
+import { qualitiesEng } from '../../../utils/language-objects';
 import css from './about-section-mobile.module.scss';
 
 export default function AboutSectionMobile() {
@@ -37,7 +37,7 @@ export default function AboutSectionMobile() {
           <h2 className={css.qualitiesHeader}>Personal qualities:</h2>
           <ul className={css.qualitiesList}>
             {qualitiesEng.map((element) => (
-              <li className={css.qualitiesListItem}>
+              <li className={css.qualitiesListItem} key={element.icon}>
                 <img
                   src={element.icon}
                   alt={element.name}
