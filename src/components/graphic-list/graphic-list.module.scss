@@ -1,0 +1,139 @@
+@import "../../styles/main";
+
+.block {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 0;
+    color: white;
+    text-shadow: $text-shadow;
+    overflow: hidden;
+
+    li {
+        list-style: none;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .mainItem {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        border-bottom: 1rem solid $asphalt;
+        font-size: $size-header;
+        font-family: $font-main;
+        font-weight: 600;
+        z-index: 2;
+        position: relative;
+
+        .icon {
+            height: 2.5rem;
+            width: 2.5rem;
+            margin-right: 1rem;
+
+            // &.empty {}
+
+            &.circled {
+                background-color: rgb(224, 222, 222);
+                padding: 0.2rem;
+                border-radius: 30%;
+                border: 2px solid black;
+            }
+        }
+    }
+
+    .category {
+        background-color: $asphalt;
+        color: white;
+        font-family: $font-big-pixel;
+        font-size: $size-huge;
+        @include dfc;
+        z-index: 2;
+        position: relative;
+        padding: 0;
+        border-bottom: 1rem solid $asphalt;
+    }
+
+    .whiteItem {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .coloredItem {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        z-index: 2;
+
+        &.one {
+            top: 80%;
+            @include risingAnimation(80%, 75%);
+        }
+
+        &.two {
+            top: 70%;
+            @include risingAnimation(70%, 65%);
+        }
+
+        &.three {
+            top: 60%;
+            @include risingAnimation(60%, 55%);
+        }
+
+        &.four {
+            top: 50%;
+            @include risingAnimation(50%, 45%);
+        }
+
+        &.five {
+            top: 40%;
+            @include risingAnimation(40%, 35%);
+        }
+
+        &.six {
+            top: 30%;
+            @include risingAnimation(30%, 25%);
+        }
+
+        &.seven {
+
+            @include risingAnimation(20%, 15%);
+            top: 20%;
+
+        }
+
+        &.eight {
+            top: 10%;
+            @include risingAnimation(10%, 5%);
+        }
+
+        &.nine {
+            top: 0;
+            @include risingAnimation(0%, 0%);
+        }
+
+        &.red {
+            background-color: $red;
+        }
+
+        &.orange {
+            background-color: $orange;
+        }
+
+        &.yellow {
+            background-color: $yellow;
+        }
+
+        &.green {
+            background-color: $green;
+        }
+
+        &.blue {
+            background-color: $blue;
+        }
+    }
+}

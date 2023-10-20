@@ -104,21 +104,26 @@
     }
 }
 
-@mixin risingAnimation {
-    animation: rising 1.5s ease;
+@mixin risingAnimation ($height, $bounceHeight) {
+    animation: rising 1.5s ease-in-out;
 
 
     @keyframes rising {
         0% {
-            transform: translateY(40rem)
+            top: 100%;
+
         }
 
         75% {
-            transform: translateY(8.5rem)
+            top: $bounceHeight ;
+            // top: 15%;
+
         }
 
         100% {
-            transform: translateY(10.5rem)
+            top: $height;
+            // top: 20%;
+
         }
 
         ;

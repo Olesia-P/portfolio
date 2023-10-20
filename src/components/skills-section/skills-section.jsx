@@ -1,53 +1,57 @@
 import React from 'react';
-import cx from 'classnames';
 import css from './skills-section.module.scss';
+import GraphicList from '../graphic-list/graphic-list';
+import {
+  frontSkills,
+  endSkills,
+  otherSkills,
+} from '../../utils/language-objects';
 
 export default function SkillsSection() {
   return (
-    <article className={css.card}>
-      <h2 className={css.headerSkills}>Skills</h2>
-      <section className={css.skillsWrap}>
-        <ul className={cx(css.skillsBlock, css.skillsBlockWhite)}>
-          <li className={css.whiteSkillsItem}> </li>
-          <li className={css.whiteSkillsItem}> </li>
-          <li className={css.whiteSkillsItem}> </li>
-          <li className={css.whiteSkillsItem}> </li>
-          <li className={css.whiteSkillsItem}> </li>
-          <li className={css.whiteSkillsItem}> </li>
-          <li className={css.whiteSkillsItem}> </li>
-          <li className={css.whiteSkillsItem}> </li>
-          <li className={css.whiteSkillsItem}> </li>
-        </ul>
-        <ul className={cx(css.skillsBlock, css.skillsBlockColored)}>
-          <li className={css.coloredSkillsItem}> </li>
-          <li className={css.coloredSkillsItem}> </li>
-          <li className={css.coloredSkillsItem}> </li>
-          <li className={css.coloredSkillsItem}> </li>
-          <li className={css.coloredSkillsItem}> </li>
-          <li className={css.coloredSkillsItem}> </li>
-          <li className={css.coloredSkillsItem}> </li>
-          <li className={css.coloredSkillsItem}> </li>
-          <li className={css.coloredSkillsItem}> </li>
-        </ul>
-        <ul className={cx(css.skillsBlock, css.skillsBlockMain)}>
-          <li className={css.mainSkillsItem}>0</li>
-          <li className={css.mainSkillsItem}>0</li>
-          <li className={css.mainSkillsItem}>0</li>
-          <li className={css.mainSkillsItem}>0</li>
-          <li className={css.mainSkillsItem}>0</li>
-          <li className={css.mainSkillsItem}>0</li>
-          <li className={css.mainSkillsItem}>0</li>
-          <li className={css.mainSkillsItem}>0</li>
-          <li className={css.mainSkillsItem}>0</li>
-        </ul>
-
-        {/* <div className={css.filler1}> </div>
-        <div className={css.filler2}> </div>
-        <div className={css.filler3}> </div> */}
-      </section>
-      <aside className={css.familiarWith}>
-        <h3 className={css.headerFamiliarWith}>I am also familiar with:</h3>
+    <section className={css.card}>
+      <article>
+        <h2 className={css.headerSkills}>Skills</h2>
+        <div className={css.commentWrapper}>
+          <p className={css.comment}>
+            In the fast-paced and ever-evolving world of web development, I
+            believe that <strong className={css.strong1}>adaptability</strong>{' '}
+            is a key. I am{' '}
+            <strong className={css.strong3}>
+              {' '}
+              ready to learn new and old ways
+            </strong>{' '}
+            - whatever it takes to create a competitive product!
+          </p>
+        </div>
+        <section className={css.skillsWrap}>
+          <GraphicList
+            category="Front-end"
+            list={frontSkills}
+            coveredItemsNumber="seven"
+            meterColor="yellow"
+          />
+          <GraphicList
+            category="Back-end"
+            list={endSkills}
+            coveredItemsNumber="seven"
+            meterColor="green"
+          />
+          <GraphicList
+            category="Other"
+            list={otherSkills}
+            coveredItemsNumber="seven"
+            meterColor="blue"
+          />
+        </section>
+      </article>
+      <aside className={css.pokemonPyramidWrap}>
+        <img
+          className={css.pokemonPyramid}
+          src="/pokemon-pyramid.png"
+          alt="pokemon-pyramid.png"
+        />
       </aside>
-    </article>
+    </section>
   );
 }
