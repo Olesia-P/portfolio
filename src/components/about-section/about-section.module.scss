@@ -6,7 +6,7 @@
     @include mb ($asphalt);
     border-radius: $standart-b-radius;
     margin: 1rem 14rem 1rem 0;
-    padding: 1rem;
+    padding: 2rem 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
 
@@ -25,7 +25,7 @@
             .name {
                 font-family: $font-angular;
                 font-size: $size-huge;
-                margin: 0 0 0.2rem 0;
+                margin: 0 0 1.5rem 0;
                 text-align: center;
             }
 
@@ -89,7 +89,7 @@
             .age {
                 position: absolute;
                 right: -2rem;
-                top: 0;
+                top: -1.3rem;
                 font-family: $font-game;
                 font-size: $size-huge;
                 padding: 0.2rem 0.3rem;
@@ -125,7 +125,7 @@
                 height: 3rem;
                 width: 3rem;
                 right: -2rem;
-                bottom: 0;
+                bottom: -1.5rem;
             }
         }
     }

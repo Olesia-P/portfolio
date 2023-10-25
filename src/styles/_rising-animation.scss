@@ -1,0 +1,170 @@
+@mixin risingAnimationOne {
+    animation: risingOne 1.5s ease-in-out;
+
+    @keyframes risingOne {
+        0% {
+            top: 100%;
+
+        }
+
+        75% {
+            top: 75%;
+        }
+
+        100% {
+            top: 80%;
+        }
+    }
+}
+
+@mixin risingAnimationTwo {
+    animation: risingTwo 1.5s ease-in-out;
+
+    @keyframes risingTwo {
+        0% {
+            top: 100%;
+
+        }
+
+        75% {
+            top: 65%;
+        }
+
+        100% {
+            top: 70%;
+        }
+    }
+}
+
+@mixin risingAnimationThree {
+    animation: risingThree 1.5s ease-in-out;
+
+    @keyframes risingThree {
+        0% {
+            top: 100%;
+
+        }
+
+        75% {
+            top: 55%;
+        }
+
+        100% {
+            top: 60%;
+        }
+    }
+}
+
+@mixin risingAnimationFour {
+    animation: risingFour 1.5s ease-in-out;
+
+    @keyframes risingFour {
+        0% {
+            top: 100%;
+
+        }
+
+        75% {
+            top: 45%;
+        }
+
+        100% {
+            top: 50%;
+        }
+    }
+}
+
+@mixin risingAnimationFive {
+    animation: risingFive 1.5s ease-in-out;
+
+    @keyframes risingFive {
+        0% {
+            top: 100%;
+
+        }
+
+        75% {
+            top: 35%;
+        }
+
+        100% {
+            top: 40%;
+        }
+    }
+}
+
+@mixin risingAnimationSix {
+    animation: risingSix 1.5s ease-in-out;
+
+    @keyframes risingSix {
+        0% {
+            top: 100%;
+
+        }
+
+        75% {
+            top: 25%;
+        }
+
+        100% {
+            top: 30%;
+        }
+    }
+}
+
+@mixin risingAnimationSeven {
+    animation: risingSeven 1.5s ease-in-out;
+
+    @keyframes risingSeven {
+        0% {
+            top: 100%;
+
+        }
+
+        75% {
+            top: 15%;
+        }
+
+        100% {
+            top: 20%;
+        }
+    }
+}
+
+@mixin risingAnimationEight {
+    animation: risingEight 1.5s ease-in-out;
+
+    @keyframes risingEight {
+        0% {
+            top: 100%;
+
+        }
+
+        75% {
+            top: 5%;
+        }
+
+        100% {
+            top: 10%;
+        }
+    }
+}
+
+@mixin risingAnimationNine {
+    animation: risingnNine 1.5s ease-in-out;
+
+    @keyframes risingnNine {
+        0% {
+            top: 100%;
+
+        }
+
+        75% {
+            top: 0%;
+        }
+
+        100% {
+            top: 0%;
+        }
+    }
+}

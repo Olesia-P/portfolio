@@ -1,15 +1,25 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import css from './about-section.module.scss';
 import { qualitiesEng } from '../../utils/language-objects';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import AboutSectionMobile from './about-section-mobile/about-section-mobile';
+import { changeTvImage } from '../../store/modules/mixed-purpose-slice';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 export default function AboutSection() {
   const isLowTablet = useMediaQuery(767);
+  const dispatch = useDispatch();
+
+  const handleIntersection = () =>
+    dispatch(changeTvImage('/gifs/white-noise.gif'));
+
+  const aboutRef = useIntersectionObserver(handleIntersection, undefined, 1);
+
   return (
     <>
       {!isLowTablet && (
-        <article className={css.card}>
+        <article className={css.card} ref={aboutRef}>
           <div className={css.container}>
             <section className={css.leftSection}>
               <h2 className={css.name}>Olesia Pryhun</h2>
@@ -67,3 +77,24 @@ export default function AboutSection() {
     </>
   );
 }
+
+//  useEffect(() => {
+// const observer = new IntersectionObserver(
+//   (entries) => {
+//     entries.forEach((entry) => {
+//       console.log('entry.isIntersecting about', entry.isIntersecting);
+//       if (entry.isIntersecting) {
+//         dispatch(changeTvImage('/gifs/white-noise.gif'));
+//       }
+//     });
+//   },
+// {
+//   root: null,
+//   rootMargin: '0px',
+//   threshold: 1,
+// },
+//   );
+//   if (aboutRef.current) {
+//     observer.observe(aboutRef.current);
+//   }
+// }, []);

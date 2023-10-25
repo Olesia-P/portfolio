@@ -6,8 +6,8 @@ export default function GraphicList({
   list,
   coveredItemsNumber,
   meterColor,
-  // width,
   category,
+  isAnimated,
 }) {
   return (
     <ul className={css.block}>
@@ -16,6 +16,7 @@ export default function GraphicList({
           css.coloredItem,
           css[coveredItemsNumber],
           css[meterColor],
+          isAnimated && css.animated,
         )}
       >
         {' '}

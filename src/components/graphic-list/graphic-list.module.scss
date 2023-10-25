@@ -19,7 +19,7 @@
         display: flex;
         align-items: center;
         border-bottom: 1rem solid $asphalt;
-        font-size: $size-header;
+        font-size: $size-p;
         font-family: $font-main;
         font-weight: 600;
         z-index: 2;
@@ -45,7 +45,7 @@
         background-color: $asphalt;
         color: white;
         font-family: $font-big-pixel;
-        font-size: $size-huge;
+        font-size: $size-header;
         @include dfc;
         z-index: 2;
         position: relative;
@@ -66,55 +66,91 @@
         position: absolute;
         left: 0;
         width: 100%;
-        height: 120%;
+        height: 100%;
         z-index: 2;
+        animation: rising 1.5s ease-in-out;
 
         &.one {
-            top: 80%;
-            @include risingAnimation(80%, 75%);
+            top: 82%;
+
+            &.animated {
+                @include risingAnimationOne;
+            }
         }
 
         &.two {
             top: 70%;
-            @include risingAnimation(70%, 65%);
+
+            &.animated {
+                @include risingAnimationTwo;
+            }
+
         }
 
         &.three {
             top: 60%;
-            @include risingAnimation(60%, 55%);
+
+            &.animated {
+                @include risingAnimationThree;
+            }
+
         }
 
         &.four {
             top: 50%;
-            @include risingAnimation(50%, 45%);
+
+            &.animated {
+                @include risingAnimationFour;
+            }
+
         }
 
         &.five {
             top: 40%;
-            @include risingAnimation(40%, 35%);
+
+            &.animated {
+                @include risingAnimationFive;
+            }
+
         }
 
         &.six {
             top: 30%;
-            @include risingAnimation(30%, 25%);
+
+            &.animated {
+                @include risingAnimationSix;
+            }
+
         }
 
         &.seven {
-
-            @include risingAnimation(20%, 15%);
             top: 20%;
+
+            &.animated {
+                @include risingAnimationSeven;
+            }
 
         }
 
         &.eight {
             top: 10%;
-            @include risingAnimation(10%, 5%);
+
+            &.animated {
+                @include risingAnimationEight;
+            }
+
         }
 
         &.nine {
             top: 0;
-            @include risingAnimation(0%, 0%);
+
+            &.animated {
+                @include risingAnimationNine;
+            }
+
         }
+
+
 
         &.red {
             background-color: $red;

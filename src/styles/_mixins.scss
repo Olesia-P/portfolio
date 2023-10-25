@@ -1,3 +1,5 @@
+@import "./rising-animation";
+
 @mixin dfc {
     display: flex;
     justify-content: center;
@@ -99,33 +101,21 @@
         100% {
             transform: rotate(-4deg);
         }
-
-        ;
     }
 }
 
-@mixin risingAnimation ($height, $bounceHeight) {
-    animation: rising 1.5s ease-in-out;
+@mixin highlightingAnimation {
+    animation: highlighting 1s ease-in-out;
 
 
-    @keyframes rising {
+
+    @keyframes highlighting {
         0% {
-            top: 100%;
-
-        }
-
-        75% {
-            top: $bounceHeight ;
-            // top: 15%;
-
+            transform: translateX(-100%);
         }
 
         100% {
-            top: $height;
-            // top: 20%;
-
+            transform: translateX(0);
         }
-
-        ;
     }
 }
