@@ -1,27 +1,36 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import css from './tv.module.scss';
-import { changeTvImage } from '../../store/modules/mixed-purpose-slice';
 import useMediaQuery from '../../hooks/useMediaQuery';
 
 export default function Tv() {
   const isTablet = useMediaQuery(1024);
-  const { tvImage } = useSelector(({ mixedPurpose }) => mixedPurpose);
-  const [isSkills, setIsSkills] = useState(false);
-  const dispatch = useDispatch();
+  const { tvSection } = useSelector(({ mixedPurpose }) => mixedPurpose);
+  const [tvImage, setTvImage] = useState('/gifs/white-noise.gif');
+
+  const decideImage = () => {
+    switch (tvSection) {
+      case 'about':
+        setTvImage('/gifs/white-noise.gif');
+        break;
+      case 'skills':
+        setTvImage('/gifs/serious.gif');
+        break;
+      default:
+        setTvImage('/gifs/white-noise.gif');
+    }
+  };
 
   useEffect(() => {
-    if (tvImage === '/gifs/serious.gif') {
-      setIsSkills(true);
-    } else {
-      setIsSkills(false);
-    }
-  }, [tvImage]);
+    decideImage();
+  }, [tvSection]);
 
-  const handleMouseEnter = () =>
-    isSkills && dispatch(changeTvImage('/gifs/no-idea.gif'));
-  const handleMouseLeave = () =>
-    isSkills && dispatch(changeTvImage('/gifs/serious.gif'));
+  const handleMouseEnter = () => {
+    tvImage === '/gifs/serious.gif' && setTvImage('/gifs/no-idea.gif');
+  };
+  const handleMouseLeave = () => {
+    tvImage === '/gifs/no-idea.gif' && setTvImage('/gifs/serious.gif');
+  };
   return (
     <>
       {!isTablet && (

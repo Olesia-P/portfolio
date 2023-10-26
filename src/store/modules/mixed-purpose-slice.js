@@ -1,20 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = { tvImage: '/gifs/white-noise.gif' };
+const initialState = { tvSection: 'about' };
 
 export const mixedPurposeSlice = createSlice({
   name: 'mixedPurpose',
   initialState,
   reducers: {
-    changeTvImage: (state, action) => {
+    changeTvSection: (state, action) => {
       return {
         ...state,
-        tvImage: action.payload,
+        tvSection: action.payload,
       };
     },
   },
 });
 
-export const { changeTvImage } = mixedPurposeSlice.actions;
+export const { changeTvSection } = mixedPurposeSlice.actions;
 
 export default mixedPurposeSlice.reducer;

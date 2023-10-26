@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import cx from 'classnames';
-import { changeTvImage } from '../../store/modules/mixed-purpose-slice';
+import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
 
 import css from './skills-section.module.scss';
 import GraphicList from '../graphic-list/graphic-list';
@@ -9,24 +9,32 @@ import {
   frontSkills,
   endSkills,
   otherSkills,
+  frontSkillsMobile,
+  endSkillsMobile,
+  otherSkillsMobile,
 } from '../../utils/language-objects';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import useMediaQuery from '../../hooks/useMediaQuery';
+import GraphicListMobile from '../graphic-list-mobile/graphic-list-mobile';
 
 export default function SkillsSection() {
   const [isAnimated, setIsAnimated] = useState(false);
   const dispatch = useDispatch();
   const handleIntersection = () => {
     setIsAnimated(true);
-    dispatch(changeTvImage('/gifs/serious.gif'));
+    dispatch(changeTvSection('skills'));
   };
   const handleOutsideIntersection = () => {
     setIsAnimated(false);
   };
 
+  const isLowTablet = useMediaQuery(767);
+
+  const decideThresholdValue = () => (isLowTablet ? 0 : 0.5);
   const skillsRef = useIntersectionObserver(
     handleIntersection,
     handleOutsideIntersection,
-    0.5,
+    decideThresholdValue(),
   );
 
   return (
@@ -49,27 +57,53 @@ export default function SkillsSection() {
           </p>
         </div>
         <section className={css.skillsWrap}>
-          <GraphicList
-            category="Front-end"
-            list={frontSkills}
-            coveredItemsNumber="seven"
-            meterColor="yellow"
-            isAnimated={isAnimated}
-          />
-          <GraphicList
-            category="Back-end"
-            list={endSkills}
-            coveredItemsNumber="two"
-            meterColor="green"
-            isAnimated={isAnimated}
-          />
-          <GraphicList
-            category="Other"
-            list={otherSkills}
-            coveredItemsNumber="four"
-            meterColor="blue"
-            isAnimated={isAnimated}
-          />
+          {!isLowTablet && (
+            <>
+              <GraphicList
+                category="Front-end"
+                list={frontSkills}
+                coveredItemsNumber="seven"
+                meterColor="yellow"
+                isAnimated={isAnimated}
+              />
+              <GraphicList
+                category="Back-end"
+                list={endSkills}
+                coveredItemsNumber="two"
+                meterColor="green"
+                isAnimated={isAnimated}
+              />
+              <GraphicList
+                category="Other"
+                list={otherSkills}
+                coveredItemsNumber="four"
+                meterColor="blue"
+                isAnimated={isAnimated}
+              />
+            </>
+          )}
+          {isLowTablet && (
+            <>
+              <GraphicListMobile
+                category="Front-end"
+                list={frontSkillsMobile}
+                meterColor="yellow"
+                isAnimated={isAnimated}
+              />
+              <GraphicListMobile
+                category="Back-end"
+                list={endSkillsMobile}
+                meterColor="green"
+                isAnimated={isAnimated}
+              />
+              <GraphicListMobile
+                category="Other"
+                list={otherSkillsMobile}
+                meterColor="blue"
+                isAnimated={isAnimated}
+              />
+            </>
+          )}
         </section>
       </article>
       <aside className={css.pokemonPyramidWrap}>

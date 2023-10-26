@@ -4,15 +4,14 @@ import css from './about-section.module.scss';
 import { qualitiesEng } from '../../utils/language-objects';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import AboutSectionMobile from './about-section-mobile/about-section-mobile';
-import { changeTvImage } from '../../store/modules/mixed-purpose-slice';
+import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 export default function AboutSection() {
   const isLowTablet = useMediaQuery(767);
   const dispatch = useDispatch();
 
-  const handleIntersection = () =>
-    dispatch(changeTvImage('/gifs/white-noise.gif'));
+  const handleIntersection = () => dispatch(changeTvSection('about'));
 
   const aboutRef = useIntersectionObserver(handleIntersection, undefined, 1);
 
@@ -49,7 +48,7 @@ export default function AboutSection() {
                   before getting into web development. I am still good at
                   explaining things :)
                 </p>
-                <hr />
+                <hr className={css.divider} />
                 <h3 className={css.title}>My studying journey:</h3>
                 <p className={css.text}>
                   I finished a front-end course, then I continued my studies
@@ -58,7 +57,7 @@ export default function AboutSection() {
                   provided me with support and guidance throughout the whole
                   process.
                 </p>
-                <hr />
+                <hr className={css.divider} />
                 <h3 className={css.title}> How did I learn?</h3>
                 <p className={css.text}>
                   I learned through

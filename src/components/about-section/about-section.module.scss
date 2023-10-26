@@ -2,10 +2,10 @@
 
 .card {
     background-color: $white;
-    max-width: 55%;
+    max-width: 65%;
     @include mb ($asphalt);
     border-radius: $standart-b-radius;
-    margin: 1rem 14rem 1rem 0;
+    margin: 1rem 20rem 1rem 0;
     padding: 2rem 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
@@ -118,6 +118,11 @@
                         background-color: rgb(165, 217, 165);
                     }
                 }
+
+                .divider {
+                    margin: 1.5rem 0;
+                }
+
             }
 
             .flag {

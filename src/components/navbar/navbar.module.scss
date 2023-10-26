@@ -58,9 +58,11 @@
                 cursor: pointer;
                 box-shadow: $main-shadow;
                 text-shadow: $text-shadow;
+                transition: all ease-in 0.2s;
 
                 &:hover {
                     @include hover;
+                    transition: all ease-in 0.2s;
                 }
 
                 &.red {
