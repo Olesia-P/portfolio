@@ -1,0 +1,144 @@
+@include ultra {
+    .card {
+        .commentWrapper {
+            .comment {
+                strong {
+                    &.strong1 {
+                        &::before {
+                            background: $green-yellow;
+                        }
+                    }
+
+                    &.strong2 {
+                        &::before {
+                            background: $orange-pink;
+                        }
+                    }
+
+                    &.strong3 {
+                        &::before {
+                            background: $blue-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include laptop {
+    .card {
+        .commentWrapper {
+            .comment {
+                strong {
+                    &.strong1 {
+                        &::before {
+                            background: $green-yellow;
+                        }
+                    }
+
+                    &.strong2 {
+                        &::before {
+                            background: $orange-pink;
+                        }
+                    }
+
+                    &.strong3 {
+                        &::before {
+                            background: $blue-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include lowTablet {
+    .card {
+        .commentWrapper {
+            .comment {
+                strong {
+                    &.strong1 {
+                        &::before {
+                            background: $orange-pink;
+                        }
+                    }
+
+                    &.strong2 {
+                        &::before {
+                            background: $green-yellow;
+                        }
+                    }
+
+                    &.strong3 {
+                        &::before {
+                            background: $yellow-orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include tablet {
+    .card {
+        .commentWrapper {
+            .comment {
+                strong {
+                    &.strong1 {
+                        &::before {
+                            background: $orange-pink;
+                        }
+                    }
+
+                    &.strong2 {
+                        &::before {
+                            background: $yellow-orange;
+                        }
+                    }
+
+                    &.strong3 {
+                        &::before {
+                            background: $orange-pink;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include mobile {
+    .card {
+        .commentWrapper {
+            .comment {
+                strong {
+                    &.strong1 {
+                        &::before {
+                            background: linear-gradient(90deg, rgba(104, 213, 253, 0.63), rgba(169, 236, 91, 0.79), rgba(253, 246, 116, 0.98));
+                        }
+                    }
+
+                    &.strong2 {
+                        &::before {
+                            background: linear-gradient(90deg, rgba(169, 236, 91, 0.79), rgba(253, 246, 116, 0.98), rgba(255, 164, 120, 0.92));
+                        }
+                    }
+
+                    &.strong3 {
+                        &::before {
+                            background: linear-gradient(90deg, rgba(104, 213, 253, 0.63), rgba(169, 236, 91, 0.79), rgba(253, 246, 116, 0.98));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

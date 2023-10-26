@@ -42,7 +42,7 @@ export default function SkillsSection() {
       <article>
         <h2 className={css.headerSkills}>Skills</h2>
         <div className={css.commentWrapper}>
-          <p className={css.comment}>
+          <p className={cx(css.comment)}>
             In the fast-paced and ever-evolving world of web development, I
             believe that{' '}
             <strong className={cx(css.strong1, isAnimated && css.animated)}>
@@ -51,7 +51,11 @@ export default function SkillsSection() {
             is a key. I am{' '}
             <strong className={cx(css.strong2, isAnimated && css.animated)}>
               {' '}
-              ready to learn new and old ways
+              ready to learn{' '}
+            </strong>{' '}
+            <strong className={cx(css.strong3, isAnimated && css.animated)}>
+              {' '}
+              new and old ways
             </strong>{' '}
             - whatever it takes to create a competitive product!
           </p>
@@ -63,21 +67,21 @@ export default function SkillsSection() {
                 category="Front-end"
                 list={frontSkills}
                 coveredItemsNumber="seven"
-                meterColor="yellow"
+                meterColor="green"
                 isAnimated={isAnimated}
               />
               <GraphicList
                 category="Back-end"
                 list={endSkills}
                 coveredItemsNumber="two"
-                meterColor="green"
+                meterColor="blue"
                 isAnimated={isAnimated}
               />
               <GraphicList
                 category="Other"
                 list={otherSkills}
                 coveredItemsNumber="four"
-                meterColor="blue"
+                meterColor="darkblue"
                 isAnimated={isAnimated}
               />
             </>
@@ -87,19 +91,19 @@ export default function SkillsSection() {
               <GraphicListMobile
                 category="Front-end"
                 list={frontSkillsMobile}
-                meterColor="yellow"
+                meterColor="green"
                 isAnimated={isAnimated}
               />
               <GraphicListMobile
                 category="Back-end"
                 list={endSkillsMobile}
-                meterColor="green"
+                meterColor="blue"
                 isAnimated={isAnimated}
               />
               <GraphicListMobile
                 category="Other"
                 list={otherSkillsMobile}
-                meterColor="blue"
+                meterColor="darkblue"
                 isAnimated={isAnimated}
               />
             </>
@@ -116,30 +120,3 @@ export default function SkillsSection() {
     </section>
   );
 }
-
-// useEffect(() => {
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry) => {
-//         console.log('entry.isIntersecting skills', entry.isIntersecting);
-//         if (entry.isIntersecting) {
-//           setIsAnimated(true);
-//           dispatch(changeTvImage('/gifs/strong.gif'));
-//         }
-//         if (!entry.isIntersecting) {
-//           setIsAnimated(false);
-//         }
-//       });
-//     },
-
-//     {
-//       root: null,
-//       rootMargin: '0px',
-//       threshold: 0.25,
-//     },
-//   );
-
-//   if (skillsRef.current) {
-//     observer.observe(skillsRef.current);
-//   }
-// }, []);

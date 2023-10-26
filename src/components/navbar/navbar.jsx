@@ -7,13 +7,13 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import { changeIsMobileMenuOpen } from '../../store/modules/openings-slice';
 
 export default function Navbar() {
-  const isMobile = useMediaQuery(1024);
+  const tablet = useMediaQuery(1024);
   const { isMobileMenuOpen } = useSelector(({ openings }) => openings);
   const dispatch = useDispatch();
 
   return (
     <header>
-      {!isMobile && (
+      {!tablet && (
         <div className={css.container}>
           <nav aria-label="primary-navigation">
             <ul>
@@ -26,8 +26,8 @@ export default function Navbar() {
           </nav>
         </div>
       )}
-      {isMobile && (
-        <div className={css.containerMobile}>
+      {tablet && (
+        <div className={css.containerTablet}>
           <i
             className={cx(css.iconContainer, isMobileMenuOpen && css.open)}
             onClick={() => dispatch(changeIsMobileMenuOpen(!isMobileMenuOpen))}

@@ -25,7 +25,7 @@ export default function GraphicList({
       <li className={css.whiteItem}> </li>
 
       {list.map((element) => (
-        <li className={css.mainItem} key={element.id2}>
+        <li className={css.mainItem} key={element.id1}>
           <img
             src={element.icon}
             alt={element.name}

@@ -4,13 +4,21 @@ $orange: #EE6B2F;
 $yellow: #E6BC2F;
 $green: #4DAD5B;
 $blue: #30A7D7;
-$dark-blue: #1B53BA;
-$purple: rgb(208, 3, 208);
+// $dark-blue: #1B53BA;
+$dark-blue: #366bcc;
+$purple: rgb(168, 60, 168);
 $grey: #919191;
 // $asphalt: #59585e;
 $asphalt: #595959;
 $white: #F2F2F2;
 $hover-white: rgb(225, 225, 225);
+
+//gradients
+$blue-green: linear-gradient(90deg, rgba(104, 213, 253, 0.63), rgba(169, 236, 91, 0.79));
+$green-yellow: linear-gradient(90deg, rgba(169, 236, 91, 0.79), rgba(253, 246, 116, 0.98));
+$yellow-orange: linear-gradient(90deg, rgba(253, 246, 116, 0.98), rgba(255, 164, 120, 0.92));
+$orange-pink: linear-gradient(90deg, rgba(255, 164, 120, 0.92), rgba(250, 115, 188, 0.89));
+$pink-purple: linear-gradient(90deg, rgba(250, 115, 188, 0.89), rgb(97, 176, 242));
 
 //border
 $standart-b-radius: 0.5rem;

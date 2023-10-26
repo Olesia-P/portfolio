@@ -41,7 +41,6 @@
         }
     }
 
-
     .category {
         background-color: $asphalt;
         color: white;
@@ -53,8 +52,6 @@
         padding: 0;
         border-bottom: 1rem solid $asphalt;
     }
-
-
 
     .whiteItem {
         background-color: white;
@@ -78,8 +75,6 @@
             @include risingAnimationNine;
         }
 
-
-
         &.red {
             background-color: $red;
         }
@@ -98,6 +93,14 @@
 
         &.blue {
             background-color: $blue;
+        }
+
+        &.purple {
+            background-color: $purple;
+        }
+
+        &.darkblue {
+            background-color: $dark-blue;
         }
     }
 }

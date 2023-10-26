@@ -4,29 +4,30 @@
     position: fixed;
     @include dfc;
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     padding-top: 0;
     font-size: $size-small-header;
     font-family: $font-angular;
     line-height: 1;
     font-weight: 600;
     z-index: 5;
+    border-top: 1rem solid $grey;
 
     nav {
         background-color: $grey;
-        width: 76%;
+        width: 80%;
         height: 100%;
         @include dfc;
         padding: 0 68px;
 
         &:before {
-            left: 12%;
+            left: 10%;
             background: url(/notch-white-xxl-left.png) no-repeat 0 0;
         }
 
         &:after {
-            right: 12%;
-            top: 0.1%;
+            right: 10%;
+            // top: 0.1%;
             background: transparent url(/notch-white-xxl-right.png) no-repeat 0 0;
         }
 
@@ -49,7 +50,8 @@
 
             li {
                 list-style: none;
-                padding: 0.3rem 0.5rem;
+                padding: 0.4rem 0.5rem;
+                margin-bottom: 1rem;
                 color: white;
                 width: 9.2rem;
                 text-align: center;
@@ -62,7 +64,7 @@
 
                 &:hover {
                     @include hover;
-                    transition: all ease-in 0.2s;
+
                 }
 
                 &.red {
@@ -92,16 +94,29 @@
 
 @include ultra {
     .container {
+        font-size: calc($size-small-header + 4pt);
+        height: 4.5rem;
+        border-top: 1.5rem solid $grey;
+
         nav {
-            width: 66%;
+
+            padding: 0 10rem;
+            width: 75%;
 
 
             &:before {
-                left: 17%;
+                left: 12.5%;
             }
 
             &:after {
-                right: 17%;
+                right: 12.5%;
+            }
+
+            ul {
+                li {
+                    width: 12rem;
+                    margin-bottom: 1.5rem;
+                }
             }
         }
     }
@@ -113,19 +128,21 @@
             width: 100%;
 
             &:before {
-                left: 0;
+                left: -1%;
             }
 
             &:after {
                 right: 0;
             }
+
+
         }
     }
 }
 
 
 
-.containerMobile {
+.containerTablet {
     position: fixed;
     z-index: 5;
 

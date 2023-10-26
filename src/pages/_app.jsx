@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     // <>
     <Provider store={store}>
       <Layout>
-        <Component {...pageProps} />
+        <Component {...pageProps} lang="en" />
       </Layout>
     </Provider>
     // </>
