@@ -48,7 +48,7 @@
             margin: 0;
             justify-content: space-evenly;
 
-            li {
+            .navLink {
                 list-style: none;
                 padding: 0.4rem 0.5rem;
                 margin-bottom: 1rem;
@@ -113,7 +113,7 @@
             }
 
             ul {
-                li {
+                .navLink {
                     width: 12rem;
                     margin-bottom: 1.5rem;
                 }
@@ -216,7 +216,7 @@
             margin: 0;
             justify-content: space-around;
 
-            li {
+            .navLink {
                 list-style: none;
                 padding: 0.3rem 0.5rem;
                 color: white;

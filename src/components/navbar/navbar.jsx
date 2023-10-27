@@ -5,6 +5,7 @@ import css from './navbar.module.scss';
 import { navEng } from '../../utils/language-objects';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import { changeIsMobileMenuOpen } from '../../store/modules/openings-slice';
+import LangSwitch from './lang-switch/lang-switch';
 
 export default function Navbar() {
   const tablet = useMediaQuery(1024);
@@ -18,10 +19,14 @@ export default function Navbar() {
           <nav aria-label="primary-navigation">
             <ul>
               {navEng.map((element) => (
-                <li key={element.name} className={cx(css[element.color])}>
+                <li
+                  key={element.name}
+                  className={cx(css[element.color], css.navLink)}
+                >
                   {element.name}
                 </li>
               ))}
+              <LangSwitch />
             </ul>
           </nav>
         </div>
@@ -57,7 +62,10 @@ export default function Navbar() {
           >
             <ul>
               {navEng.map((element) => (
-                <li key={element.name} className={cx(css[element.color])}>
+                <li
+                  key={element.name}
+                  className={cx(css[element.color], css.navLink)}
+                >
                   {element.name}
                 </li>
               ))}

@@ -1,6 +1,5 @@
 @import "../../styles/main";
 
-
 .card {
     background-color: $asphalt;
     width: 55%;
@@ -22,12 +21,11 @@
     }
 
     .commentWrapper {
-        background: linear-gradient(94.3deg, rgba(104, 213, 253, 0.63) 0.7%, rgba(169, 236, 91, 0.79) 18.6%, rgba(253, 246, 116, 0.98) 39.1%, rgba(255, 164, 120, 0.92) 63%, rgba(250, 115, 188, 0.89) 85.3%, rgb(97, 176, 242) 108.2%);
+        background: $main-gradient;
         padding: 0.5rem;
         margin: 0 1rem;
         border-radius: $standart-b-radius;
         position: relative;
-
 
         .comment {
             color: $white;
@@ -48,49 +46,21 @@
                 line-height: 1;
                 font-weight: 400;
 
-                &.strong1 {
-                    color: rgb(244, 244, 141);
-                }
-
-                &.strong2 {
-                    color: rgb(190, 248, 190);
-                }
-
-                &.strong3 {
-                    color: rgb(175, 175, 233);
+                &::before {
+                    background: radial-gradient(rgb(195, 106, 206) 0%, rgb(89, 89, 89) 98%);
+                    z-index: -1;
+                    content: ' ';
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
                 }
 
                 &.animated {
-                    color: white;
 
                     &::before {
-                        z-index: -1;
-                        content: ' ';
-                        position: absolute;
-                        height: 100%;
-                        width: 100%;
-                        top: 0;
-                        left: 0;
                         @include highlightingAnimation;
-                    }
-                }
-
-                &.strong1 {
-
-                    &::before {
-                        background: $green-yellow;
-                    }
-                }
-
-                &.strong2 {
-                    &::before {
-                        background: $orange-pink;
-                    }
-                }
-
-                &.strong3 {
-                    &::before {
-                        background: $blue-green;
                     }
                 }
             }
@@ -157,4 +127,4 @@
     }
 }
 
-@import "./skills-gradients";
+// @import "./skills-gradients";

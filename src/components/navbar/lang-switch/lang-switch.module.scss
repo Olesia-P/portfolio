@@ -1,0 +1,41 @@
+@import "../../../styles/main";
+
+.langSwitchContainer {
+    list-style: none;
+    @include dfc;
+    margin-bottom: 1rem;
+
+    .langContainer {
+        // @include dfcc;
+
+        .iconContainer {
+            height: 2.5rem;
+            width: 2.5rem;
+            position: relative;
+            padding: 0.5rem;
+
+            .pokeball {
+                height: 2.5rem;
+                width: 2.5rem;
+                z-index: 4;
+                position: relative;
+
+            }
+
+            .flag {
+                position: absolute;
+                height: 2.5rem;
+                width: 2.5rem;
+                left: 0.5rem;
+                top: -0.7rem;
+
+                z-index: 0;
+            }
+        }
+
+
+        .language {
+            padding: 0 0.5rem;
+        }
+    }
+}
