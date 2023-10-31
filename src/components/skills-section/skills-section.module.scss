@@ -38,17 +38,14 @@
             padding: 1rem;
             line-height: 1.7;
             transition: transform 2s ease-in-out;
-
+            hyphens: auto;
+            overflow: hidden;
 
             strong {
                 display: inline-block;
-                overflow-y: hidden;
                 position: relative;
-                line-height: 0.7;
-                font-weight: 400;
 
                 &::before {
-                    background: radial-gradient(rgb(195, 106, 206) 0%, rgb(89, 89, 89) 98%);
                     z-index: -1;
                     content: ' ';
                     position: absolute;
@@ -58,8 +55,19 @@
                     left: 0;
                 }
 
-                &.animated {
+                &.strong1 {
+                    &::before {
+                        background: radial-gradient(rgb(113, 160, 167) 0%, rgb(89, 89, 89) 100%);
+                    }
+                }
 
+                &.strong2 {
+                    &::before {
+                        background: radial-gradient(rgb(171, 108, 159) 0%, rgb(89, 89, 89) 100%);
+                    }
+                }
+
+                &.animated {
                     &::before {
                         @include highlightingAnimation;
                     }
@@ -127,5 +135,3 @@
         }
     }
 }
-
-// @import "./skills-gradients";

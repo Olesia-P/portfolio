@@ -42,7 +42,7 @@ export default function SkillsSection() {
       <article>
         <h2 className={css.headerSkills}>Skills</h2>
         <div className={css.commentWrapper}>
-          <p className={cx(css.comment)}>
+          <p className={cx(css.comment)} lang="en">
             In the fast-paced and ever-evolving world of web development, I
             believe that{' '}
             <strong className={cx(css.strong1, isAnimated && css.animated)}>
@@ -51,11 +51,7 @@ export default function SkillsSection() {
             is a key. I am{' '}
             <strong className={cx(css.strong2, isAnimated && css.animated)}>
               {' '}
-              ready to learn{' '}
-            </strong>{' '}
-            <strong className={cx(css.strong3, isAnimated && css.animated)}>
-              {' '}
-              new and old ways
+              ready to learn new and old ways
             </strong>{' '}
             - whatever it takes to create a competitive product!
           </p>
