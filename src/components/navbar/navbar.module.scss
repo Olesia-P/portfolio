@@ -18,26 +18,28 @@
         width: 80%;
         height: 100%;
         @include dfc;
-        padding: 0 68px;
-
-        &:before {
-            left: 10%;
-            background: url(/notch-white-xxl-left.png) no-repeat 0 0;
-        }
-
-        &:after {
-            right: 10%;
-            // top: 0.1%;
-            background: transparent url(/notch-white-xxl-right.png) no-repeat 0 0;
-        }
+        border-radius: $standart-b-radius;
+        position: relative;
 
         &:before,
         &:after {
-            bottom: 0;
+            bottom: 0rem;
             content: " ";
             position: absolute;
-            height: 50px;
-            width: 68px;
+            border-style: solid;
+            border-width: 3rem 3rem 3rem 0;
+            border-color: transparent $grey transparent transparent;
+            border-radius: $standart-b-radius;
+        }
+
+        &:before {
+            left: -2.5%;
+            transform: rotate(135deg);
+        }
+
+        &:after {
+            right: -2.5%;
+            transform: rotate(45deg);
         }
 
         ul {
@@ -92,6 +94,7 @@
     }
 }
 
+
 @include ultra {
     .container {
         font-size: calc($size-small-header + 4pt);
@@ -100,16 +103,16 @@
 
         nav {
 
-            padding: 0 10rem;
-            width: 75%;
-
+            max-width: 100rem;
 
             &:before {
-                left: 12.5%;
+                left: -2.3%;
+
             }
 
             &:after {
-                right: 12.5%;
+                right: -2.3%;
+
             }
 
             ul {
@@ -122,131 +125,35 @@
     }
 }
 
-@include laptop {
+@media screen and (max-width: 1500px) {
     .container {
         nav {
-            width: 100%;
-
             &:before {
-                left: -1%;
+                left: -3%;
+
             }
 
             &:after {
-                right: 0;
+                right: -3%;
+
             }
-
-
         }
     }
 }
 
+@include laptop {
+    .container {
+        nav {
+            width: 90%;
 
+            &:before {
+                left: -3.3%;
 
-.containerTablet {
-    position: fixed;
-    z-index: 5;
+            }
 
-    .iconContainer,
-    .iconContainerOpened {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        margin: 0.5rem;
-        transition: all ease-in-out 0.3s;
+            &:after {
+                right: -3.3%;
 
-    }
-
-    .iconContainer {
-        display: block;
-        height: 5rem;
-        width: 5rem;
-        z-index: 1;
-
-        .icon {
-            height: 100%;
-            width: 100%;
-            filter: grayscale(20%);
-        }
-
-        &.open {
-            transform: rotate(180deg);
-            opacity: 0;
-            z-index: 0;
-        }
-    }
-
-    .iconContainerOpened {
-        height: 5rem;
-        width: 4rem;
-        z-index: 0;
-        opacity: 0;
-
-        .iconOpened {
-            height: 100%;
-            width: 100%;
-        }
-
-        &.open {
-            transform: rotateX(360deg);
-            opacity: 1;
-            z-index: 1;
-        }
-    }
-
-    nav {
-        margin-top: 6rem;
-        width: 10rem;
-        position: relative;
-        font-size: $size-header;
-        font-family: $font-angular;
-        transform: translateX(-110%);
-        transition: transform 0.2s ease-in;
-
-        &.open {
-            transform: translateX(0);
-            transition: transform 0.2s ease-in;
-        }
-
-        ul {
-            width: 100%;
-            height: 100%;
-            @include dfcc;
-            padding-left: 0;
-            margin: 0;
-            justify-content: space-around;
-
-            .navLink {
-                list-style: none;
-                padding: 0.3rem 0.5rem;
-                color: white;
-                width: 100%;
-                text-align: center;
-                border-radius: $standart-b-radius;
-                border: 5px solid $asphalt;
-                cursor: pointer;
-                box-shadow: $main-shadow;
-                text-shadow: $text-shadow;
-
-                &.red {
-                    background-color: $red;
-                }
-
-                &.orange {
-                    background-color: $orange;
-                }
-
-                &.yellow {
-                    background-color: $yellow;
-                }
-
-                &.green {
-                    background-color: $green;
-                }
-
-                &.blue {
-                    background-color: $blue;
-                }
             }
         }
     }

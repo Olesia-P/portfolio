@@ -9,26 +9,28 @@
         // @include dfcc;
 
         .iconContainer {
-            height: 2.5rem;
-            width: 2.5rem;
+            height: 3.5rem;
+            width: 3.5rem;
             position: relative;
             padding: 0.5rem;
 
             .pokeball {
-                height: 2.5rem;
-                width: 2.5rem;
+                height: 3.5rem;
+                width: 3.5rem;
                 z-index: 4;
                 position: relative;
+                stroke: $asphalt;
 
             }
 
             .flag {
                 position: absolute;
-                height: 2.5rem;
-                width: 2.5rem;
-                left: 0.5rem;
-                top: -0.7rem;
-
+                height: 3rem;
+                width: 3rem;
+                left: 0.8rem;
+                top: -1.3rem;
+                // border: 0.3rem solid $asphalt;
+                // border-radius: 50%;
                 z-index: 0;
             }
         }

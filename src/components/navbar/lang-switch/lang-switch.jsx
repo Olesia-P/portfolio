@@ -8,10 +8,10 @@ export default function LangSwitch() {
         <i className={css.iconContainer}>
           <img
             className={css.pokeball}
-            src="/empty-pokeball.png"
+            src="/empty-pokeball.svg"
             alt="en lang"
           />
-          <img className={css.flag} src="/en-lang.png" alt="en lang" />
+          <img className={css.flag} src="/us-lang.png" alt="en lang" />
         </i>
         {/* <p className={css.language}>EN</p> */}
       </div>
@@ -19,7 +19,7 @@ export default function LangSwitch() {
         <i className={css.iconContainer}>
           <img
             className={css.pokeball}
-            src="/empty-pokeball.png"
+            src="/empty-pokeball.svg"
             alt="ua lang"
           />
           <img className={css.flag} src="/ua-lang.png" alt="ua lang" />

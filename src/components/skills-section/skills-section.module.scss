@@ -36,14 +36,15 @@
             z-index: 1;
             position: relative;
             padding: 1rem;
-            line-height: 1.5;
+            line-height: 1.7;
             transition: transform 2s ease-in-out;
+
 
             strong {
                 display: inline-block;
                 overflow-y: hidden;
                 position: relative;
-                line-height: 1;
+                line-height: 0.7;
                 font-weight: 400;
 
                 &::before {
