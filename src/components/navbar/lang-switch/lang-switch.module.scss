@@ -3,41 +3,51 @@
 .langSwitchContainer {
     list-style: none;
     @include dfc;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    position: relative;
 
-    .langContainer {
-        // @include dfcc;
+    .currentLang {
+        position: relative;
 
-        .iconContainer {
+        .bubble {
             height: 3.5rem;
-            width: 3.5rem;
-            position: relative;
-            padding: 0.5rem;
+        }
 
-            .pokeball {
-                height: 3.5rem;
-                width: 3.5rem;
-                z-index: 4;
-                position: relative;
-                stroke: $asphalt;
+        .flag {
+            position: absolute;
+            height: 1.25rem;
+            bottom: 1.45rem;
+            left: 1.15rem;
+        }
+    }
 
-            }
+    .langDropdown {
+        position: absolute;
+        @include dfcc;
+        top: 3rem;
+        padding: 0rem;
+        background-color: $white;
+        border-radius: $standart-b-radius;
+        box-shadow: $main-shadow;
+        width: 70%;
+        height: 0;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
 
-            .flag {
-                position: absolute;
-                height: 3rem;
-                width: 3rem;
-                left: 0.8rem;
-                top: -1.3rem;
-                // border: 0.3rem solid $asphalt;
-                // border-radius: 50%;
-                z-index: 0;
+        .flag {
+            height: 100%;
+            width: 100%;
+            padding: 0.2rem;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(120%);
             }
         }
 
-
-        .language {
-            padding: 0 0.5rem;
+        &.open {
+            height: 100%;
+            padding: 0.2rem;
         }
     }
 }

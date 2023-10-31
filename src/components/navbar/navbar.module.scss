@@ -20,6 +20,7 @@
         @include dfc;
         border-radius: $standart-b-radius;
         position: relative;
+        padding: 0 3rem;
 
         &:before,
         &:after {
@@ -102,7 +103,7 @@
         border-top: 1.5rem solid $grey;
 
         nav {
-
+            padding: 0 4rem;
             max-width: 100rem;
 
             &:before {
@@ -144,6 +145,7 @@
 @include laptop {
     .container {
         nav {
+            padding: 0rem;
             width: 90%;
 
             &:before {

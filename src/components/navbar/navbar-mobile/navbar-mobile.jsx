@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import cx from 'classnames';
 import { changeIsMobileMenuOpen } from '../../../store/modules/openings-slice';
 import css from './navbar-mobile.module.scss';
+import LangSwitchMobile from '../lang-switch-mobile/lang-switch-mobile';
 
 export default function NavbarMobile({ text }) {
   const { isMobileMenuOpen } = useSelector(({ openings }) => openings);
@@ -38,7 +39,8 @@ export default function NavbarMobile({ text }) {
             >
               {element.name}
             </li>
-          ))}
+          ))}{' '}
+          <LangSwitchMobile />
         </ul>
       </nav>
     </div>

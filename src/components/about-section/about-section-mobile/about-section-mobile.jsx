@@ -7,7 +7,7 @@ export default function AboutSectionMobile() {
     <article className={css.cardMobile}>
       <section className={css.mobileSection}>
         <p className={css.age}>26</p>
-        <img src="/ua_icon.png" className={css.flag} alt="ua-flag" />
+        <img src="/ua-icon.png" className={css.flag} alt="ua-flag" />
         <h2 className={css.name}>Olesia Pryhun</h2>
         <img src="/avatar.png" alt="my-avatar" className={css.avatar} />
         <div className={css.textWrap}>

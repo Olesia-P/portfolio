@@ -1,0 +1,28 @@
+@import "../../../styles/main";
+
+.mobileLangSwitchContainer {
+    list-style: none;
+    padding: 0.3rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: $standart-b-radius;
+    border: 5px solid $asphalt;
+    cursor: pointer;
+    box-shadow: $main-shadow;
+    text-shadow: $text-shadow;
+    background-color: $grey;
+    @include dfc;
+    justify-content: space-evenly;
+
+
+    .flag {
+        height: 2.2rem;
+        padding: 0.2rem;
+        filter: grayscale(0.8);
+
+        &.chosen {
+            filter: grayscale(0);
+        }
+    }
+}

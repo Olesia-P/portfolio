@@ -67,7 +67,7 @@ export default function AboutSection() {
                   chat GPT.
                 </p>
               </div>
-              <img src="/ua_icon.png" className={css.flag} alt="ua-flag" />
+              <img src="/ua-icon.png" className={css.flag} alt="ua-flag" />
             </section>{' '}
           </div>
         </article>
