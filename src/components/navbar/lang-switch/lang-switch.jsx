@@ -19,7 +19,7 @@ export default function LangSwitch() {
           setIsDropdownOpen(!isDropdownOpen);
         }}
       >
-        <img src="/bubble.png" alt="" className={css.bubble} />
+        <img src="/mobile-phone.png" alt="" className={css.mobile} />
         <img
           className={cx(css.flag)}
           src={language === 'ua' ? '/ua-lang.png' : '/en-lang.png'}
@@ -33,6 +33,7 @@ export default function LangSwitch() {
           alt="ua lang"
           onClick={() => {
             dispatch(changeLangauge('ua'));
+            setIsDropdownOpen(false);
           }}
         />
 
@@ -42,6 +43,7 @@ export default function LangSwitch() {
           alt="en lang"
           onClick={() => {
             dispatch(changeLangauge('en'));
+            setIsDropdownOpen(false);
           }}
         />
       </div>

@@ -9,6 +9,7 @@
     padding: 2rem 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
+    outline: 1px solid black;
 
     .container {
         @include dfc;
