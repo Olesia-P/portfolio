@@ -20,7 +20,7 @@ export default function LangSwitchMobile() {
 
       <img
         className={cx(css.flag, language === 'en' && css.chosen)}
-        src="/uk-lang.png"
+        src="/en-lang.png"
         alt="en lang"
         onClick={() => {
           dispatch(changeLangauge('en'));

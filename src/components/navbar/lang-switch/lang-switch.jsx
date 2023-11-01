@@ -22,7 +22,7 @@ export default function LangSwitch() {
         <img src="/bubble.png" alt="" className={css.bubble} />
         <img
           className={cx(css.flag)}
-          src={language === 'ua' ? '/ua-lang.png' : '/uk-lang.png'}
+          src={language === 'ua' ? '/ua-lang.png' : '/en-lang.png'}
           alt="language"
         />
       </div>
@@ -38,7 +38,7 @@ export default function LangSwitch() {
 
         <img
           className={cx(css.flag, language === 'en')}
-          src="/uk-lang.png"
+          src="/en-lang.png"
           alt="en lang"
           onClick={() => {
             dispatch(changeLangauge('en'));

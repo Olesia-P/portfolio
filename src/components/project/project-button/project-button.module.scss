@@ -1,0 +1,43 @@
+@import "../../../styles/main";
+
+.buttonContainer {
+    height: 2rem;
+    width: 5rem;
+    font-size: $size-small-header;
+    font-family: $font-main;
+    box-shadow: $main-shadow;
+    @include sb(black);
+    border-radius: $standart-b-radius;
+    font-weight: 600;
+    color: white;
+    text-shadow: $text-shadow;
+
+
+    &.red {
+        background-color: $red;
+    }
+
+    &.orange {
+        background-color: $orange;
+    }
+
+    &.yellow {
+        background-color: $yellow;
+    }
+
+    &.green {
+        background-color: $green;
+    }
+
+    &.blue {
+        background-color: $blue;
+    }
+
+    &.purple {
+        background-color: $purple;
+    }
+
+    &.darkblue {
+        background-color: $dark-blue;
+    }
+}

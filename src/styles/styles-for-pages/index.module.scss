@@ -32,6 +32,15 @@
             @include shadowForHangingAnimation;
         }
     }
+
+    .projectsHeader {
+        font-size: 40pt;
+        font-family: $font-game;
+        text-shadow: $text-shadow;
+        font-weight: 400;
+        padding: 0;
+        margin-right: 5rem 10% 5rem auto;
+    }
 }
 
 @include tablet {

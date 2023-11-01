@@ -1,0 +1,125 @@
+@import "../../styles/main";
+
+.card {
+    background-color: rgb(214, 210, 210);
+    width: 55%;
+    @include mb ($asphalt);
+    border-radius: $standart-b-radius;
+    margin: 1rem 10rem 1rem 0;
+    padding: 1rem;
+    box-shadow: $main-shadow;
+    font-family: $font-main;
+    background-image: url("/comics-pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+
+
+    .topSection {
+        display: flex;
+
+        .pokemonImgWrap {
+            // background-color: blue;
+            width: 30%;
+            @include dfcc;
+            position: relative;
+            margin: 0 2rem 0 0;
+
+
+            .pokemonImg {
+                position: absolute;
+                top: 1.75rem;
+                left: 3rem;
+            }
+
+            .circle {
+                height: 16rem;
+                width: 16rem;
+                background-color: $white;
+                border-radius: 50%;
+                @include sb(black);
+                box-shadow: $main-shadow;
+            }
+
+
+        }
+
+        .headerWrap {
+            width: 65%;
+
+            .level {
+                font-family: $font-game;
+                font-size: 38pt;
+                margin: 1rem 0 0 0;
+                line-height: 1;
+            }
+
+
+            .projectTitle {
+                font-family: $font-angular;
+                font-size: $size-huge;
+                margin: 0 0 1rem 0;
+                font-weight: 600;
+                background-image: url("/paper.png");
+                padding: 2rem 0 0 1rem;
+                ;
+                width: 80%;
+            }
+
+            .usedSkills {
+                background-color: $asphalt;
+                @include sb (black);
+                // border: 0.5rem ridge black;
+                border-radius: $standart-b-radius;
+                padding: 0.5rem;
+                width: 90%;
+                box-shadow: $main-shadow;
+
+                .skillsList {
+                    padding: 0;
+                    margin: 0;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+
+                    .skillItem {
+                        list-style: none;
+                        font-size: $size-small-header;
+                        font-family: $font-main;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        color: white;
+                        text-shadow: $text-shadow;
+                        margin: 0.3rem 0;
+
+                        .skillIcon {
+                            background-color: white;
+                            padding: 0.1rem;
+                            border-radius: 50%;
+                            border: 2px solid black;
+                            height: 2rem;
+                            width: 2rem;
+                            margin: 0 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .bottomSection {}
+
+    .button1 {
+        position: absolute;
+        top: 1rem;
+        right: 7rem;
+    }
+
+    .button2 {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+}

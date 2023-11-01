@@ -15,7 +15,11 @@ export default function NavbarMobile({ text }) {
         className={cx(css.iconContainer, isMobileMenuOpen && css.open)}
         onClick={() => dispatch(changeIsMobileMenuOpen(!isMobileMenuOpen))}
       >
-        <img src="/pokeball.png" alt="mobileMenuIcon" className={css.icon} />
+        <img
+          src="/pokeball-icon.png"
+          alt="mobileMenuIcon"
+          className={css.icon}
+        />
       </i>{' '}
       <i
         className={cx(css.iconContainerOpened, isMobileMenuOpen && css.open)}
