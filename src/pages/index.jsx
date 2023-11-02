@@ -1,9 +1,9 @@
 import React from 'react';
 import css from '../styles/styles-for-pages/index.module.scss';
-
 import AboutSection from '../components/about-section/about-section';
 import SkillsSection from '../components/skills-section/skills-section';
 import Project from '../components/project/project';
+import ProjectsSectionHeader from '../components/projects-section-header/projects-section-header';
 
 export default function Home() {
   return (
@@ -12,10 +12,8 @@ export default function Home() {
 
       <AboutSection />
       <SkillsSection />
+      <ProjectsSectionHeader />
 
-      <h2 className={css.projectsHeader}>
-        Pokemons evolve... so do developers!
-      </h2>
       <Project />
     </main>
   );

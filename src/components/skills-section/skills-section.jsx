@@ -108,7 +108,7 @@ export default function SkillsSection() {
       </article>
       <aside className={css.pokemonPyramidWrap}>
         <img
-          className={css.pokemonPyramid}
+          className={cx(css.pokemonPyramid, isAnimated && css.animated)}
           src="/pokemon-pyramid.png"
           alt="pokemon-pyramid.png"
         />

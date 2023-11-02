@@ -5,13 +5,23 @@
     @include dfc;
     margin-bottom: 0.8rem;
     position: relative;
+    cursor: pointer;
 
     .currentLang {
         position: relative;
+        transition: all ease-in 0.2s;
+
+        &:hover {
+            transform: scale(120%);
+        }
+
 
         .mobile {
             height: 3rem;
+
+
         }
+
 
         .flag {
             position: absolute;
@@ -22,21 +32,6 @@
         }
     }
 
-    // .chain1 {
-    //     width: 0;
-    //     position: absolute;
-    //     top: 2.8rem;
-    //     left: 1rem;
-    //     transform: rotate(-45deg);
-    //     z-index: 2;
-    //     transition: width 0.2s ease-in-out;
-
-    //     &.open {
-    //         width: 2.2rem;
-    //     }
-
-    // }
-
     .langDropdown {
         position: absolute;
         @include dfcc;
@@ -44,35 +39,16 @@
         padding: 0rem;
         background-color: $grey;
         border-radius: $standart-b-radius;
-        // box-shadow: $main-shadow;
         width: 90%;
         height: 0;
         transition: height 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         overflow: hidden;
-        // border: 3px solid black;
         background-image: none;
-        background-size: cover;
 
 
-
-
-
-        // .chain2 {
-        //     width: 0;
-        //     position: absolute;
-        //     top: 2.8rem;
-        //     left: 1rem;
-        //     transform: rotate(-45deg);
-        //     z-index: 2;
-
-
-        // }
 
         .flag {
-            // height: 2rem;
-            // width: 3rem;
-
             padding: 0.6rem;
             transition: transform 0.2s ease-in-out;
 
@@ -84,15 +60,8 @@
         &.open {
             height: 8rem;
             padding: 0.5rem;
-
             background-image: url('/dashed-texture.png');
-
-            .chain2 {
-                width: 2.2rem;
-
-
-
-            }
+            background-size: contain;
         }
     }
 }

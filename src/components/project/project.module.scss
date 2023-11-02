@@ -1,7 +1,7 @@
 @import "../../styles/main";
 
 .card {
-    background-color: rgb(214, 210, 210);
+    background-color: $light-grey;
     width: 55%;
     @include mb ($asphalt);
     border-radius: $standart-b-radius;

@@ -1,0 +1,12 @@
+@import "../../styles/main";
+
+.cursor {
+    animation: blinking 0.7s infinite steps(2);
+
+    @keyframes blinking {
+        0% {
+            opacity: 0;
+        }
+    }
+
+}

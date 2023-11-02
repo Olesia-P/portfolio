@@ -18,11 +18,10 @@ export default function Project() {
           <aside className={css.usedSkills}>
             <ul className={css.skillsList}>
               {project1Skills.map((element) => (
-                <li className={css.skillItem}>
+                <li key={element.id} className={css.skillItem}>
                   <img
                     src={element.icon}
                     className={css.skillIcon}
-                    key={element.id}
                     alt={element.name}
                   />
                   {element.name}

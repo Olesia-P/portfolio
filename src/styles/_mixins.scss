@@ -122,3 +122,27 @@
         }
     }
 }
+
+
+
+@mixin totterAnimation {
+    animation: totter 1s linear;
+
+
+
+    @keyframes totter {
+        0% {
+            transform: rotateZ(-1deg);
+
+        }
+
+        50% {
+            transform: rotateZ(1deg);
+        }
+
+        100% {
+            transform: rotateZ();
+        }
+    }
+
+}

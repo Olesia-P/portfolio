@@ -36,7 +36,6 @@ export default function LangSwitch() {
             setIsDropdownOpen(false);
           }}
         />
-
         <img
           className={cx(css.flag, language === 'en')}
           src="/en-lang.png"

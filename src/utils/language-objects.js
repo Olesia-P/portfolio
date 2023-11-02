@@ -245,17 +245,17 @@ export const project1Skills = [
   {
     icon: '/skills-icons/react-icon.png',
     name: 'React',
-    id2: 'p1s1',
+    id: 'p1s1',
   },
 
   {
     icon: '/skills-icons/sass-icon.png',
     name: 'Sass/Scss',
-    id2: 'p1s3',
+    id: 'p1s3',
   },
   {
     icon: '/skills-icons/git-icon.png',
     name: 'Git + Bash',
-    id1: 'p1s2',
+    id: 'p1s2',
   },
 ];

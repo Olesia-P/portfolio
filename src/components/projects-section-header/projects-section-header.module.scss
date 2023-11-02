@@ -1,0 +1,41 @@
+@import "../../styles/main";
+
+.projectsSectionHeaderWrap {
+    position: relative;
+    color: $white;
+    text-shadow: $text-shadow;
+
+
+    .dialogBox {
+        height: 15rem;
+        width: 55rem;
+        margin: 14rem 9rem 4rem auto;
+        background-color: white;
+    }
+
+    .character {
+        height: 32rem;
+        position: absolute;
+        top: 2rem;
+        left: -9rem;
+    }
+
+    .projectsHeader {
+        font-family: $font-angular;
+        position: absolute;
+        font-size: $size-huge;
+        top: 12.5rem;
+        right: 12rem;
+        font-weight: 400;
+    }
+
+    .projectsCaption {
+        position: absolute;
+        font-family: $font-game;
+        font-size: 30pt;
+        top: 22rem;
+        left: 9rem;
+
+
+    }
+}
