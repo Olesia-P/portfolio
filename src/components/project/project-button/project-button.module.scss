@@ -9,9 +9,9 @@
     @include sb(black);
     border-radius: $standart-b-radius;
     font-weight: 600;
-    color: white;
+    cursor: pointer;
     text-shadow: $text-shadow;
-
+    @include hover(0.2rem, black);
 
     &.red {
         background-color: $red;
@@ -39,5 +39,12 @@
 
     &.darkblue {
         background-color: $dark-blue;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+
+
     }
 }

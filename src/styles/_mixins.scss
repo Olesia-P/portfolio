@@ -23,13 +23,13 @@
 
 
 
-@mixin hover {
+@mixin hover($borderSize, $borderColor) {
     transition: all ease-in 0.2s;
 
     &:hover {
         filter: brightness(120%);
         transform: scale(110%);
-        border: 6px solid $asphalt;
+        border: $borderSize solid $borderColor;
 
     }
 
@@ -145,4 +145,27 @@
         }
     }
 
+}
+
+@mixin movementSlideAnimation {
+    animation: movementSlide 0.5s linear;
+    animation-delay: 0.5s;
+
+
+
+    @keyframes movementSlide {
+        0% {
+            opacity: 0;
+
+        }
+
+        50% {
+            opacity: 1;
+
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
 }

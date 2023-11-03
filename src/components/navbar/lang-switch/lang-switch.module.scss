@@ -15,13 +15,9 @@
             transform: scale(120%);
         }
 
-
         .mobile {
             height: 3rem;
-
-
         }
-
 
         .flag {
             position: absolute;
@@ -35,7 +31,7 @@
     .langDropdown {
         position: absolute;
         @include dfcc;
-        top: 3rem;
+        top: 3.3rem;
         padding: 0rem;
         background-color: $grey;
         border-radius: $standart-b-radius;
@@ -45,8 +41,7 @@
         transition: all 0.3s ease-in-out;
         overflow: hidden;
         background-image: none;
-
-
+        box-shadow: $main-shadow;
 
         .flag {
             padding: 0.6rem;
@@ -60,8 +55,8 @@
         &.open {
             height: 8rem;
             padding: 0.5rem;
-            background-image: url('/dashed-texture.png');
-            background-size: contain;
+            // background-image: url('/dashed-texture.png');
+            // background-size: contain;
         }
     }
 }

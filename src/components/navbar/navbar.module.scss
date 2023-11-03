@@ -64,12 +64,8 @@
                 cursor: pointer;
                 box-shadow: $main-shadow;
                 text-shadow: $text-shadow;
-                transition: all ease-in 0.2s;
-
-                &:hover {
-                    @include hover;
-
-                }
+                // transition: all ease-in 0.2s;
+                @include hover(6px, $asphalt);
 
                 &.red {
                     background-color: $red;
@@ -150,12 +146,12 @@
             width: 90%;
 
             &:before {
-                left: -3.3%;
+                left: -3.2%;
 
             }
 
             &:after {
-                right: -3.3%;
+                right: -3.2%;
 
             }
         }
