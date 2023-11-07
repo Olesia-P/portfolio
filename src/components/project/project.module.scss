@@ -14,24 +14,19 @@
     background-repeat: no-repeat;
     position: relative;
 
-
-
     .topSection {
         display: flex;
 
         .pokemonImgWrap {
-            // background-color: blue;
             width: 30%;
             @include dfcc;
             position: relative;
             margin: 0 2rem 0 0;
 
-
             .pokemonImg {
                 position: absolute;
                 top: 1.75rem;
                 left: -40rem;
-
                 z-index: 1;
 
                 &.animated {
@@ -60,8 +55,6 @@
                 @include sb(black);
                 box-shadow: $main-shadow;
             }
-
-
         }
 
         .headerWrap {
@@ -72,9 +65,7 @@
                 font-size: 38pt;
                 margin: 1rem 0 0 0;
                 line-height: 1;
-                // text-decoration: underline;
             }
-
 
             .projectTitle {
                 font-family: $font-angular;
@@ -90,7 +81,6 @@
             .usedSkills {
                 background-color: $asphalt;
                 @include sb (black);
-                // border: 0.5rem ridge black;
                 border-radius: $standart-b-radius;
                 padding: 0.5rem;
                 width: 90%;
@@ -112,7 +102,6 @@
                         color: white;
                         text-shadow: $text-shadow;
                         margin: 0.3rem 0;
-
                         border-left: 1px solid white;
 
                         .skillIcon {
@@ -128,102 +117,26 @@
                 }
             }
         }
-
     }
 
     .bottomSection {
         font-family: $font-main;
-        // @include dfc;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
-        .textBlock {
+        .description {
+            grid-column: span 2;
+            font-weight: 600;
+            font-size: $size-header;
+            background: none;
             background-color: $white;
-            border-radius: $standart-b-radius;
+            border: 0.5rem outset $light-grey;
             margin: 1rem;
-            padding: 1rem;
-            outline: 0.2rem solid black;
-            border: 0.5rem solid $light-green;
-
-            // height: 15rem;
-            // width: 50%;
-            // flex-wrap: wrap;
-            .title {
-                margin: 0;
-                font-size: $size-small-header;
-                font-weight: 600;
-                margin-bottom: 0.5rem;
-            }
-
-            .text {
-                font-size: $size-p;
-                // background-color: white;
-                margin: 0;
-                list-style: none;
-                border-radius: $standart-b-radius;
-                // padding-left: 1rem;
-                line-height: 1.5;
-
-
-                li {
-                    // @include dfc;
-                    // display: flex;
-                    position: relative;
-
-                    &::before {
-                        content: '';
-                        display: block;
-                        position: absolute;
-                        height: 1.5rem;
-                        width: 1.5rem;
-                        // margin-right: 0.5rem;
-                        // padding-top: 1rem;
-                        left: -1.7rem;
-                        top: 0.2rem;
-                        // background-image: url('/pokeballs/red-pokeball-icon.png');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                    }
-                }
-
-
-            }
-
-            &.features {
-                ul {
-                    li {
-                        &::before {
-
-                            background-image: url('/pokeballs/potion-icon.png');
-
-                        }
-                    }
-                }
-            }
-
-            &.learned {
-                ul {
-                    li {
-                        &::before {
-
-                            background-image: url('/pokeballs/star-icon.png');
-
-                        }
-                    }
-                }
-            }
-
-            &.description {
-                grid-column: span 2;
-                font-weight: 600;
-                font-size: $size-header;
-            }
-
-
-
-
+            padding: 1rem 2rem;
+            border-radius: $standart-b-radius;
+            background: linear-gradient(90deg, rgb(145, 145, 145) 0%, rgb(214, 210, 210) 19%, rgb(214, 210, 210) 77%, rgb(145, 145, 145) 100%);
+            outline: 0.1rem solid black;
         }
-
     }
 
     .button1 {

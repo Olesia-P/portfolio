@@ -150,32 +150,6 @@
 
         }
 
-        &.red {
-            background-color: $red;
-        }
-
-        &.orange {
-            background-color: $orange;
-        }
-
-        &.yellow {
-            background-color: $yellow;
-        }
-
-        &.green {
-            background-color: $green;
-        }
-
-        &.blue {
-            background-color: $blue;
-        }
-
-        &.purple {
-            background-color: $purple;
-        }
-
-        &.darkblue {
-            background-color: $dark-blue;
-        }
+        @include allColorsBackground;
     }
 }

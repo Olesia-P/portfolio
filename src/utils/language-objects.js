@@ -259,3 +259,23 @@ export const project1Skills = [
     id: 'p1s2',
   },
 ];
+
+export const project1Features = {
+  title: 'Features',
+  list: [
+    "Type a city name to check today's weather and the weather forecast for 6 days;",
+    'You can switch between Fahrenheit and Celsius;',
+    'Error pop-up shows if the city is typed wrong;',
+    'Submit button is disabled if input field is empty.',
+  ],
+};
+
+export const project1Learned = {
+  title: 'What did I learn?',
+  list: [
+    'Making independent and reusable components;',
+    'Making HTTP requests using Axios;',
+    'Using SCSS and modules;',
+    'Creating responsive layouts.',
+  ],
+};

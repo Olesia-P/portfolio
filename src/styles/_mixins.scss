@@ -21,8 +21,6 @@
     border: 0.2rem solid $color;
 }
 
-
-
 @mixin hover($borderSize, $borderColor) {
     transition: all ease-in 0.2s;
 
@@ -30,20 +28,15 @@
         filter: brightness(120%);
         transform: scale(110%);
         border: $borderSize solid $borderColor;
-
     }
-
-
 }
 
 @mixin hangingAnimation {
     animation: hanging 1.3s infinite alternate cubic-bezier(0.11, 0, 0.5, 0);
 
-
     @keyframes hanging {
         0% {
             transform: translateY(0.2rem);
-
         }
 
         25% {
@@ -62,15 +55,105 @@
     }
 }
 
+
+@mixin allColorsBackground {
+    &.red {
+        background-color: $red;
+    }
+
+    &.orange {
+        background-color: $orange;
+    }
+
+    &.yellow {
+        background-color: $yellow;
+    }
+
+    &.green {
+        background-color: $green;
+    }
+
+    &.blue {
+        background-color: $blue;
+    }
+
+    &.purple {
+        background-color: $purple;
+    }
+
+    &.darkblue {
+        background-color: $dark-blue;
+    }
+}
+
+@mixin allColors {
+    &.red {
+        color: $red;
+    }
+
+    &.orange {
+        color: $orange;
+    }
+
+    &.yellow {
+        color: $yellow;
+    }
+
+    &.green {
+        color: $green;
+    }
+
+    &.blue {
+        color: $blue;
+    }
+
+    &.purple {
+        color: $purple;
+    }
+
+    &.darkblue {
+        color: $dark-blue;
+    }
+}
+
+@mixin allColorsLightBorder {
+    &.red {
+        border: 0.5rem solid $light-red;
+
+    }
+
+    &.orange {
+        border: 0.5rem solid $light-orange;
+    }
+
+    &.yellow {
+        border: 0.5rem solid $light-yellow;
+    }
+
+    &.green {
+        border: 0.5rem solid $light-green;
+    }
+
+    &.blue {
+        border: 0.5rem solid $light-blue;
+    }
+
+    &.purple {
+        border: 0.5rem solid $light-purple;
+    }
+
+    &.darkblue {
+        border: 0.5rem solid $light-dark-blue;
+    }
+}
+
 @mixin shadowForHangingAnimation {
     animation: shadowForHanging 1.3s infinite alternate cubic-bezier(0.11, 0, 0.5, 0);
-
 
     @keyframes shadowForHanging {
         0% {
             height: 1.5rem;
             width: 15rem;
-
         }
 
         25% {
@@ -95,7 +178,6 @@
 @mixin wavingAnimation {
     animation: waving 2.5s infinite alternate cubic-bezier(0.11, 0, 0.5, 0);
 
-
     @keyframes waving {
         0% {
             transform: rotate(4deg);
@@ -110,8 +192,6 @@
 @mixin highlightingAnimation {
     animation: highlighting 1s ease-in-out;
 
-
-
     @keyframes highlighting {
         0% {
             transform: translateX(-100%);
@@ -124,11 +204,8 @@
 }
 
 
-
 @mixin totterAnimation {
     animation: totter 1s linear;
-
-
 
     @keyframes totter {
         0% {
@@ -151,21 +228,33 @@
     animation: movementSlide 0.5s linear;
     animation-delay: 0.5s;
 
-
-
     @keyframes movementSlide {
         0% {
             opacity: 0;
-
         }
 
         50% {
             opacity: 1;
-
         }
 
         100% {
             opacity: 0;
+        }
+    }
+}
+
+@mixin rotateCardAnimation {
+    animation: rotateCard 0.5s ease-in;
+
+
+    @keyframes rotateCard {
+        0% {
+            transform: rotateX(180deg);
+        }
+
+        100% {
+            transform: rotateX(0deg);
+
         }
     }
 }

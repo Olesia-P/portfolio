@@ -9,16 +9,8 @@ export default function ProjectsSectionHeader() {
   const handleIntersection = () => {
     setIsAnimated(true);
   };
-  const handleOutsideIntersection = () => {
-    setIsAnimated(false);
-  };
 
-  const ref = useIntersectionObserver(
-    handleIntersection,
-    handleOutsideIntersection,
-    1,
-  );
-  //   console.log('isAnimated', isAnimated);
+  const ref = useIntersectionObserver(handleIntersection, undefined, 1);
 
   return (
     <header className={css.projectsSectionHeaderWrap} ref={ref}>
@@ -35,5 +27,3 @@ export default function ProjectsSectionHeader() {
     </header>
   );
 }
-
-// &nbsp;

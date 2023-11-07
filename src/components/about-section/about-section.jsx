@@ -11,7 +11,8 @@ export default function AboutSection() {
   const isLowTablet = useMediaQuery(767);
   const dispatch = useDispatch();
 
-  const handleIntersection = () => dispatch(changeTvSection('about'));
+  const handleIntersection = () =>
+    dispatch(changeTvSection({ name: 'about', link: '' }));
 
   const aboutRef = useIntersectionObserver(handleIntersection, undefined, 1);
 

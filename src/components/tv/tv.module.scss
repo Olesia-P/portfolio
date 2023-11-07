@@ -50,3 +50,9 @@
         width: 22%;
     }
 }
+
+@include tablet {
+    .containerFull {
+        display: none;
+    }
+}

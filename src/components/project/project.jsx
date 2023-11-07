@@ -1,25 +1,32 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import cx from 'classnames';
 import css from './project.module.scss';
-import { project1Skills } from '../../utils/language-objects';
+import {
+  project1Skills,
+  project1Features,
+  project1Learned,
+} from '../../utils/language-objects';
 import ProjectButton from './project-button/project-button';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
+import ProjectCard from './project-card/project-card';
 
 export default function Project() {
   const [isAnimated, setIsAnimated] = useState(false);
+  const dispatch = useDispatch();
 
   const handleIntersection = () => {
     setIsAnimated(true);
-  };
-  const handleOutsideIntersection = () => {
-    setIsAnimated(false);
+    dispatch(
+      changeTvSection({
+        name: 'project1',
+        link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+      }),
+    );
   };
 
-  const ref = useIntersectionObserver(
-    handleIntersection,
-    handleOutsideIntersection,
-    0,
-  );
+  const ref = useIntersectionObserver(handleIntersection, undefined, 0.8);
   return (
     <article className={css.card} ref={ref}>
       <section className={css.topSection}>
@@ -56,35 +63,30 @@ export default function Project() {
           </aside>
         </div>
       </section>
+
       <section className={css.bottomSection}>
-        <div className={cx(css.textBlock, css.description)}>
+        <div className={css.description}>
           <p>
             You have to start somewhere! My first React project - simple,
             stylish... well, merely usefull, but working!
           </p>
         </div>
-        <div className={cx(css.textBlock, css.features)}>
-          <h4 className={css.title}>Features</h4>
 
-          <ul className={css.text}>
-            <li>
-              Type a city name to check today&apos;s weather and the weather
-              forecast for 6 days;
-            </li>
-            <li>You can switch between Fahrenheit and Celsius;</li>
-            <li>Error pop-up shows if the city is typed wrong;</li>
-            <li>Submit button is disabled if input field is empty.</li>
-          </ul>
+        <div className={css.features}>
+          <ProjectCard
+            cardName="Features"
+            text={project1Features}
+            color="yellow"
+            icon="potion"
+          />
         </div>
-        <div className={cx(css.textBlock, css.learned)}>
-          <h4 className={css.title}>What did I learn?</h4>
-
-          <ul className={css.text}>
-            <li>Making independent and reusable components;</li>
-            <li>Making HTTP requests using Axios;</li>
-            <li>Using SCSS and modules;</li>
-            <li>Creating responsive layouts.</li>
-          </ul>
+        <div className={css.learned}>
+          <ProjectCard
+            cardName="What I learned"
+            text={project1Learned}
+            color="orange"
+            icon="star"
+          />
         </div>
       </section>
       <div className={css.button1}>

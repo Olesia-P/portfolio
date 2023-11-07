@@ -22,10 +22,7 @@ export default function SkillsSection() {
   const dispatch = useDispatch();
   const handleIntersection = () => {
     setIsAnimated(true);
-    dispatch(changeTvSection('skills'));
-  };
-  const handleOutsideIntersection = () => {
-    setIsAnimated(false);
+    dispatch(changeTvSection({ name: 'skills', link: '' }));
   };
 
   const isLowTablet = useMediaQuery(767);
@@ -33,7 +30,7 @@ export default function SkillsSection() {
   const decideThresholdValue = () => (isLowTablet ? 0 : 0.5);
   const skillsRef = useIntersectionObserver(
     handleIntersection,
-    handleOutsideIntersection,
+    undefined,
     decideThresholdValue(),
   );
 
