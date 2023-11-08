@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import cx from 'classnames';
 import css from './project-card.module.scss';
 
-export default function ProjectCard({ cardName, text, color, icon }) {
-  const [cardState, setCardState] = useState('back');
-
+export default function ProjectCard({
+  cardName,
+  text,
+  color,
+  icon,
+  isAnimated,
+}) {
   return (
     <div className={css.container}>
-      <div
-        className={cx(css.card, css.backCard, cardState === 'back' && css.open)}
-        onClick={() => setCardState('face')}
-      >
+      <div className={cx(css.card, css.backCard, !isAnimated && css.close)}>
         <h5 className={cx(css.cardName, css[color])}>{cardName}</h5>
       </div>
       <div
@@ -18,9 +19,8 @@ export default function ProjectCard({ cardName, text, color, icon }) {
           css.card,
           css.faceCard,
           css[color],
-          cardState === 'face' && css.open,
+          isAnimated && css.open,
         )}
-        onClick={() => setCardState('back')}
       >
         <h4 className={css.title}>{text.title}</h4>
         <ul className={css.list}>

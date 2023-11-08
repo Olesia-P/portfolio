@@ -24,13 +24,16 @@ export default function SkillsSection() {
     setIsAnimated(true);
     dispatch(changeTvSection({ name: 'skills', link: '' }));
   };
+  const handleOutsideIntersection = () => {
+    dispatch(changeTvSection({ name: 'about', link: '' }));
+  };
 
   const isLowTablet = useMediaQuery(767);
 
   const decideThresholdValue = () => (isLowTablet ? 0 : 0.5);
   const skillsRef = useIntersectionObserver(
     handleIntersection,
-    undefined,
+    handleOutsideIntersection,
     decideThresholdValue(),
   );
 

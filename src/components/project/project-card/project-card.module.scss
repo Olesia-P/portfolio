@@ -39,7 +39,7 @@
             @include allColors;
         }
 
-        &.open {
+        &.close {
             @include rotateCardAnimation;
             z-index: 1;
             opacity: 1;

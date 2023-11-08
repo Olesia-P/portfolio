@@ -246,7 +246,6 @@
 @mixin rotateCardAnimation {
     animation: rotateCard 0.5s ease-in;
 
-
     @keyframes rotateCard {
         0% {
             transform: rotateX(180deg);

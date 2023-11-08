@@ -6,7 +6,7 @@
     @include mb ($asphalt);
     border-radius: $standart-b-radius;
     margin: 1rem 10rem 1rem 0;
-    padding: 1rem;
+    padding: 2.5rem 1rem 1rem 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
     background-image: url("/comics-pattern.png");
@@ -14,23 +14,29 @@
     background-repeat: no-repeat;
     position: relative;
 
+
     .topSection {
         display: flex;
+        // position: relative;
 
         .pokemonImgWrap {
-            width: 30%;
+            // background-color: red;
+            width: 26%;
+            height: 16rem;
             @include dfcc;
             position: relative;
-            margin: 0 2rem 0 0;
+            top: 1.75rem;
+            left: 5%;
+            margin: 0 4rem 0 0;
 
             .pokemonImg {
                 position: absolute;
-                top: 1.75rem;
+                top: 0;
                 left: -40rem;
                 z-index: 1;
 
                 &.animated {
-                    left: 3rem;
+                    left: 0;
                     transition: left 1s ease-in-out;
                 }
             }
@@ -54,6 +60,10 @@
                 border-radius: 50%;
                 @include sb(black);
                 box-shadow: $main-shadow;
+                position: absolute;
+                top: -1.75rem;
+                left: -12%;
+                // opacity: 0;
             }
         }
 
@@ -149,5 +159,80 @@
         position: absolute;
         top: 1rem;
         right: 1rem;
+    }
+}
+
+@include ultra {
+    .card {
+        max-width: 50%;
+        margin: 1rem 18rem 1rem 0;
+
+
+        .topSection {
+            // display: flex;
+            // position: relative;
+
+            .pokemonImgWrap {
+                // background-color: red;
+                // width: 26%;
+                // height: 16rem;
+                // @include dfcc;
+                // position: relative;
+                // top: 1.75rem;
+                // left: 5%;
+                // margin: 0 2rem 0 0;
+
+                .pokemonImg {
+                    // position: absolute;
+                    // top: 0;
+                    // left: -40rem;
+                    // z-index: 1;
+
+                    &.animated {
+                        // left: 0;
+                        // transition: left 1s ease-in-out;
+                    }
+                }
+
+                .movementImg {
+                    // position: absolute;
+                    // top: 3rem;
+                    // left: -22rem;
+                    // height: 9rem;
+                    // opacity: 0;
+
+                    &.animated {
+                        // @include movementSlideAnimation;
+                    }
+                }
+
+                .circle {
+                    // height: 16rem;
+                    // width: 16rem;
+                    // background-color: $white;
+                    // border-radius: 50%;
+                    // @include sb(black);
+                    // box-shadow: $main-shadow;
+                    // position: absolute;
+                    // top: -1.75rem;
+                    left: -10%;
+                    // // opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+@include laptop {
+    .card {
+        width: 70%;
+        margin: 1rem 12rem 1rem 0;
+    }
+}
+
+@include tablet {
+    .card {
+        width: 90%;
+        margin: 1rem;
     }
 }

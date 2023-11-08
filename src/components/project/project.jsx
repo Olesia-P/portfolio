@@ -14,6 +14,7 @@ import ProjectCard from './project-card/project-card';
 
 export default function Project() {
   const [isAnimated, setIsAnimated] = useState(false);
+  const [isCardAnimated, setIsCardAnimated] = useState(false);
   const dispatch = useDispatch();
 
   const handleIntersection = () => {
@@ -24,9 +25,20 @@ export default function Project() {
         link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
       }),
     );
+    setTimeout(() => {
+      setIsCardAnimated(true);
+    }, 1500);
   };
 
-  const ref = useIntersectionObserver(handleIntersection, undefined, 0.8);
+  const handleOutsideIntersection = () => {
+    dispatch(changeTvSection({ name: 'about', link: '' }));
+  };
+
+  const ref = useIntersectionObserver(
+    handleIntersection,
+    handleOutsideIntersection,
+    0.8,
+  );
   return (
     <article className={css.card} ref={ref}>
       <section className={css.topSection}>
@@ -78,6 +90,7 @@ export default function Project() {
             text={project1Features}
             color="yellow"
             icon="potion"
+            isAnimated={isCardAnimated}
           />
         </div>
         <div className={css.learned}>
@@ -86,6 +99,7 @@ export default function Project() {
             text={project1Learned}
             color="orange"
             icon="star"
+            isAnimated={isCardAnimated}
           />
         </div>
       </section>
