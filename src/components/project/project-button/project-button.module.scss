@@ -1,24 +1,147 @@
 @import "../../../styles/main";
 
 .buttonContainer {
-    height: 2rem;
-    width: 5rem;
-    font-size: $size-small-header;
-    font-family: $font-main;
+    height: 6rem;
+    position: relative;
+    font-family: $font-big-pixel;
+    line-height: 1;
     box-shadow: $main-shadow;
-    @include sb(black);
+    background-color: $asphalt;
+    outline: 0.1rem solid black;
     border-radius: $standart-b-radius;
     font-weight: 600;
     cursor: pointer;
     text-shadow: $text-shadow;
-    @include hover(0.2rem, black);
+    box-shadow: $main-shadow;
+    @include dfc;
+    margin: 1rem;
+    outline: 0.1rem solid black;
+    border: 0.5rem outset $asphalt;
+    transition: all 0.3s ease-in-out;
 
-    @include allColorsBackground;
+    &:hover {
+        transform: scale(105%);
+    }
+
+    &:after,
+    &:before {
+        content: " ";
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &:before {
+        bottom: 1rem;
+        left: 5rem;
+    }
+
+    &:after {
+        bottom: 1rem;
+        right: 5rem;
+    }
+
+    &.red {
+        color: $red;
+
+        &:hover {
+
+            &:after,
+            &:before {
+                background-image: url("/pixel-gifs/red.gif");
+            }
+
+        }
+    }
+
+    &.orange {
+        color: $orange;
+
+        &:hover {
+
+            &:after,
+            &:before {
+                background-image: url("/pixel-gifs/orange.gif");
+            }
+
+        }
+    }
+
+    &.yellow {
+        color: $yellow;
+
+        &:hover {
+
+            &:after,
+            &:before {
+                background-image: url("/pixel-gifs/yellow.gif");
+            }
+
+        }
+    }
+
+    &.green {
+        color: $green;
+
+        &:hover {
+
+            &:after,
+            &:before {
+                background-image: url("/pixel-gifs/green.gif");
+            }
+
+        }
+    }
+
+    &.blue {
+        color: $blue;
+
+        &:hover {
+
+            &:after,
+            &:before {
+                background-image: url("/pixel-gifs/blue.gif");
+            }
+
+        }
+    }
+
+    &.darkblue {
+        color: $dark-blue;
+
+        &:hover {
+
+            &:after,
+            &:before {
+                background-image: url("/pixel-gifs/darkblue.gif");
+            }
+
+        }
+    }
+
+    &.purple {
+        color: $purple;
+
+        &:hover {
+
+            &:after,
+            &:before {
+                background-image: url("/pixel-gifs/purple.gif");
+            }
+
+        }
+    }
 
     a {
+        position: relative;
+        top: -0.7rem;
+        left: 0;
+        font-size: 48pt;
         text-decoration: none;
-        color: white;
-
-
+        color: inherit;
+        font-weight: 400;
     }
 }

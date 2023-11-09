@@ -86,6 +86,36 @@
     }
 }
 
+@mixin allColorsLightBackground {
+    &.red {
+        background-color: $light-red;
+    }
+
+    &.orange {
+        background-color: $light-orange;
+    }
+
+    &.yellow {
+        background-color: $light-yellow;
+    }
+
+    &.green {
+        background-color: $light-green;
+    }
+
+    &.blue {
+        background-color: $light-blue;
+    }
+
+    &.purple {
+        background-color: $light-purple;
+    }
+
+    &.darkblue {
+        background-color: $light-dark-blue;
+    }
+}
+
 @mixin allColors {
     &.red {
         color: $red;
@@ -144,6 +174,37 @@
 
     &.darkblue {
         border: 0.5rem solid $light-dark-blue;
+    }
+}
+
+@mixin allColorsBorder {
+    &.red {
+        border: 0.5rem solid $red;
+
+    }
+
+    &.orange {
+        border: 0.5rem solid $orange;
+    }
+
+    &.yellow {
+        border: 0.5rem solid $yellow;
+    }
+
+    &.green {
+        border: 0.5rem solid $green;
+    }
+
+    &.blue {
+        border: 0.5rem solid $blue;
+    }
+
+    &.purple {
+        border: 0.5rem solid $purple;
+    }
+
+    &.darkblue {
+        border: 0.5rem solid $dark-blue;
     }
 }
 

@@ -9,8 +9,8 @@ export default function ProjectButton({
   // handleClick
 }) {
   return (
-    <button type="button" className={cx(css.buttonContainer, css[color])}>
+    <div role="button" className={cx(css.buttonContainer, css[color])}>
       <a href={href}>{text}</a>
-    </button>
+    </div>
   );
 }

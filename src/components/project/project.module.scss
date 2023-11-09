@@ -6,7 +6,7 @@
     @include mb ($asphalt);
     border-radius: $standart-b-radius;
     margin: 1rem 10rem 1rem 0;
-    padding: 2.5rem 1rem 1rem 1rem;
+    padding: 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
     background-image: url("/comics-pattern.png");
@@ -144,22 +144,22 @@
             margin: 1rem;
             padding: 1rem 2rem;
             border-radius: $standart-b-radius;
-            background: linear-gradient(90deg, rgb(145, 145, 145) 0%, rgb(214, 210, 210) 19%, rgb(214, 210, 210) 77%, rgb(145, 145, 145) 100%);
+            background: linear-gradient(90deg, rgb(214, 210, 210) 0%, rgb(242, 242, 242) 15%, rgb(242, 242, 242) 80%, rgb(214, 210, 210) 97%);
             outline: 0.1rem solid black;
         }
     }
 
-    .button1 {
-        position: absolute;
-        top: 1rem;
-        right: 7rem;
-    }
+    // .button1 {
+    //     position: absolute;
+    //     top: 1rem;
+    //     right: 8rem;
+    // }
 
-    .button2 {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-    }
+    // .button2 {
+    //     position: absolute;
+    //     top: 1rem;
+    //     right: 1rem;
+    // }
 }
 
 @include ultra {

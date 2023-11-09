@@ -102,21 +102,22 @@ export default function Project() {
             isAnimated={isCardAnimated}
           />
         </div>
+
+        <div className={css.button1}>
+          <ProjectButton
+            text="CODE"
+            color="yellow"
+            href="https://github.com/Olesia-P/weather-react"
+          />
+        </div>
+        <div className={css.button2}>
+          <ProjectButton
+            text="SITE"
+            color="orange"
+            href="https://courageous-zuccutto-ed2e98.netlify.app/"
+          />
+        </div>
       </section>
-      <div className={css.button1}>
-        <ProjectButton
-          text="code"
-          color="orange"
-          href="https://github.com/Olesia-P/weather-react"
-        />
-      </div>
-      <div className={css.button2}>
-        <ProjectButton
-          text="site"
-          color="yellow"
-          href="https://courageous-zuccutto-ed2e98.netlify.app/"
-        />
-      </div>
     </article>
   );
 }
