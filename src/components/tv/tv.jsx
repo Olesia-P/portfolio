@@ -5,6 +5,8 @@ import css from './tv.module.scss';
 export default function Tv() {
   const { tvSection } = useSelector(({ mixedPurpose }) => mixedPurpose);
   const [tvImage, setTvImage] = useState('/gifs/white-noise.gif');
+  // eslint-disable-next-line no-console
+  console.log('tvSection.name', tvSection.name);
 
   const decideImage = () => {
     switch (tvSection.name) {

@@ -10,7 +10,9 @@ export default function ProjectButton({
 }) {
   return (
     <div role="button" className={cx(css.buttonContainer, css[color])}>
-      <a href={href}>{text}</a>
+      <a href={href} target="_blank" rel="noreferrer">
+        {text}
+      </a>
     </div>
   );
 }

@@ -14,7 +14,9 @@ export default function ProjectsSectionHeader() {
 
   return (
     <header className={css.projectsSectionHeaderWrap} ref={ref}>
-      <h2 className={css.projectsHeader}>Projects</h2>
+      <div className={css.headerWrap}>
+        <h2 className={css.projectsHeader}>Projects</h2>
+      </div>
       <p className={css.projectsCaption}>
         <Typewriter
           text="Pokemons evolve... so do developers!"

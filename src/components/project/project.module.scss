@@ -20,7 +20,7 @@
         // position: relative;
 
         .pokemonImgWrap {
-            // background-color: red;
+            // background-color: blue;
             width: 26%;
             height: 16rem;
             @include dfcc;
@@ -32,7 +32,7 @@
             .pokemonImg {
                 position: absolute;
                 top: 0;
-                left: -40rem;
+                left: -100vw;
                 z-index: 1;
 
                 &.animated {
@@ -46,12 +46,24 @@
                 top: 3rem;
                 left: -22rem;
                 height: 9rem;
-                opacity: 0;
+                // opacity: 0;
+                opacity: 1;
 
-                &.animated {
-                    @include movementSlideAnimation;
-                }
+                // &.animated {
+                //     @include movementSlideAnimation;
+                // }
             }
+        }
+
+        .circleWrap {
+            width: 26%;
+            height: 16rem;
+            @include dfcc;
+            position: absolute;
+            top: 1.25rem;
+            left: 3.5%;
+            margin: 0 4rem 0 0;
+            // background-color: red;
 
             .circle {
                 height: 16rem;
@@ -61,8 +73,8 @@
                 @include sb(black);
                 box-shadow: $main-shadow;
                 position: absolute;
-                top: -1.75rem;
-                left: -12%;
+                top: 0;
+                left: 0;
                 // opacity: 0;
             }
         }
@@ -84,7 +96,7 @@
                 font-weight: 600;
                 background-image: url("/paper.png");
                 padding: 2rem 0 0 1rem;
-                ;
+
                 width: 80%;
             }
 
@@ -173,14 +185,14 @@
             // position: relative;
 
             .pokemonImgWrap {
-                // background-color: red;
+                // background-color: blue;
                 // width: 26%;
                 // height: 16rem;
                 // @include dfcc;
                 // position: relative;
                 // top: 1.75rem;
-                // left: 5%;
-                // margin: 0 2rem 0 0;
+                left: 4.5%;
+                // margin: 0 4rem 0 0;
 
                 .pokemonImg {
                     // position: absolute;
@@ -204,19 +216,6 @@
                     &.animated {
                         // @include movementSlideAnimation;
                     }
-                }
-
-                .circle {
-                    // height: 16rem;
-                    // width: 16rem;
-                    // background-color: $white;
-                    // border-radius: 50%;
-                    // @include sb(black);
-                    // box-shadow: $main-shadow;
-                    // position: absolute;
-                    // top: -1.75rem;
-                    left: -10%;
-                    // // opacity: 0;
                 }
             }
         }

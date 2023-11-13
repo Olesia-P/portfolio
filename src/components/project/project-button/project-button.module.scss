@@ -1,7 +1,7 @@
 @import "../../../styles/main";
 
 .buttonContainer {
-    height: 6rem;
+    height: 4.5rem;
     position: relative;
     font-family: $font-big-pixel;
     line-height: 1;
@@ -23,8 +23,8 @@
     &:before {
         content: " ";
         display: block;
-        height: 4rem;
-        width: 4rem;
+        height: 3rem;
+        width: 3rem;
         position: absolute;
         background-size: contain;
         background-repeat: no-repeat;
@@ -43,13 +43,13 @@
     }
 
     &:before {
-        bottom: 1rem;
-        left: 5rem;
+        bottom: 0.5rem;
+        left: 7rem;
     }
 
     &:after {
-        bottom: 1rem;
-        right: 5rem;
+        bottom: 0.5rem;
+        right: 6.5rem;
     }
 
     &.red {
@@ -119,7 +119,7 @@
         position: relative;
         top: -0.7rem;
         left: 0;
-        font-size: 48pt;
+        font-size: 40pt;
         text-decoration: none;
         color: inherit;
         font-weight: 400;

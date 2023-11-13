@@ -54,6 +54,8 @@ export default function Project() {
             className={cx(css.movementImg, isAnimated && css.animated)}
             alt="movement"
           />
+        </figure>
+        <figure className={css.circleWrap}>
           <div className={css.circle}> </div>
         </figure>
         <div className={css.headerWrap}>

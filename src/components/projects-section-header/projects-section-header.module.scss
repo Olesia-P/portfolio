@@ -4,38 +4,101 @@
     position: relative;
     color: $white;
     text-shadow: $text-shadow;
-
+    width: 55%;
+    margin: 16rem 28% 4rem auto;
 
     .dialogBox {
         height: 15rem;
-        width: 55rem;
-        margin: 14rem 9rem 4rem auto;
+        width: 100%;
         background-color: white;
     }
 
     .character {
         height: 32rem;
         position: absolute;
-        top: 2rem;
+        bottom: -2rem;
         left: -9rem;
     }
 
-    .projectsHeader {
-        font-family: $font-angular;
+    .headerWrap {
+        background-color: black;
         position: absolute;
-        font-size: $size-huge;
-        top: 12.5rem;
-        right: 12rem;
-        font-weight: 400;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        height: 3.5rem;
+        width: 30%;
+        @include dfc;
+
+        .projectsHeader {
+            font-family: $font-angular;
+            font-size: 24pt;
+            font-weight: 400;
+        }
     }
 
     .projectsCaption {
         position: absolute;
         font-family: $font-game;
-        font-size: 30pt;
-        top: 22rem;
+        font-size: $size-huge;
+        top: 7rem;
         left: 9rem;
+        padding: 0.5rem;
+    }
+}
 
+@include ultra {
+    .projectsSectionHeaderWrap {
+        width: 40%;
+        margin: 16rem 35% 4rem auto;
+    }
+}
 
+@include laptop {
+    .projectsSectionHeaderWrap {
+        width: 65%;
+        margin: 16rem 24% 4rem auto;
+    }
+}
+
+@include tablet {
+    .projectsSectionHeaderWrap {
+        width: 75%;
+        margin: 16rem 10% 4rem auto;
+    }
+}
+
+@include lowTablet {
+    .projectsSectionHeaderWrap {
+        width: 75%;
+        margin: 16rem 5% 4rem auto;
+
+        .headerWrap {
+            .projectsHeader {
+                font-size: 19pt;
+            }
+        }
+
+        .projectsCaption {
+            font-size: $size-header;
+            top: 5rem;
+            line-height: 1.5;
+        }
+    }
+}
+
+@include mobile {
+    .projectsSectionHeaderWrap {
+        margin: 16rem 3% 4rem auto;
+
+        .headerWrap {
+            .projectsHeader {
+                font-size: $size-small-header;
+            }
+        }
+
+        .projectsCaption {
+            line-height: 1.3;
+        }
     }
 }
