@@ -10,7 +10,7 @@ export default function ProjectsSectionHeader() {
     setIsAnimated(true);
   };
 
-  const ref = useIntersectionObserver(handleIntersection, undefined, 1);
+  const ref = useIntersectionObserver(handleIntersection, undefined, -150, 1);
 
   return (
     <header className={css.projectsSectionHeaderWrap} ref={ref}>

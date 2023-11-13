@@ -1,6 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = { tvSection: { name: 'about', link: '' }, language: 'en' };
+const initialState = {
+  tvSection: { name: '', link: '' },
+  language: 'en',
+};
 
 export const mixedPurposeSlice = createSlice({
   name: 'mixedPurpose',

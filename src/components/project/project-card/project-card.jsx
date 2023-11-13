@@ -6,7 +6,7 @@ export default function ProjectCard({
   // cardName,
   text,
   color,
-  icon,
+  // icon,
   isAnimated,
 }) {
   return (
@@ -25,7 +25,7 @@ export default function ProjectCard({
         <h4 className={cx(css.title, css[color])}>{text.title}</h4>
         <ul className={css.list}>
           {text.list.map((element) => (
-            <li className={cx(css[icon])} key={element}>
+            <li className={cx(css[color])} key={element}>
               {element}
             </li>
           ))}

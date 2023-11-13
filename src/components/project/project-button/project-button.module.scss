@@ -19,10 +19,6 @@
     border: 0.5rem outset $asphalt;
     transition: all 0.3s ease-in-out;
 
-    &:hover {
-        transform: scale(105%);
-    }
-
     &:after,
     &:before {
         content: " ";
@@ -32,6 +28,18 @@
         position: absolute;
         background-size: contain;
         background-repeat: no-repeat;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover {
+        // transform: scale(103%);
+        transition: all 0.7s ease-in-out;
+
+        &:after,
+        &:before {
+            opacity: 1;
+        }
     }
 
     &:before {
@@ -47,91 +55,63 @@
     &.red {
         color: $red;
 
-        &:hover {
-
-            &:after,
-            &:before {
-                background-image: url("/pixel-gifs/red.gif");
-            }
-
+        &:after,
+        &:before {
+            background-image: url("/pixel-gifs/red.gif");
         }
     }
 
     &.orange {
         color: $orange;
 
-        &:hover {
-
-            &:after,
-            &:before {
-                background-image: url("/pixel-gifs/orange.gif");
-            }
-
+        &:after,
+        &:before {
+            background-image: url("/pixel-gifs/orange.gif");
         }
     }
 
     &.yellow {
         color: $yellow;
 
-        &:hover {
-
-            &:after,
-            &:before {
-                background-image: url("/pixel-gifs/yellow.gif");
-            }
-
+        &:after,
+        &:before {
+            background-image: url("/pixel-gifs/yellow.gif");
         }
     }
 
     &.green {
         color: $green;
 
-        &:hover {
-
-            &:after,
-            &:before {
-                background-image: url("/pixel-gifs/green.gif");
-            }
-
+        &:after,
+        &:before {
+            background-image: url("/pixel-gifs/green.gif");
         }
     }
 
     &.blue {
         color: $blue;
 
-        &:hover {
-
-            &:after,
-            &:before {
-                background-image: url("/pixel-gifs/blue.gif");
-            }
-
+        &:after,
+        &:before {
+            background-image: url("/pixel-gifs/blue.gif");
         }
     }
 
     &.darkblue {
         color: $dark-blue;
 
-        &:hover {
-
-            &:after,
-            &:before {
-                background-image: url("/pixel-gifs/darkblue.gif");
-            }
-
+        &:after,
+        &:before {
+            background-image: url("/pixel-gifs/darkblue.gif");
         }
     }
 
     &.purple {
         color: $purple;
 
-        &:hover {
-
-            &:after,
-            &:before {
-                background-image: url("/pixel-gifs/purple.gif");
-            }
-
+        &:after,
+        &:before {
+            background-image: url("/pixel-gifs/purple.gif");
         }
     }
 

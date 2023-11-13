@@ -19,7 +19,7 @@
 
     .backCard {
         background-color: $asphalt;
-        background-image: url("/pngwing.com (5).png");
+        background-image: url("/card.png");
         filter: contrast(80%);
         @include dfc;
         position: absolute;
@@ -91,15 +91,45 @@
                     background-repeat: no-repeat;
                 }
 
-                &.potion {
+                &.red {
                     &::before {
-                        background-image: url('/pokeballs/potion-icon.png');
+                        background-image: url('/list-icons/cap-icon.png');
                     }
                 }
 
-                &.star {
+                &.yellow {
                     &::before {
-                        background-image: url('/pokeballs/star-icon.png');
+                        background-image: url('/list-icons/star-icon.png');
+                    }
+                }
+
+                &.orange {
+                    &::before {
+                        background-image: url('/list-icons/flame-icon.png');
+                    }
+                }
+
+                &.green {
+                    &::before {
+                        background-image: url('/list-icons/tree-icon.png');
+                    }
+                }
+
+                &.blue {
+                    &::before {
+                        background-image: url('/list-icons/bubble-icon.png');
+                    }
+                }
+
+                &.darkblue {
+                    &::before {
+                        background-image: url('/list-icons/cloud-icon.png');
+                    }
+                }
+
+                &.purple {
+                    &::before {
+                        background-image: url('/list-icons/med-icon.png');
                     }
                 }
             }

@@ -5,12 +5,14 @@ import css from './tv.module.scss';
 export default function Tv() {
   const { tvSection } = useSelector(({ mixedPurpose }) => mixedPurpose);
   const [tvImage, setTvImage] = useState('/gifs/white-noise.gif');
-  // const [tvLink, setTvLink] = useState('');
 
   const decideImage = () => {
     switch (tvSection.name) {
+      // case 'whitenoise':
+      //   setTvImage('/gifs/white-noise.gif');
+      //   break;
       case 'about':
-        setTvImage('/gifs/white-noise.gif');
+        setTvImage('/gifs/hey.gif');
         break;
       case 'skills':
         setTvImage('/gifs/serious.gif');

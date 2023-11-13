@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 export default function useIntersectionObserver(
   handleIntersection,
   handleOutsideIntersection,
+  rootMargin,
   thresholdValue,
 ) {
   const ref = useRef();
@@ -24,7 +25,7 @@ export default function useIntersectionObserver(
       },
       {
         root: null,
-        rootMargin: '0px',
+        rootMargin: `${rootMargin}px`,
         threshold: thresholdValue,
       },
     );

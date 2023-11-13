@@ -31,13 +31,14 @@ export default function Project() {
   };
 
   const handleOutsideIntersection = () => {
-    dispatch(changeTvSection({ name: 'about', link: '' }));
+    dispatch(changeTvSection({ name: '', link: '' }));
   };
 
   const ref = useIntersectionObserver(
     handleIntersection,
     handleOutsideIntersection,
-    0.8,
+    250,
+    0.85,
   );
   return (
     <article className={css.card} ref={ref}>
@@ -86,19 +87,15 @@ export default function Project() {
 
         <div className={css.features}>
           <ProjectCard
-            cardName="Features"
             text={project1Features}
             color="yellow"
-            icon="potion"
             isAnimated={isCardAnimated}
           />
         </div>
         <div className={css.learned}>
           <ProjectCard
-            cardName="What I learned"
             text={project1Learned}
             color="orange"
-            icon="star"
             isAnimated={isCardAnimated}
           />
         </div>
