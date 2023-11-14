@@ -242,6 +242,11 @@ export const otherSkillsMobile = [
 ];
 
 export const project1Text = {
+  pokemonImg: '/pokeball.png',
+  tvSection: {
+    name: 'project1',
+    link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+  },
   level: 'Level 1: Pokeball',
   title: 'Project: Weather-App',
   skills: [
@@ -283,4 +288,6 @@ export const project1Text = {
       'Submit button is disabled if input field is empty.',
     ],
   },
+  codeLink: 'https://github.com/Olesia-P/weather-react',
+  siteLink: 'https://courageous-zuccutto-ed2e98.netlify.app/',
 };

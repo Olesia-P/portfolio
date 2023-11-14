@@ -20,8 +20,8 @@ export default function Project({ text }) {
     setIsAnimated(true);
     dispatch(
       changeTvSection({
-        name: 'project1',
-        link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+        name: `${text.tvSection.name}`,
+        link: `${text.tvSection.link}`,
       }),
     );
     setTimeout(() => {
@@ -48,7 +48,7 @@ export default function Project({ text }) {
           <section className={css.topSection}>
             <figure className={css.pokemonImgWrap}>
               <img
-                src="/pokeball.png"
+                src={text.pokemonImg}
                 className={cx(css.pokemonImg, isAnimated && css.animated)}
                 alt="pokemon"
               />
@@ -102,18 +102,10 @@ export default function Project({ text }) {
             </div>
 
             <div className={css.button1}>
-              <ProjectButton
-                text="CODE"
-                color="yellow"
-                href="https://github.com/Olesia-P/weather-react"
-              />
+              <ProjectButton text="CODE" color="yellow" href={text.codeLink} />
             </div>
             <div className={css.button2}>
-              <ProjectButton
-                text="SITE"
-                color="orange"
-                href="https://courageous-zuccutto-ed2e98.netlify.app/"
-              />
+              <ProjectButton text="SITE" color="orange" href={text.siteLink} />
             </div>
           </section>
         </>
