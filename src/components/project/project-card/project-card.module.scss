@@ -43,7 +43,6 @@
             z-index: 1;
             opacity: 1;
         }
-
     }
 
     .faceCard {
@@ -134,5 +133,12 @@
                 }
             }
         }
+    }
+}
+
+@include lowTablet {
+    .container {
+        margin: 1rem 0;
+        height: auto;
     }
 }

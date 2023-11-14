@@ -4,6 +4,7 @@ import AboutSection from '../components/about-section/about-section';
 import SkillsSection from '../components/skills-section/skills-section';
 import Project from '../components/project/project';
 import ProjectsSectionHeader from '../components/projects-section-header/projects-section-header';
+import { project1Text } from '../utils/language-objects';
 // import Break from '../components/break/break';
 
 export default function Home() {
@@ -14,8 +15,7 @@ export default function Home() {
       <AboutSection />
       <SkillsSection />
       <ProjectsSectionHeader />
-      <Project />
-      <Project />
+      <Project text={project1Text} />
     </main>
   );
 }

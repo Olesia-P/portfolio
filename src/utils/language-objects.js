@@ -241,41 +241,46 @@ export const otherSkillsMobile = [
   },
 ];
 
-export const project1Skills = [
-  {
-    icon: '/skills-icons/react-icon.png',
-    name: 'React',
-    id: 'p1s1',
-  },
+export const project1Text = {
+  level: 'Level 1: Pokeball',
+  title: 'Project: Weather-App',
+  skills: [
+    {
+      icon: '/skills-icons/react-icon.png',
+      name: 'React',
+      id: 'p1s1',
+    },
 
-  {
-    icon: '/skills-icons/sass-icon.png',
-    name: 'Sass/Scss',
-    id: 'p1s3',
-  },
-  {
-    icon: '/skills-icons/git-icon.png',
-    name: 'Git + Bash',
-    id: 'p1s2',
-  },
-];
-
-export const project1Features = {
-  title: 'Features',
-  list: [
-    "Type a city name to check today's weather and the weather forecast for 6 days;",
-    'You can switch between Fahrenheit and Celsius;',
-    'Error pop-up shows if the city is typed wrong;',
-    'Submit button is disabled if input field is empty.',
+    {
+      icon: '/skills-icons/sass-icon.png',
+      name: 'Sass/Scss',
+      id: 'p1s3',
+    },
+    {
+      icon: '/skills-icons/git-icon.png',
+      name: 'Git + Bash',
+      id: 'p1s2',
+    },
   ],
-};
+  description:
+    'You have to start somewhere! My first React project - simple, stylish... well, merely usefull, but working!',
 
-export const project1Learned = {
-  title: 'What did I learn?',
-  list: [
-    'Making independent and reusable components;',
-    'Making HTTP requests using Axios;',
-    'Using SCSS and modules;',
-    'Creating responsive layouts.',
-  ],
+  learned: {
+    title: 'What did I learn?',
+    list: [
+      'Making independent and reusable components;',
+      'Making HTTP requests using Axios;',
+      'Using SCSS and modules;',
+      'Creating responsive layouts.',
+    ],
+  },
+  features: {
+    title: 'Features',
+    list: [
+      "Type a city name to check today's weather and the weather forecast for 6 days;",
+      'You can switch between Fahrenheit and Celsius;',
+      'Error pop-up shows if the city is typed wrong;',
+      'Submit button is disabled if input field is empty.',
+    ],
+  },
 };

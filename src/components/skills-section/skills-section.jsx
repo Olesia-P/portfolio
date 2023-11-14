@@ -30,11 +30,13 @@ export default function SkillsSection() {
 
   const isLowTablet = useMediaQuery(767);
 
-  const decideThresholdValue = () => (isLowTablet ? 1 : 0.5);
+  const decideThresholdValue = () => (isLowTablet ? 0.85 : 0.25);
+  const decideRootMargin = () => (isLowTablet ? -150 : 0);
+
   const skillsRef = useIntersectionObserver(
     handleIntersection,
     handleOutsideIntersection,
-    -150,
+    decideRootMargin(),
     decideThresholdValue(),
   );
 

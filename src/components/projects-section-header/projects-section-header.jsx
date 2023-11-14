@@ -2,15 +2,24 @@ import React, { useState } from 'react';
 import css from './projects-section-header.module.scss';
 import Typewriter from '../typewriter/typewriter';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 export default function ProjectsSectionHeader() {
   const [isAnimated, setIsAnimated] = useState(false);
+  const isLowTablet = useMediaQuery(767);
 
   const handleIntersection = () => {
     setIsAnimated(true);
   };
 
-  const ref = useIntersectionObserver(handleIntersection, undefined, -150, 1);
+  const decideRootMargin = () => (isLowTablet ? -150 : 0);
+
+  const ref = useIntersectionObserver(
+    handleIntersection,
+    undefined,
+    decideRootMargin(),
+    1,
+  );
 
   return (
     <header className={css.projectsSectionHeaderWrap} ref={ref}>

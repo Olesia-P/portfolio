@@ -17,7 +17,6 @@
     margin: 1rem;
     outline: 0.1rem solid black;
     border: 0.5rem outset $asphalt;
-    transition: all 0.3s ease-in-out;
 
     &:after,
     &:before {
@@ -33,7 +32,6 @@
     }
 
     &:hover {
-        // transform: scale(103%);
         transition: all 0.7s ease-in-out;
 
         &:after,
@@ -123,5 +121,36 @@
         text-decoration: none;
         color: inherit;
         font-weight: 400;
+    }
+}
+
+@include lowTablet {
+    .buttonContainer {
+        margin: 1rem 0;
+
+        &:after,
+        &:before {
+            opacity: 1;
+        }
+
+        &:before {
+            bottom: 0.5rem;
+            left: 2rem;
+        }
+
+        &:after {
+            bottom: 0.5rem;
+            right: 2rem;
+        }
+    }
+}
+
+@include mobile {
+    .buttonContainer {
+
+        &:after,
+        &:before {
+            opacity: 0;
+        }
     }
 }

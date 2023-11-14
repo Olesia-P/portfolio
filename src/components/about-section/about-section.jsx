@@ -22,7 +22,7 @@ export default function AboutSection() {
     handleIntersection,
     handleOutsideIntersection,
     0,
-    1,
+    0,
   );
 
   return (

@@ -1,0 +1,165 @@
+@import "../../../styles/main";
+
+.topSection {
+    display: flex;
+    flex-direction: column;
+
+    .headerWrap {
+
+        .level {
+            font-family: $font-game;
+            font-size: 38pt;
+            margin: 0;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .projectTitle {
+            font-family: $font-angular;
+            font-size: $size-huge;
+            margin: 0 0 1rem 0;
+            font-weight: 600;
+            background-image: url("/paper.png");
+            padding: 2rem 0 0 1rem;
+        }
+
+        .usedSkills {
+            background-color: $asphalt;
+            @include sb (black);
+            border-radius: $standart-b-radius;
+            padding: 0.5rem;
+            box-shadow: $main-shadow;
+
+            .skillsList {
+                padding: 0;
+                margin: 0;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                display: flex;
+                align-content: center;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+
+                .skillItem {
+                    list-style: none;
+                    font-size: $size-small-header;
+                    font-family: $font-main;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    text-shadow: $text-shadow;
+                    margin: 0 0.3rem;
+                    gap: 0.5rem;
+                    border-left: 2px solid rgba(255, 255, 255, 0.852);
+                    border-right: 2px solid rgba(255, 255, 255, 0.842);
+                    padding: 0 0.7rem 0 0;
+
+                    .skillIcon {
+                        background-color: white;
+                        padding: 0.1rem;
+                        border-radius: 50%;
+                        border: 2px solid black;
+                        height: 2rem;
+                        width: 2rem;
+                        margin: 0 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .pokemonImgWrap {
+        width: 15rem;
+        height: 15rem;
+        @include dfcc;
+        position: relative;
+        margin: 4rem auto 2rem auto;
+
+        .pokemonImg {
+            width: 15rem;
+            position: absolute;
+            top: 0;
+            left: -100vw;
+            z-index: 1;
+
+            &.animated {
+                left: 0;
+                transition: left 1s ease-in-out;
+            }
+        }
+
+        .movementImg {
+            position: absolute;
+            top: 3rem;
+            left: -22rem;
+            height: 9rem;
+            opacity: 0;
+
+            &.animated {
+                @include movementSlideAnimation;
+            }
+        }
+    }
+
+    .circle {
+        height: 18rem;
+        width: 18rem;
+        background-color: $white;
+        border-radius: 50%;
+        @include sb(black);
+        box-shadow: $main-shadow;
+        position: absolute;
+        top: -1.5rem;
+        left: -1.5rem;
+    }
+}
+
+.bottomSection {
+    font-family: $font-main;
+    @include dfcc;
+
+    .description {
+        grid-column: span 2;
+        font-weight: 600;
+        font-size: $size-header;
+        background: none;
+        background-color: $white;
+        border: 0.5rem outset $light-grey;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: $standart-b-radius;
+        background: linear-gradient(90deg, rgb(214, 210, 210) 0%, rgb(242, 242, 242) 15%, rgb(242, 242, 242) 80%, rgb(214, 210, 210) 97%);
+        outline: 0.1rem solid black;
+    }
+
+    .features,
+    .learned {
+        width: 100%;
+    }
+
+    .button1,
+    .button2 {
+        width: 100%;
+    }
+
+
+}
+
+@include mobile {
+    .topSection {
+        .pokemonImgWrap {
+            width: 12rem;
+            height: 12rem;
+
+            .pokemonImg {
+                width: 12rem;
+            }
+        }
+
+        .circle {
+            height: 15rem;
+            width: 15rem;
+        }
+    }
+}
