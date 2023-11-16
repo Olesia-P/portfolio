@@ -38,16 +38,17 @@
         &:before {
             opacity: 1;
         }
+
     }
 
     &:before {
         bottom: 0.5rem;
-        left: 7rem;
+        left: 15%;
     }
 
     &:after {
         bottom: 0.5rem;
-        right: 6.5rem;
+        right: 14%;
     }
 
     &.red {
@@ -124,23 +125,26 @@
     }
 }
 
-@include lowTablet {
+@include tablet {
     .buttonContainer {
-        margin: 1rem 0;
 
         &:after,
         &:before {
             opacity: 1;
         }
+    }
+}
+
+@include lowTablet {
+    .buttonContainer {
+        margin: 0.5rem 0;
 
         &:before {
-            bottom: 0.5rem;
-            left: 2rem;
+            left: 18%;
         }
 
         &:after {
-            bottom: 0.5rem;
-            right: 2rem;
+            right: 17%;
         }
     }
 }

@@ -246,6 +246,7 @@ export const project1Text = {
   tvSection: {
     name: 'project1',
     link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+    screenshot: '/projects-screenshots/weather-project-screenshot-small.jpg',
   },
   level: 'Level 1: Pokeball',
   title: 'Project: Weather-App',

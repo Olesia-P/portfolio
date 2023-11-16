@@ -133,6 +133,12 @@
         outline: 0.1rem solid black;
     }
 
+    .tvMobile {
+        display: none;
+        grid-column: span 2;
+    }
+
+
     .features,
     .learned {
         width: 100%;

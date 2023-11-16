@@ -1,0 +1,46 @@
+@import "../../../styles/main";
+
+.containerMobile {
+
+    margin: 1rem auto;
+    width: 90%;
+    position: relative;
+
+
+    .console {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+    }
+
+    .screenshot {
+        position: absolute;
+        top: 21%;
+        left: 19%;
+        width: 42%;
+        height: 46%;
+        z-index: 1;
+        margin-left: 10%;
+        cursor: pointer;
+        // display: none;
+
+    }
+
+    .background {
+        background-color: black;
+        position: absolute;
+        top: 18%;
+        left: 27%;
+        width: 45%;
+        height: 55%;
+        // z-index: 0;
+        // display: none;
+    }
+}
+
+@include lowTablet {
+    .containerMobile {
+        width: 100%;
+    }
+}

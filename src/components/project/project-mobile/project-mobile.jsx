@@ -3,8 +3,14 @@ import cx from 'classnames';
 import ProjectButton from '../project-button/project-button';
 import ProjectCard from '../project-card/project-card';
 import css from './project-mobile.module.scss';
+import TvMobile from '../../tv/tv-mobile/tv-mobile';
 
-export default function ProjectMobile({ text, isAnimated, isCardAnimated }) {
+export default function ProjectMobile({
+  text,
+  isAnimated,
+  isCardAnimated,
+  tvSection,
+}) {
   return (
     <>
       <section className={css.topSection}>
@@ -45,6 +51,10 @@ export default function ProjectMobile({ text, isAnimated, isCardAnimated }) {
       <section className={css.bottomSection}>
         <div className={css.description}>
           <p>{text.description}</p>
+        </div>
+
+        <div className={css.tv}>
+          <TvMobile tvSection={tvSection} />
         </div>
 
         <div className={css.features}>

@@ -158,7 +158,14 @@
             background: linear-gradient(90deg, rgb(214, 210, 210) 0%, rgb(242, 242, 242) 15%, rgb(242, 242, 242) 80%, rgb(214, 210, 210) 97%);
             outline: 0.1rem solid black;
         }
+
+        .tvMobile {
+            display: none;
+            grid-column: span 2;
+        }
     }
+
+
 }
 
 @include ultra {
@@ -220,6 +227,13 @@
     .card {
         width: 90%;
         margin: 1rem;
+
+        .bottomSection {
+            .tvMobile {
+                display: block;
+            }
+        }
+
     }
 }
 

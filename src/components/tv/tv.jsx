@@ -55,11 +55,11 @@ export default function Tv() {
         <img className={css.tv} src="/tv.png" alt="projects-screenshots" />
 
         <img
-          className={css.gifWhiteNoise}
+          className={css.screenshot}
           src={tvImage}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          alt="white-noise-gif"
+          alt="screenshot"
         />
 
         <div className={css.background}> </div>
