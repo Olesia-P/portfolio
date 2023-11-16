@@ -24,19 +24,19 @@ export default function SkillsSection() {
     setIsAnimated(true);
     dispatch(changeTvSection({ name: 'skills', link: '' }));
   };
-  const handleOutsideIntersection = () => {
-    dispatch(changeTvSection({ name: '', link: '' }));
-  };
+  // const handleOutsideIntersection = () => {
+  //   dispatch(changeTvSection({ name: '', link: '' }));
+  // };
 
   const isLowTablet = useMediaQuery(767);
+  const isSmallDesktop = useMediaQuery(1440);
 
-  const decideThresholdValue = () => (isLowTablet ? 0.85 : 0.25);
-  const decideRootMargin = () => (isLowTablet ? -150 : 0);
+  const decideThresholdValue = () => (isSmallDesktop ? 0.3 : 0.4);
 
   const skillsRef = useIntersectionObserver(
     handleIntersection,
-    handleOutsideIntersection,
-    decideRootMargin(),
+    // handleOutsideIntersection,
+    undefined,
     decideThresholdValue(),
   );
 

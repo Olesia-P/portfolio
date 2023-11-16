@@ -9,20 +9,25 @@ import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 export default function AboutSection() {
   const isLowTablet = useMediaQuery(767);
+  const isSmallDesktop = useMediaQuery(1440);
+
   const dispatch = useDispatch();
 
   const handleIntersection = () =>
     dispatch(changeTvSection({ name: 'about', link: '' }));
 
-  const handleOutsideIntersection = () => {
-    dispatch(changeTvSection({ name: '', link: '' }));
-  };
+  // const handleOutsideIntersection = () => {
+  //   dispatch(changeTvSection({ name: '', link: '' }));
+  // };
+
+  const decideThresholdValue = () => (isSmallDesktop ? 0 : 0.5);
 
   const aboutRef = useIntersectionObserver(
     handleIntersection,
-    handleOutsideIntersection,
-    0,
-    0,
+    // handleOutsideIntersection,
+    undefined,
+    // 0,
+    decideThresholdValue(),
   );
 
   return (

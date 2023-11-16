@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  tvSection: { name: 'about', link: '' },
+  tvSection: { name: ' ', link: '' },
   language: 'en',
 };
 

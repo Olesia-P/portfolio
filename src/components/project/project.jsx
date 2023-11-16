@@ -16,6 +16,7 @@ export default function Project({ text }) {
   const dispatch = useDispatch();
 
   const isLowTablet = useMediaQuery(767);
+  const isSmallDesktop = useMediaQuery(1440);
 
   const handleIntersection = () => {
     setIsAnimated(true);
@@ -30,16 +31,17 @@ export default function Project({ text }) {
     }, 1500);
   };
 
-  const handleOutsideIntersection = () => {
-    dispatch(changeTvSection({ name: '', link: '' }));
-  };
-  const decideRootMargin = () => (isLowTablet ? 250 : 0);
-  const decideThresholdValue = () => (isLowTablet ? 1 : 0.25);
+  // const handleOutsideIntersection = () => {
+  //   dispatch(changeTvSection({ name: '', link: '' }));
+  // };
+
+  const decideThresholdValue = () => (isSmallDesktop ? 0.4 : 0.5);
 
   const ref = useIntersectionObserver(
     handleIntersection,
-    handleOutsideIntersection,
-    decideRootMargin(),
+    // handleOutsideIntersection,
+    undefined,
+
     decideThresholdValue(),
   );
   return (

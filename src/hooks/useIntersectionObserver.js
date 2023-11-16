@@ -1,13 +1,15 @@
 import { useEffect, useRef } from 'react';
+import useMediaQuery from './useMediaQuery';
 
 export default function useIntersectionObserver(
   handleIntersection,
   handleOutsideIntersection,
-  rootMargin,
   thresholdValue,
 ) {
   const ref = useRef();
+  const isSmallDesktop = useMediaQuery(1440);
 
+  const decideRootMargin = () => (isSmallDesktop ? '' : '-20% 0% -30% 0%');
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -25,7 +27,7 @@ export default function useIntersectionObserver(
       },
       {
         root: null,
-        rootMargin: `${rootMargin}px`,
+        rootMargin: decideRootMargin(),
         threshold: thresholdValue,
       },
     );

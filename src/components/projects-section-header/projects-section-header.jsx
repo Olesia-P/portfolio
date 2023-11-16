@@ -1,24 +1,29 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import css from './projects-section-header.module.scss';
 import Typewriter from '../typewriter/typewriter';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import useMediaQuery from '../../hooks/useMediaQuery';
+import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
 
 export default function ProjectsSectionHeader() {
   const [isAnimated, setIsAnimated] = useState(false);
-  const isLowTablet = useMediaQuery(767);
+  const isSmallDesktop = useMediaQuery(1440);
+
+  const dispatch = useDispatch();
 
   const handleIntersection = () => {
     setIsAnimated(true);
+    dispatch(changeTvSection({ name: '', link: '' }));
   };
 
-  const decideRootMargin = () => (isLowTablet ? -150 : 0);
+  const decideThresholdValue = () => (isSmallDesktop ? 0 : 0.3);
 
   const ref = useIntersectionObserver(
     handleIntersection,
     undefined,
-    decideRootMargin(),
-    1,
+    decideThresholdValue(),
+    0.3,
   );
 
   return (

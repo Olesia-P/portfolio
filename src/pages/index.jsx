@@ -5,7 +5,7 @@ import SkillsSection from '../components/skills-section/skills-section';
 import Project from '../components/project/project';
 import ProjectsSectionHeader from '../components/projects-section-header/projects-section-header';
 import { project1Text } from '../utils/language-objects';
-// import Break from '../components/break/break';
+import Break from '../components/break/break';
 
 export default function Home() {
   return (
@@ -13,7 +13,9 @@ export default function Home() {
       <h1 className={css.jobTitle}>Junior front-end developer</h1>
 
       <AboutSection />
+      <Break />
       <SkillsSection />
+
       <ProjectsSectionHeader />
       <Project text={project1Text} />
     </main>

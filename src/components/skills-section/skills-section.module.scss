@@ -4,7 +4,7 @@
     background-color: $asphalt;
     width: 55%;
     border-radius: $standart-b-radius;
-    margin: 8rem 10rem 1rem 0;
+    margin: 0 10rem 1rem 0;
     padding: 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
@@ -100,7 +100,7 @@
 @include ultra {
     .card {
         max-width: 50%;
-        margin: 10rem 18rem 1rem 0;
+        margin: 0 18rem 1rem 0;
 
         .headerSkills {
             font-size: calc($size-huge + 4pt);
