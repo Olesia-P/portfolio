@@ -7,9 +7,9 @@ export default function useIntersectionObserver(
   thresholdValue,
 ) {
   const ref = useRef();
-  const isSmallDesktop = useMediaQuery(1440);
+  const isTablet = useMediaQuery(1024);
 
-  const decideRootMargin = () => (isSmallDesktop ? '' : '-20% 0% -30% 0%');
+  const decideRootMargin = () => (isTablet ? '0px 0px 0px 0px' : '-20%');
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {

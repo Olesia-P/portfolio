@@ -24,21 +24,10 @@ export default function SkillsSection() {
     setIsAnimated(true);
     dispatch(changeTvSection({ name: 'skills', link: '' }));
   };
-  // const handleOutsideIntersection = () => {
-  //   dispatch(changeTvSection({ name: '', link: '' }));
-  // };
 
   const isLowTablet = useMediaQuery(767);
-  const isSmallDesktop = useMediaQuery(1440);
 
-  const decideThresholdValue = () => (isSmallDesktop ? 0.3 : 0.4);
-
-  const skillsRef = useIntersectionObserver(
-    handleIntersection,
-    // handleOutsideIntersection,
-    undefined,
-    decideThresholdValue(),
-  );
+  const skillsRef = useIntersectionObserver(handleIntersection, undefined, 0.1);
 
   return (
     <section className={css.card} ref={skillsRef}>

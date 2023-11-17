@@ -1,19 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cx from 'classnames';
 import ProjectButton from '../project-button/project-button';
 import ProjectCard from '../project-card/project-card';
 import css from './project-mobile.module.scss';
 import TvMobile from '../../tv/tv-mobile/tv-mobile';
+import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 
-export default function ProjectMobile({
-  text,
-  isAnimated,
-  isCardAnimated,
-  tvSection,
-}) {
+export default function ProjectMobile({ text, tvSection }) {
+  const [isAnimated, setIsAnimated] = useState(false);
+  const [isCardAnimated, setIsCardAnimated] = useState(false);
+
+  const handleIntersection = () => {
+    setIsAnimated(true);
+
+    setTimeout(() => {
+      setIsCardAnimated(true);
+    }, 1500);
+  };
+
+  const ref = useIntersectionObserver(handleIntersection, undefined, 0);
+
   return (
     <>
-      <section className={css.topSection}>
+      <section className={css.topSection} ref={ref}>
         <div className={css.headerWrap}>
           <h2 className={css.level}>{text.level}</h2>
 

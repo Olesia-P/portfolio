@@ -1,5 +1,11 @@
 @import "../../styles/main";
 
 .container {
-    margin-top: 8rem;
+    margin-top: 10rem;
+}
+
+@include tablet {
+    .container {
+        margin-top: 4rem;
+    }
 }

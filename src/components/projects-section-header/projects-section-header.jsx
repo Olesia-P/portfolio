@@ -3,12 +3,11 @@ import { useDispatch } from 'react-redux';
 import css from './projects-section-header.module.scss';
 import Typewriter from '../typewriter/typewriter';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
-import useMediaQuery from '../../hooks/useMediaQuery';
+// import useMediaQuery from '../../hooks/useMediaQuery';
 import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
 
 export default function ProjectsSectionHeader() {
   const [isAnimated, setIsAnimated] = useState(false);
-  const isSmallDesktop = useMediaQuery(1440);
 
   const dispatch = useDispatch();
 
@@ -17,14 +16,7 @@ export default function ProjectsSectionHeader() {
     dispatch(changeTvSection({ name: '', link: '' }));
   };
 
-  const decideThresholdValue = () => (isSmallDesktop ? 0 : 0.3);
-
-  const ref = useIntersectionObserver(
-    handleIntersection,
-    undefined,
-    decideThresholdValue(),
-    0.3,
-  );
+  const ref = useIntersectionObserver(handleIntersection, undefined, 0);
 
   return (
     <header className={css.projectsSectionHeaderWrap} ref={ref}>
