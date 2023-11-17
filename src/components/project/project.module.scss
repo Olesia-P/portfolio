@@ -155,8 +155,13 @@
             margin: 1rem;
             padding: 1rem 2rem;
             border-radius: $standart-b-radius;
-            background: linear-gradient(90deg, rgb(214, 210, 210) 0%, rgb(242, 242, 242) 15%, rgb(242, 242, 242) 80%, rgb(214, 210, 210) 97%);
+            background: linear-gradient(90deg, rgb(214, 210, 210) 0%, rgb(255, 255, 255) 7%, rgb(255, 255, 255) 88%, rgb(214, 210, 210) 100%);
             outline: 0.1rem solid black;
+            line-height: 1.2;
+
+            p {
+                margin: 1rem 0;
+            }
         }
 
         .tvMobile {
@@ -176,6 +181,7 @@
         .topSection {
             .pokemonImgWrap {
                 left: 7%;
+                margin-bottom: 1.5rem;
 
                 .pokemonImg {
                     width: 13rem;

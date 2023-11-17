@@ -24,6 +24,11 @@ export default function Tv() {
           '/projects-screenshots/weather-project-screenshot-small.jpg',
         );
         break;
+      case 'project2':
+        setTvImage(
+          '/projects-screenshots/rozetka-project-screenshot-small.png',
+        );
+        break;
       default:
         setTvImage('/gifs/white-noise.gif');
     }

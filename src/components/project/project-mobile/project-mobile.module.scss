@@ -74,7 +74,7 @@
         height: 15rem;
         @include dfcc;
         position: relative;
-        margin: 4rem auto 2rem auto;
+        margin: 3.5rem auto;
 
         .pokemonImg {
             width: 15rem;
@@ -129,8 +129,13 @@
         margin: 1rem 0;
         padding: 1rem;
         border-radius: $standart-b-radius;
-        background: linear-gradient(90deg, rgb(214, 210, 210) 0%, rgb(242, 242, 242) 15%, rgb(242, 242, 242) 80%, rgb(214, 210, 210) 97%);
+        background: linear-gradient(90deg, rgb(214, 210, 210) 0%, rgb(255, 255, 255) 7%, rgb(255, 255, 255) 88%, rgb(214, 210, 210) 100%);
         outline: 0.1rem solid black;
+        line-height: 1.2;
+
+        p {
+            margin: 1rem 0;
+        }
     }
 
     .tvMobile {

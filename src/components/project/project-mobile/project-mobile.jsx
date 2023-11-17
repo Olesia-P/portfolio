@@ -45,7 +45,7 @@ export default function ProjectMobile({ text, tvSection }) {
 
         <figure className={css.pokemonImgWrap}>
           <img
-            src="/pokeball.png"
+            src={text.pokemonImg}
             className={cx(css.pokemonImg, isAnimated && css.animated)}
             alt="pokemon"
           />
@@ -59,7 +59,9 @@ export default function ProjectMobile({ text, tvSection }) {
       </section>
       <section className={css.bottomSection}>
         <div className={css.description}>
-          <p>{text.description}</p>
+          {text.description.map((element) => (
+            <p key={element}>{element}</p>
+          ))}
         </div>
 
         <div className={css.tv}>
@@ -69,14 +71,14 @@ export default function ProjectMobile({ text, tvSection }) {
         <div className={css.features}>
           <ProjectCard
             text={text.features}
-            color="yellow"
+            color={text.color1}
             isAnimated={isCardAnimated}
           />
         </div>
         <div className={css.learned}>
           <ProjectCard
             text={text.learned}
-            color="orange"
+            color={text.color2}
             isAnimated={isCardAnimated}
           />
         </div>
@@ -84,14 +86,14 @@ export default function ProjectMobile({ text, tvSection }) {
         <div className={css.button1}>
           <ProjectButton
             text="CODE"
-            color="yellow"
+            color={text.color1}
             href="https://github.com/Olesia-P/weather-react"
           />
         </div>
         <div className={css.button2}>
           <ProjectButton
             text="SITE"
-            color="orange"
+            color={text.color2}
             href="https://courageous-zuccutto-ed2e98.netlify.app/"
           />
         </div>

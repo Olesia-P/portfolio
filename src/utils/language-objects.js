@@ -242,6 +242,8 @@ export const otherSkillsMobile = [
 ];
 
 export const project1Text = {
+  color1: 'yellow',
+  color2: 'orange',
   pokemonImg: '/pokeball.png',
   tvSection: {
     name: 'project1',
@@ -268,8 +270,9 @@ export const project1Text = {
       id: 'p1s2',
     },
   ],
-  description:
+  description: [
     'You have to start somewhere! My first React project - simple, stylish... well, merely usefull, but working!',
+  ],
 
   learned: {
     title: 'What did I learn?',
@@ -277,7 +280,8 @@ export const project1Text = {
       'Making independent and reusable components;',
       'Making HTTP requests using Axios;',
       'Using SCSS and modules;',
-      'Creating responsive layouts.',
+      'Creating responsive layouts;',
+      'Using libraries (e.g. "classnames", "react-animated-weather")',
     ],
   },
   features: {
@@ -291,4 +295,67 @@ export const project1Text = {
   },
   codeLink: 'https://github.com/Olesia-P/weather-react',
   siteLink: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+};
+export const project2Text = {
+  color1: 'green',
+  color2: 'blue',
+  pokemonImg: '/pichu.png',
+  tvSection: {
+    name: 'project2',
+    link: 'https://superlative-kleicha-ac1778.netlify.app/',
+    screenshot: '/projects-screenshots/rozetka-project-screenshot-small.png',
+  },
+  level: 'Level 2: Pichu',
+  title: 'Project: Visual "Rozetka" homepage copy',
+  skills: [
+    {
+      icon: '/skills-icons/nextjs-icon.png',
+      name: 'Next.js',
+      id: 'p2s1',
+    },
+
+    {
+      icon: '/skills-icons/sass-icon.png',
+      name: 'Sass/Scss',
+      id: 'p2s2',
+    },
+    {
+      icon: '/skills-icons/redux-icon.svg',
+      name: 'Redux',
+      id: 'p2s3',
+    },
+    {
+      icon: '/skills-icons/git-icon.png',
+      name: 'Git + Bash',
+      id: 'p2s4',
+    },
+  ],
+  description: [
+    'Rozetka.com.ua is a famous Ukrainian online shopping website.',
+    'I used its homepage as a template for practicing reproducing a VISUAL layout as close to the original as possible.',
+    'Original “Rozetka” website is often updated and has design changes. This project was made sometime ago, so it can look a bit different from the original now.',
+  ],
+
+  learned: {
+    title: 'What did I learn?',
+    list: [
+      'Building ‘hamburger’ menu;',
+      'Creating pop-ups;',
+      'Using React HOC components;',
+      'Creating custom hooks;',
+      'Using Redux Toolkit to change states globally',
+    ],
+  },
+  features: {
+    title: 'Features',
+    list: [
+      'It is a VISUAL copy! But I added some functionality as an opportunity to practise;',
+      'You can add products to the cart using “buy” button under the product picture;',
+      'You can increase or decrease the amount of products in the cart;',
+      'You can delete products from the cart;',
+      'Note: This website has Ukrainian language version only.',
+    ],
+  },
+  codeLink: 'https://github.com/Olesia-P/rozetka',
+  siteLink: 'https://superlative-kleicha-ac1778.netlify.app/',
 };

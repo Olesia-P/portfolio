@@ -73,7 +73,9 @@ export default function Project({ text }) {
           </section>
           <section className={css.bottomSection}>
             <div className={css.description}>
-              <p>{text.description}</p>
+              {text.description.map((element) => (
+                <p key={element}>{element}</p>
+              ))}
             </div>
 
             <div className={css.tvMobile}>
@@ -83,23 +85,31 @@ export default function Project({ text }) {
             <div className={css.features}>
               <ProjectCard
                 text={text.features}
-                color="yellow"
+                color={text.color1}
                 isAnimated={isCardAnimated}
               />
             </div>
             <div className={css.learned}>
               <ProjectCard
                 text={text.learned}
-                color="orange"
+                color={text.color2}
                 isAnimated={isCardAnimated}
               />
             </div>
 
             <div className={css.button1}>
-              <ProjectButton text="CODE" color="yellow" href={text.codeLink} />
+              <ProjectButton
+                text="CODE"
+                color={text.color1}
+                href={text.codeLink}
+              />
             </div>
             <div className={css.button2}>
-              <ProjectButton text="SITE" color="orange" href={text.siteLink} />
+              <ProjectButton
+                text="SITE"
+                color={text.color2}
+                href={text.siteLink}
+              />
             </div>
           </section>
         </>
