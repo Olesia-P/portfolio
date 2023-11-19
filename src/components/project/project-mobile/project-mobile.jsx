@@ -3,10 +3,10 @@ import cx from 'classnames';
 import ProjectButton from '../project-button/project-button';
 import ProjectCard from '../project-card/project-card';
 import css from './project-mobile.module.scss';
-import TvMobile from '../../tv/tv-mobile/tv-mobile';
 import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
+import ScreenshotMobile from '../../screenshot/screenshot-mobile/screenshot-mobile';
 
-export default function ProjectMobile({ text, tvSection }) {
+export default function ProjectMobile({ text }) {
   const [isAnimated, setIsAnimated] = useState(false);
   const [isCardAnimated, setIsCardAnimated] = useState(false);
 
@@ -64,10 +64,9 @@ export default function ProjectMobile({ text, tvSection }) {
           ))}
         </div>
 
-        <div className={css.tv}>
-          <TvMobile tvSection={tvSection} />
+        <div className={css.screenshot}>
+          <ScreenshotMobile screenshot={text.screenshot} />
         </div>
-
         <div className={css.features}>
           <ProjectCard
             text={text.features}
@@ -84,18 +83,10 @@ export default function ProjectMobile({ text, tvSection }) {
         </div>
 
         <div className={css.button1}>
-          <ProjectButton
-            text="CODE"
-            color={text.color1}
-            href="https://github.com/Olesia-P/weather-react"
-          />
+          <ProjectButton text="CODE" color={text.color1} href={text.codeLink} />
         </div>
         <div className={css.button2}>
-          <ProjectButton
-            text="SITE"
-            color={text.color2}
-            href="https://courageous-zuccutto-ed2e98.netlify.app/"
-          />
+          <ProjectButton text="SITE" color={text.color2} href={text.siteLink} />
         </div>
       </section>
     </>

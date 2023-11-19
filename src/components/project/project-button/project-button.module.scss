@@ -156,5 +156,15 @@
         &:before {
             opacity: 0;
         }
+
+        &:hover {
+            transition: all 0.7s ease-in-out;
+
+            &:after,
+            &:before {
+                opacity: 0;
+            }
+
+        }
     }
 }

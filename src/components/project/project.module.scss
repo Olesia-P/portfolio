@@ -9,9 +9,12 @@
     padding: 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
-    background-image: url("/comics-pattern.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: url("/comics-pattern.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    background-image: url("/comix-pattern-mobile.png");
+    background-size: contain;
+    background-repeat: repeat;
     position: relative;
 
     .topSection {
@@ -164,8 +167,7 @@
             }
         }
 
-        .tvMobile {
-            display: none;
+        .screenshot {
             grid-column: span 2;
         }
     }
@@ -206,6 +208,7 @@
         width: 70%;
         margin: 1rem 12rem 1rem 0;
 
+
         .topSection {
             .pokemonImgWrap {
                 top: 1.6rem;
@@ -243,11 +246,23 @@
     }
 }
 
+// @include lowTablet {
+//     .card {
+
+//         padding: 2rem;
+//     }
+// }
 @include lowTablet {
     .card {
-        background-image: url("/comix-pattern-mobile.png");
-        background-size: contain;
-        background-repeat: repeat;
-        padding: 2rem;
+        width: 100%;
+        margin: 0rem;
+        padding: 1rem;
+    }
+}
+
+@include mobile {
+    .card {
+
+        padding: 0.5rem;
     }
 }

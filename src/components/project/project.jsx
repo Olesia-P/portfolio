@@ -8,7 +8,7 @@ import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
 import ProjectCard from './project-card/project-card';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import ProjectMobile from './project-mobile/project-mobile';
-import TvMobile from '../tv/tv-mobile/tv-mobile';
+import Screenshot from '../screenshot/screenshot';
 
 export default function Project({ text }) {
   const [isAnimated, setIsAnimated] = useState(false);
@@ -21,8 +21,8 @@ export default function Project({ text }) {
     setIsAnimated(true);
     dispatch(
       changeTvSection({
-        name: `${text.tvSection.name}`,
-        link: `${text.tvSection.link}`,
+        name: ' ',
+        link: ' ',
       }),
     );
     setTimeout(() => {
@@ -78,10 +78,6 @@ export default function Project({ text }) {
               ))}
             </div>
 
-            <div className={css.tvMobile}>
-              <TvMobile tvSection={text.tvSection} />
-            </div>
-
             <div className={css.features}>
               <ProjectCard
                 text={text.features}
@@ -111,6 +107,10 @@ export default function Project({ text }) {
                 href={text.siteLink}
               />
             </div>
+
+            <div className={css.screenshot}>
+              <Screenshot screenshot={text.screenshot} />
+            </div>
           </section>
         </>
       )}
@@ -119,7 +119,6 @@ export default function Project({ text }) {
           text={text}
           isAnimated={isAnimated}
           isCardAnimated={isCardAnimated}
-          tvSection={text.tvSection}
         />
       )}
     </article>

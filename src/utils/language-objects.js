@@ -245,10 +245,10 @@ export const project1Text = {
   color1: 'yellow',
   color2: 'orange',
   pokemonImg: '/pokeball.png',
-  tvSection: {
+  screenshot: {
     name: 'project1',
     link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
-    screenshot: '/projects-screenshots/weather-project-screenshot-small.jpg',
+    screenshotImg: '/projects-screenshots/weather-project-screenshot-small.jpg',
   },
   level: 'Level 1: Pokeball',
   title: 'Project: Weather-App',
@@ -278,8 +278,9 @@ export const project1Text = {
     title: 'What did I learn?',
     list: [
       'Making independent and reusable components;',
+      'Using external API;',
       'Making HTTP requests using Axios;',
-      'Using SCSS and modules;',
+      'Using SCSS and CSS modules;',
       'Creating responsive layouts;',
       'Using libraries (e.g. "classnames", "react-animated-weather")',
     ],
@@ -300,10 +301,10 @@ export const project2Text = {
   color1: 'green',
   color2: 'blue',
   pokemonImg: '/pichu.png',
-  tvSection: {
+  screenshot: {
     name: 'project2',
     link: 'https://superlative-kleicha-ac1778.netlify.app/',
-    screenshot: '/projects-screenshots/rozetka-project-screenshot-small.png',
+    screenshotImg: '/projects-screenshots/rozetka-project-screenshot-small.png',
   },
   level: 'Level 2: Pichu',
   title: 'Project: Visual "Rozetka" homepage copy',
@@ -333,17 +334,16 @@ export const project2Text = {
   description: [
     'Rozetka.com.ua is a famous Ukrainian online shopping website.',
     'I used its homepage as a template for practicing reproducing a VISUAL layout as close to the original as possible.',
-    'Original “Rozetka” website is often updated and has design changes. This project was made sometime ago, so it can look a bit different from the original now.',
+    'Original “Rozetka” website is often updated and has design changes. This project was made some time ago, so it can look a bit different from the original now.',
   ],
 
   learned: {
     title: 'What did I learn?',
     list: [
-      'Building ‘hamburger’ menu;',
+      'Building adaptive layout with mobile (‘hamburger’) menu;',
+      'Using advanced React features, like HOCs and custom hooks;',
       'Creating pop-ups;',
-      'Using React HOC components;',
-      'Creating custom hooks;',
-      'Using Redux Toolkit to change states globally',
+      'Using Redux Toolkit to change states globally.',
     ],
   },
   features: {
@@ -353,7 +353,7 @@ export const project2Text = {
       'You can add products to the cart using “buy” button under the product picture;',
       'You can increase or decrease the amount of products in the cart;',
       'You can delete products from the cart;',
-      'Note: This website has Ukrainian language version only.',
+      'Note: This website has the Ukrainian language version only.',
     ],
   },
   codeLink: 'https://github.com/Olesia-P/rozetka',

@@ -1,11 +1,10 @@
-@import "../../../styles/main";
+@import "../../styles/main";
 
-.containerMobile {
+.container {
 
     margin: 1rem auto;
-    width: 90%;
+    width: 75%;
     position: relative;
-
 
     .console {
         height: 100%;
@@ -39,8 +38,19 @@
     }
 }
 
-@include lowTablet {
-    .containerMobile {
+
+
+
+@include laptop {
+    .container {
+        width: 80%;
+        margin: 1rem auto 0 auto;
+    }
+}
+
+@include tablet {
+    .container {
         width: 100%;
+        margin: 0;
     }
 }
