@@ -340,10 +340,12 @@ export const project2Text = {
   learned: {
     title: 'What did I learn?',
     list: [
-      'Building adaptive layout with mobile (‘hamburger’) menu;',
+      'Building complex adaptive layouts (for devices ranging from smartphones to large desktop screens);',
+      'Implementing "humburger" menu navigation;',
+      'Providing  cross-browser compatibility;',
       'Using advanced React features, like HOCs and custom hooks;',
       'Creating pop-ups;',
-      'Using Redux Toolkit to change states globally.',
+      'Using Redux for global state management.',
     ],
   },
   features: {

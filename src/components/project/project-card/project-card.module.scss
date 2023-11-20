@@ -159,10 +159,16 @@
 
 // @include mobile {
 //     .container {
+//         .faceCard {
+//             &.open {
+//                 animation-delay: 2s;
+//             }
+//         }
+//     }
 
-
-//         .card {}
-
-
+//     .backCard {
+//         &.close {
+//             animation-delay: 2s;
+//         }
 //     }
 // }

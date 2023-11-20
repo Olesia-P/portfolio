@@ -71,7 +71,21 @@
         animation: rising 1.5s ease-in-out;
         top: 0;
 
+
+
         &.animated {
+            &.delayS {
+                animation-delay: 3s;
+            }
+
+            &.delayM {
+                animation-delay: 5s;
+            }
+
+            &.delayL {
+                animation-delay: 7s;
+            }
+
             @include risingAnimationNine;
         }
 

@@ -7,6 +7,7 @@ export default function GraphicList({
   meterColor,
   category,
   isAnimated,
+  animationDelay,
 }) {
   return (
     <ul className={css.blockMobile}>
@@ -14,6 +15,7 @@ export default function GraphicList({
         className={cx(
           css.coloredItem,
           css[meterColor],
+          css[animationDelay],
           isAnimated && css.animated,
         )}
       >

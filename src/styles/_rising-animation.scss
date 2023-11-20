@@ -153,6 +153,7 @@
 @mixin risingAnimationNine {
     animation: risingnNine 1.5s ease-in-out;
 
+
     @keyframes risingnNine {
         0% {
             top: 100%;

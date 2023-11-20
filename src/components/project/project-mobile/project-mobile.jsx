@@ -15,7 +15,7 @@ export default function ProjectMobile({ text }) {
 
     setTimeout(() => {
       setIsCardAnimated(true);
-    }, 1500);
+    }, 4000);
   };
 
   const ref = useIntersectionObserver(handleIntersection, undefined, 0);

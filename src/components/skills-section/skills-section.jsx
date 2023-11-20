@@ -81,18 +81,21 @@ export default function SkillsSection() {
                 list={frontSkillsMobile}
                 meterColor="green"
                 isAnimated={isAnimated}
+                animationDelay="delayS"
               />
               <GraphicListMobile
                 category="Back-end"
                 list={endSkillsMobile}
                 meterColor="blue"
                 isAnimated={isAnimated}
+                animationDelay="delayM"
               />
               <GraphicListMobile
                 category="Other"
                 list={otherSkillsMobile}
                 meterColor="darkblue"
                 isAnimated={isAnimated}
+                animationDelay="delayL"
               />
             </>
           )}
