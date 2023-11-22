@@ -8,21 +8,16 @@ import ScreenshotMobile from '../../screenshot/screenshot-mobile/screenshot-mobi
 
 export default function ProjectMobile({ text }) {
   const [isAnimated, setIsAnimated] = useState(false);
-  const [isCardAnimated, setIsCardAnimated] = useState(false);
 
   const handleIntersection = () => {
     setIsAnimated(true);
-
-    setTimeout(() => {
-      setIsCardAnimated(true);
-    }, 4000);
   };
 
   const ref = useIntersectionObserver(handleIntersection, undefined, 0);
 
   return (
     <>
-      <section className={css.topSection} ref={ref}>
+      <section className={css.topSection}>
         <div className={css.headerWrap}>
           <h2 className={css.level}>{text.level}</h2>
 
@@ -43,7 +38,7 @@ export default function ProjectMobile({ text }) {
           </aside>
         </div>
 
-        <figure className={css.pokemonImgWrap}>
+        <figure className={css.pokemonImgWrap} ref={ref}>
           <img
             src={text.pokemonImg}
             className={cx(css.pokemonImg, isAnimated && css.animated)}
@@ -68,18 +63,10 @@ export default function ProjectMobile({ text }) {
           <ScreenshotMobile screenshot={text.screenshot} />
         </div>
         <div className={css.features}>
-          <ProjectCard
-            text={text.features}
-            color={text.color1}
-            isAnimated={isCardAnimated}
-          />
+          <ProjectCard text={text.features} color={text.color1} />
         </div>
         <div className={css.learned}>
-          <ProjectCard
-            text={text.learned}
-            color={text.color2}
-            isAnimated={isCardAnimated}
-          />
+          <ProjectCard text={text.learned} color={text.color2} />
         </div>
 
         <div className={css.button1}>

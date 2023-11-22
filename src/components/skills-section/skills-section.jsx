@@ -20,6 +20,7 @@ import GraphicListMobile from '../graphic-list-mobile/graphic-list-mobile';
 export default function SkillsSection() {
   const [isAnimated, setIsAnimated] = useState(false);
   const dispatch = useDispatch();
+
   const handleIntersection = () => {
     setIsAnimated(true);
     dispatch(changeTvSection('skills'));
@@ -80,22 +81,16 @@ export default function SkillsSection() {
                 category="Front-end"
                 list={frontSkillsMobile}
                 meterColor="green"
-                isAnimated={isAnimated}
-                animationDelay="delayS"
               />
               <GraphicListMobile
                 category="Back-end"
                 list={endSkillsMobile}
                 meterColor="blue"
-                isAnimated={isAnimated}
-                animationDelay="delayM"
               />
               <GraphicListMobile
                 category="Other"
                 list={otherSkillsMobile}
                 meterColor="darkblue"
-                isAnimated={isAnimated}
-                animationDelay="delayL"
               />
             </>
           )}

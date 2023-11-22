@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cx from 'classnames';
 import css from './project-card.module.scss';
+import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 
 export default function ProjectCard({
   // cardName,
   text,
   color,
-  // icon,
-  isAnimated,
 }) {
+  const [isAnimated, setIsAnimated] = useState(false);
+  const handleIntersection = () => {
+    setTimeout(() => {
+      setIsAnimated(true);
+    }, 500);
+  };
+
+  const ref = useIntersectionObserver(handleIntersection, undefined, 0);
   return (
-    <div className={css.container}>
+    <div className={css.container} ref={ref}>
       <div className={cx(css.card, css.backCard, !isAnimated && css.close)}>
         {' '}
       </div>

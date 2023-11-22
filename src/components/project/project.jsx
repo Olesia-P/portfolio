@@ -12,7 +12,6 @@ import Screenshot from '../screenshot/screenshot';
 
 export default function Project({ text }) {
   const [isAnimated, setIsAnimated] = useState(false);
-  const [isCardAnimated, setIsCardAnimated] = useState(false);
   const dispatch = useDispatch();
 
   const isLowTablet = useMediaQuery(767);
@@ -20,9 +19,6 @@ export default function Project({ text }) {
   const handleIntersection = () => {
     setIsAnimated(true);
     dispatch(changeTvSection(text.tv));
-    setTimeout(() => {
-      setIsCardAnimated(true);
-    }, 1500);
   };
 
   const ref = useIntersectionObserver(handleIntersection, undefined, 0);
@@ -74,18 +70,10 @@ export default function Project({ text }) {
             </div>
 
             <div className={css.features}>
-              <ProjectCard
-                text={text.features}
-                color={text.color1}
-                isAnimated={isCardAnimated}
-              />
+              <ProjectCard text={text.features} color={text.color1} />
             </div>
             <div className={css.learned}>
-              <ProjectCard
-                text={text.learned}
-                color={text.color2}
-                isAnimated={isCardAnimated}
-              />
+              <ProjectCard text={text.learned} color={text.color2} />
             </div>
 
             <div className={css.button1}>
@@ -109,13 +97,7 @@ export default function Project({ text }) {
           </section>
         </>
       )}
-      {isLowTablet && (
-        <ProjectMobile
-          text={text}
-          isAnimated={isAnimated}
-          isCardAnimated={isCardAnimated}
-        />
-      )}
+      {isLowTablet && <ProjectMobile text={text} isAnimated={isAnimated} />}
     </article>
   );
 }
