@@ -245,8 +245,8 @@ export const project1Text = {
   color1: 'yellow',
   color2: 'orange',
   pokemonImg: '/pokeball.png',
+  tv: 'project1',
   screenshot: {
-    name: 'project1',
     link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
     screenshotImg: '/projects-screenshots/weather-project-screenshot-small.jpg',
   },
@@ -301,8 +301,8 @@ export const project2Text = {
   color1: 'green',
   color2: 'blue',
   pokemonImg: '/pichu.png',
+  tv: 'project2',
   screenshot: {
-    name: 'project2',
     link: 'https://superlative-kleicha-ac1778.netlify.app/',
     screenshotImg: '/projects-screenshots/rozetka-project-screenshot-small.png',
   },
@@ -341,7 +341,7 @@ export const project2Text = {
     title: 'What did I learn?',
     list: [
       'Building complex adaptive layouts (for devices ranging from smartphones to large desktop screens);',
-      'Implementing "humburger" menu navigation;',
+      'Implementing "hamburger" menu navigation;',
       'Providing  cross-browser compatibility;',
       'Using advanced React features, like HOCs and custom hooks;',
       'Creating pop-ups;',

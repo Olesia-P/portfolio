@@ -12,8 +12,7 @@ export default function AboutSection() {
 
   const dispatch = useDispatch();
 
-  const handleIntersection = () =>
-    dispatch(changeTvSection({ name: 'about', link: '' }));
+  const handleIntersection = () => dispatch(changeTvSection('about'));
 
   const aboutRef = useIntersectionObserver(handleIntersection, undefined, 0);
 

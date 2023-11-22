@@ -6,10 +6,10 @@ export default function Tv() {
   const { tvSection } = useSelector(({ mixedPurpose }) => mixedPurpose);
   const [tvImage, setTvImage] = useState('/gifs/white-noise.gif');
   // eslint-disable-next-line no-console
-  console.log('tvSection.name', tvSection.name);
+  console.log('tvSection', tvSection);
 
   const decideImage = () => {
-    switch (tvSection.name) {
+    switch (tvSection) {
       // case 'whitenoise':
       //   setTvImage('/gifs/white-noise.gif');
       //   break;
@@ -20,14 +20,10 @@ export default function Tv() {
         setTvImage('/gifs/serious.gif');
         break;
       case 'project1':
-        setTvImage(
-          '/projects-screenshots/weather-project-screenshot-small.jpg',
-        );
+        setTvImage('/gifs/pokeball.gif');
         break;
       case 'project2':
-        setTvImage(
-          '/projects-screenshots/rozetka-project-screenshot-small.png',
-        );
+        setTvImage('/gifs/pichu.gif');
         break;
       default:
         setTvImage('/gifs/white-noise.gif');
@@ -45,30 +41,18 @@ export default function Tv() {
     tvImage === '/gifs/no-idea.gif' && setTvImage('/gifs/serious.gif');
   };
   return (
-    <a
-      href={tvSection.link}
-      target="_blank"
-      rel="noreferrer"
-      style={{ cursor: tvSection.link !== '' ? 'pointer' : 'default' }}
-      onClick={(e) => {
-        if (tvSection.link === '') {
-          e.preventDefault();
-        }
-      }}
-    >
-      <aside className={css.containerFull}>
-        <img className={css.tv} src="/tv.png" alt="projects-screenshots" />
+    <aside className={css.containerFull}>
+      <img className={css.tv} src="/tv.png" alt="projects-screenshots" />
 
-        <img
-          className={css.screenshot}
-          src={tvImage}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          alt="screenshot"
-        />
+      <img
+        className={css.screenshot}
+        src={tvImage}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        alt="screenshot"
+      />
 
-        <div className={css.background}> </div>
-      </aside>
-    </a>
+      <div className={css.background}> </div>
+    </aside>
   );
 }

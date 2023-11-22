@@ -13,7 +13,7 @@ export default function ProjectsSectionHeader() {
 
   const handleIntersection = () => {
     setIsAnimated(true);
-    dispatch(changeTvSection({ name: '', link: '' }));
+    dispatch(changeTvSection(' '));
   };
 
   const ref = useIntersectionObserver(handleIntersection, undefined, 0);

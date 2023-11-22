@@ -19,12 +19,7 @@ export default function Project({ text }) {
 
   const handleIntersection = () => {
     setIsAnimated(true);
-    dispatch(
-      changeTvSection({
-        name: ' ',
-        link: ' ',
-      }),
-    );
+    dispatch(changeTvSection(text.tv));
     setTimeout(() => {
       setIsCardAnimated(true);
     }, 1500);

@@ -22,7 +22,7 @@ export default function SkillsSection() {
   const dispatch = useDispatch();
   const handleIntersection = () => {
     setIsAnimated(true);
-    dispatch(changeTvSection({ name: 'skills', link: '' }));
+    dispatch(changeTvSection('skills'));
   };
 
   const isLowTablet = useMediaQuery(767);
