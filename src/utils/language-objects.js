@@ -390,13 +390,13 @@ export const project3Text = {
       icon: '/skills-icons/nextjs2-icon.png',
       name: 'Next.js API',
       iconStyle: 'circled',
-      id2: 'p3s2',
+      id: 'p3s2',
     },
     {
       icon: '/skills-icons/postman-icon.png',
       name: 'Postman',
       iconStyle: 'circled',
-      id2: 'p3s3',
+      id: 'p3s3',
     },
     {
       icon: '/skills-icons/sass-icon.png',
@@ -417,7 +417,7 @@ export const project3Text = {
       icon: '/skills-icons/eslint-icon.png',
       name: 'ESLint',
       iconStyle: 'circled',
-      id2: 'p3s7',
+      id: 'p3s7',
     },
   ],
   description: [

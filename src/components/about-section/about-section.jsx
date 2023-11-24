@@ -19,7 +19,7 @@ export default function AboutSection() {
   return (
     <>
       {!isLowTablet && (
-        <article className={css.card} ref={aboutRef}>
+        <article className={css.card} ref={aboutRef} id="about">
           <div className={css.container}>
             <section className={css.leftSection}>
               <h2 className={css.name}>Olesia Pryhun</h2>

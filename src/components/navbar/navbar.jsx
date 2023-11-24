@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React from 'react';
 import cx from 'classnames';
 import css from './navbar.module.scss';
@@ -10,15 +9,17 @@ import NavbarMobile from './navbar-mobile/navbar-mobile';
 export default function Navbar() {
   const tablet = useMediaQuery(1024);
   const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({
-        behavior: 'smooth',
-      });
+    if (document) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
+      }
     }
-    console.log('section', section);
-    console.log('sectionId', sectionId);
   };
+
   return (
     <header>
       {!tablet && (

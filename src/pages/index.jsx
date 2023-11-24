@@ -16,11 +16,11 @@ export default function Home() {
     <main className={css.container}>
       <h1 className={css.jobTitle}>Junior front-end developer</h1>
 
-      <AboutSection id="about" />
+      <AboutSection />
       <Break />
-      <SkillsSection id="skills" />
+      <SkillsSection />
 
-      <ProjectsSectionHeader id="projects" />
+      <ProjectsSectionHeader />
       <Project text={project1Text} size="sizeS" />
       <Break />
       <Project text={project2Text} size="sizeM" />
