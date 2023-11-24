@@ -6,7 +6,7 @@ export default function Tv() {
   const { tvSection } = useSelector(({ mixedPurpose }) => mixedPurpose);
   const [tvImage, setTvImage] = useState('/gifs/white-noise.gif');
   // eslint-disable-next-line no-console
-  console.log('tvSection', tvSection);
+  // console.log('tvSection', tvSection);
 
   const decideImage = () => {
     switch (tvSection) {
@@ -24,6 +24,9 @@ export default function Tv() {
         break;
       case 'project2':
         setTvImage('/gifs/pichu.gif');
+        break;
+      case 'project3':
+        setTvImage('/gifs/pikachu.gif');
         break;
       default:
         setTvImage('/gifs/white-noise.gif');

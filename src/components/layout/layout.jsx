@@ -8,7 +8,6 @@ export default function layout({ children }) {
     <>
       <Navbar />
       <Tv />
-      {/* <MobileMenu /> */}
       {children}
     </>
   );

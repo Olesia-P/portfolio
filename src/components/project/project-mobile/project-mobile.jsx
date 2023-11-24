@@ -41,7 +41,11 @@ export default function ProjectMobile({ text }) {
         <figure className={css.pokemonImgWrap} ref={ref}>
           <img
             src={text.pokemonImg}
-            className={cx(css.pokemonImg, isAnimated && css.animated)}
+            className={cx(
+              css.pokemonImg,
+              css[text.pokemonImgSize],
+              isAnimated && css.animated,
+            )}
             alt="pokemon"
           />
           <img

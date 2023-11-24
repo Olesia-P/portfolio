@@ -1,17 +1,21 @@
-export const navEng = [
-  { name: 'About me', color: 'red' },
-  { name: 'Skills', color: 'orange' },
-  { name: 'Projects', color: 'yellow' },
-  { name: 'Contacts', color: 'green' },
-  { name: 'CV', color: 'blue' },
-];
-export const navUa = [
-  { name: 'Про мене', color: 'red' },
-  { name: 'Навички', color: 'orange' },
-  { name: 'Проекти', color: 'yellow' },
-  { name: 'Контакти', color: 'green' },
-  { name: 'Резюме', color: 'blue' },
-];
+export const navEng = {
+  navLinks: [
+    { name: 'About me', color: 'red', sectionId: 'about' },
+    { name: 'Skills', color: 'orange', sectionId: 'skills' },
+    { name: 'Projects', color: 'yellow', sectionId: 'projects' },
+    { name: 'Contacts', color: 'green', sectionId: 'about' },
+  ],
+
+  cv: { name: 'CV', color: 'blue', pdf: '/cv/template.pdf' },
+};
+
+// export const navUa = [
+//   { name: 'Про мене', color: 'red' },
+//   { name: 'Навички', color: 'orange' },
+//   { name: 'Проекти', color: 'yellow' },
+//   { name: 'Контакти', color: 'green' },
+//   { name: 'Резюме', color: 'blue' },
+// ];
 export const qualitiesEng = [
   { name: 'Team player', icon: '/pokemon-icons/squirtle-icon.png' },
   { name: 'Responsible', icon: '/pokemon-icons/bulbasaur-icon.png' },
@@ -245,6 +249,7 @@ export const project1Text = {
   color1: 'yellow',
   color2: 'orange',
   pokemonImg: '/pokeball.png',
+  pokemonImgSize: 'sizeS',
   tv: 'project1',
   screenshot: {
     link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
@@ -301,6 +306,7 @@ export const project2Text = {
   color1: 'green',
   color2: 'blue',
   pokemonImg: '/pichu.png',
+  pokemonImgSize: 'sizeS',
   tv: 'project2',
   screenshot: {
     link: 'https://superlative-kleicha-ac1778.netlify.app/',
@@ -360,4 +366,89 @@ export const project2Text = {
   },
   codeLink: 'https://github.com/Olesia-P/rozetka',
   siteLink: 'https://superlative-kleicha-ac1778.netlify.app/',
+};
+export const project3Text = {
+  color1: 'purple',
+  color2: 'red',
+  pokemonImg: '/pikachu.png',
+  pokemonImgSize: 'sizeM',
+  tv: 'project3',
+  screenshot: {
+    link: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
+    screenshotImg:
+      '/projects-screenshots/screenshot-project-fake-shop-small.png',
+  },
+  level: 'Level 3: Pikachu',
+  title: 'Project: Fake online shop',
+  skills: [
+    {
+      icon: '/skills-icons/nextjs-icon.png',
+      name: 'Next.js',
+      id: 'p3s1',
+    },
+    {
+      icon: '/skills-icons/nextjs2-icon.png',
+      name: 'Next.js API',
+      iconStyle: 'circled',
+      id2: 'p3s2',
+    },
+    {
+      icon: '/skills-icons/postman-icon.png',
+      name: 'Postman',
+      iconStyle: 'circled',
+      id2: 'p3s3',
+    },
+    {
+      icon: '/skills-icons/sass-icon.png',
+      name: 'Sass/Scss',
+      id: 'p3s4',
+    },
+    {
+      icon: '/skills-icons/redux-icon.svg',
+      name: 'Redux',
+      id: 'p3s5',
+    },
+    {
+      icon: '/skills-icons/git-icon.png',
+      name: 'Git + Bash',
+      id: 'p3s6',
+    },
+    {
+      icon: '/skills-icons/eslint-icon.png',
+      name: 'ESLint',
+      iconStyle: 'circled',
+      id2: 'p3s7',
+    },
+  ],
+  description: [
+    'This fake shop imitates real online shopping experience. You don’t pay, and you will never get your order, but all other things look and function quite the way they are supposed to.',
+    'Product objects are received from the external API. Cart and order logic is implemented using custom-built local Next.js API.',
+  ],
+
+  learned: {
+    title: 'What did I learn?',
+    list: [
+      'Comprehensive processing of external API data;',
+      'Building a small local Next.js API;',
+      'Using Redux Toolkit for queries and data management;',
+      'Implementing a simple search engine;',
+      'Creating and managing URL hierarchy using React Router;',
+      'Building input forms with thorough validation;',
+      'Configuring ESlint ruleset;',
+      'Implementing ‘Husky’ pre-commit check.',
+    ],
+  },
+  features: {
+    title: 'Features',
+    list: [
+      'Navigate the catalog using filters (category, name, limit) or type the product’s name in the “search” field;',
+      'Click on a product to read the full description;',
+      'Add products to the cart. In the cart you can delete them, increase or decrease the amount (the final cost will be calculated accordingly);',
+      'Click “Go to checkout”, fill in the delivery information and submit the order;',
+      'The project has responsive layout (available for devices ranging from smartphones to large desktop screens);',
+      'All UI components are custom-made.',
+    ],
+  },
+  codeLink: 'https://github.com/Olesia-P/fake-shop',
+  siteLink: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
 };

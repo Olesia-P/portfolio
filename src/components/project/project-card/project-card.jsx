@@ -7,6 +7,7 @@ export default function ProjectCard({
   // cardName,
   text,
   color,
+  size,
 }) {
   const [isAnimated, setIsAnimated] = useState(false);
   const handleIntersection = () => {
@@ -17,7 +18,7 @@ export default function ProjectCard({
 
   const ref = useIntersectionObserver(handleIntersection, undefined, 0);
   return (
-    <div className={css.container} ref={ref}>
+    <div className={cx(css.container, css[size])} ref={ref}>
       <div className={cx(css.card, css.backCard, !isAnimated && css.close)}>
         {' '}
       </div>

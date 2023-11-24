@@ -10,7 +10,7 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import ProjectMobile from './project-mobile/project-mobile';
 import Screenshot from '../screenshot/screenshot';
 
-export default function Project({ text }) {
+export default function Project({ text, size }) {
   const [isAnimated, setIsAnimated] = useState(false);
   const dispatch = useDispatch();
 
@@ -23,14 +23,18 @@ export default function Project({ text }) {
 
   const ref = useIntersectionObserver(handleIntersection, undefined, 0);
   return (
-    <article className={css.card} ref={ref}>
+    <article className={css.card}>
       {!isLowTablet && (
         <>
           <section className={css.topSection}>
-            <figure className={css.pokemonImgWrap}>
+            <figure className={css.pokemonImgWrap} ref={ref}>
               <img
                 src={text.pokemonImg}
-                className={cx(css.pokemonImg, isAnimated && css.animated)}
+                className={cx(
+                  css.pokemonImg,
+                  css[text.pokemonImgSize],
+                  isAnimated && css.animated,
+                )}
                 alt="pokemon"
               />
               <img
@@ -70,10 +74,18 @@ export default function Project({ text }) {
             </div>
 
             <div className={css.features}>
-              <ProjectCard text={text.features} color={text.color1} />
+              <ProjectCard
+                text={text.features}
+                color={text.color1}
+                size={size}
+              />
             </div>
             <div className={css.learned}>
-              <ProjectCard text={text.learned} color={text.color2} />
+              <ProjectCard
+                text={text.learned}
+                color={text.color2}
+                size={size}
+              />
             </div>
 
             <div className={css.button1}>

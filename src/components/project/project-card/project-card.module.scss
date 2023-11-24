@@ -3,8 +3,21 @@
 .container {
     border-radius: $standart-b-radius;
     margin: 1rem;
-    height: 32rem;
+    // height: 32rem;
     position: relative;
+
+
+    &.sizeS {
+        height: 26rem;
+    }
+
+    &.sizeM {
+        height: 34rem;
+    }
+
+    &.sizeL {
+        height: 42rem;
+    }
 
     .card {
         border-radius: $standart-b-radius;
@@ -136,10 +149,30 @@
     }
 }
 
+@include ultra {
+    .container {
+        &.sizeS {
+            height: 20rem;
+        }
+
+        &.sizeM {
+            height: 28rem;
+        }
+
+        &.sizeL {
+            height: 32rem;
+        }
+    }
+}
+
+
+
 @include lowTablet {
     .container {
         margin: 1rem auto;
         height: auto;
+
+
 
 
         .card {

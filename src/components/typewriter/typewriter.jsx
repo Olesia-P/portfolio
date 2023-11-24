@@ -7,7 +7,6 @@ export default function Typewriter({ text, delay, isAnimated }) {
 
   // eslint-disable-next-line consistent-return
   useEffect(() => {
-    // let timeout;
     if (isAnimated) {
       if (currentIndex < text.length) {
         const timeout = setTimeout(() => {

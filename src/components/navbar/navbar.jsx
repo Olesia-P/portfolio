@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 import cx from 'classnames';
 import css from './navbar.module.scss';
@@ -8,21 +9,41 @@ import NavbarMobile from './navbar-mobile/navbar-mobile';
 
 export default function Navbar() {
   const tablet = useMediaQuery(1024);
-
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+    console.log('section', section);
+    console.log('sectionId', sectionId);
+  };
   return (
     <header>
       {!tablet && (
         <div className={css.container}>
           <nav aria-label="primary-navigation">
             <ul>
-              {navEng.map((element) => (
+              {navEng.navLinks.map((element) => (
                 <li
                   key={element.name}
                   className={cx(css[element.color], css.navLink)}
+                  onClick={() => {
+                    scrollToSection(element.sectionId);
+                  }}
                 >
                   {element.name}
                 </li>
               ))}
+              <a
+                href={navEng.cv.pdf}
+                target="_blank"
+                rel="noreferrer"
+                className={cx(css[navEng.cv.color], css.navLink)}
+              >
+                {navEng.cv.name}
+              </a>
               <LangSwitch />
             </ul>
           </nav>

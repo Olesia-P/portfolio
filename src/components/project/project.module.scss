@@ -30,11 +30,19 @@
             margin: 0 2rem 0 0;
 
             .pokemonImg {
-                width: 12rem;
+
                 position: absolute;
                 top: 0;
                 left: -100vw;
                 z-index: 1;
+
+                &.sizeS {
+                    width: 12rem;
+                }
+
+                &.sizeM {
+                    width: 15rem;
+                }
 
                 &.animated {
                     left: 0;

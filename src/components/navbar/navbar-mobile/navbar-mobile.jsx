@@ -8,7 +8,14 @@ import LangSwitchMobile from '../lang-switch-mobile/lang-switch-mobile';
 export default function NavbarMobile({ text }) {
   const { isMobileMenuOpen } = useSelector(({ openings }) => openings);
   const dispatch = useDispatch();
-
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
   return (
     <div className={css.containerMobile}>
       <i
@@ -36,14 +43,25 @@ export default function NavbarMobile({ text }) {
         className={cx(isMobileMenuOpen && css.open)}
       >
         <ul>
-          {text.map((element) => (
+          {text.navLinks.map((element) => (
             <li
               key={element.name}
               className={cx(css[element.color], css.navLink)}
+              onClick={() => {
+                scrollToSection(element.sectionId);
+              }}
             >
               {element.name}
             </li>
-          ))}{' '}
+          ))}
+          <a
+            href={text.cv.pdf}
+            target="_blank"
+            rel="noreferrer"
+            className={cx(css[text.cv.color], css.navLink)}
+          >
+            {text.cv.name}
+          </a>
           <LangSwitchMobile />
         </ul>
       </nav>

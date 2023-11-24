@@ -74,14 +74,22 @@
         height: 15rem;
         @include dfcc;
         position: relative;
-        margin: 3.5rem auto;
+        margin: 4.5rem auto;
 
         .pokemonImg {
-            width: 15rem;
+            // width: 15rem;
             position: absolute;
             top: 0;
             left: -100vw;
             z-index: 1;
+
+            &.sizeS {
+                width: 15rem;
+            }
+
+            &.sizeM {
+                width: 20rem;
+            }
 
             &.animated {
                 left: 0;
@@ -161,7 +169,13 @@
             height: 12rem;
 
             .pokemonImg {
-                width: 12rem;
+                &.sizeS {
+                    width: 12rem;
+                }
+
+                &.sizeM {
+                    width: 17rem;
+                }
             }
         }
 
