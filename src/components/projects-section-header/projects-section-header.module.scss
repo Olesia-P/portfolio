@@ -5,7 +5,7 @@
     color: $white;
     text-shadow: $text-shadow;
     width: 55%;
-    margin: 16rem 28% 4rem auto;
+    margin: 10rem 26% 4rem auto;
 
     .dialogBox {
         height: 15rem;
@@ -50,28 +50,28 @@
 @include ultra {
     .projectsSectionHeaderWrap {
         width: 40%;
-        margin: 16rem 35% 4rem auto;
+        margin: 12rem 35% 4rem auto;
     }
 }
 
 @include laptop {
     .projectsSectionHeaderWrap {
         width: 65%;
-        margin: 16rem 24% 4rem auto;
+        margin: 10rem 24% 4rem auto;
     }
 }
 
 @include tablet {
     .projectsSectionHeaderWrap {
         width: 75%;
-        margin: 16rem 10% 4rem auto;
+        margin: 12rem 10% 4rem auto;
     }
 }
 
 @include lowTablet {
     .projectsSectionHeaderWrap {
         width: 75%;
-        margin: 15rem 5% 4rem auto;
+        margin: 12rem 5% 4rem auto;
 
         .dialogBox {
             height: 10rem;

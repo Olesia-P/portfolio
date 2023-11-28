@@ -9,10 +9,11 @@
 
     .currentLang {
         position: relative;
-        transition: all ease-in 0.2s;
+        // transition: all ease-in 0.2s;
 
         &:hover {
-            transform: scale(120%);
+            // transform: scale(120%);
+            filter: brightness(110%);
         }
 
         .mobile {
@@ -45,10 +46,11 @@
 
         .flag {
             padding: 0.6rem;
-            transition: transform 0.2s ease-in-out;
+            // transition: all 0.2s ease-in-out;
 
             &:hover {
-                transform: scale(120%);
+                // transform: scale(120%);
+                filter: brightness(110%);
             }
         }
 

@@ -22,7 +22,14 @@
         z-index: 1;
         margin-left: 10%;
         cursor: pointer;
+        transition: 0.1s ease;
+        filter: brightness(97%);
         // display: none;
+
+        &:hover {
+            filter: brightness(105%);
+
+        }
 
     }
 

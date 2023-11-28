@@ -14,7 +14,7 @@ export default function Navbar() {
       if (section) {
         section.scrollIntoView({
           behavior: 'smooth',
-          block: 'center',
+          // block: 'center',
         });
       }
     }

@@ -4,7 +4,7 @@ import css from './about-section-mobile.module.scss';
 
 export default function AboutSectionMobile() {
   return (
-    <article className={css.cardMobile} id="about">
+    <article className={css.cardMobile}>
       <section className={css.mobileSection}>
         <p className={css.age}>26</p>
         <img src="/ua-icon.png" className={css.flag} alt="ua-flag" />

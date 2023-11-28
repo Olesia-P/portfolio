@@ -22,12 +22,12 @@
 }
 
 @mixin hover($borderSize, $borderColor) {
-    transition: all ease-in 0.2s;
+    transition: box-shadow ease-in 0.2s;
 
     &:hover {
-        filter: brightness(120%);
-        transform: scale(110%);
-        border: $borderSize solid $borderColor;
+        filter: brightness(110%);
+        // transform: scale(110%);
+        // border: $borderSize solid $borderColor;
     }
 }
 

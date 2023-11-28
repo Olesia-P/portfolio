@@ -73,19 +73,21 @@ export default function Project({ text, size }) {
               ))}
             </div>
 
-            <div className={css.features}>
-              <ProjectCard
-                text={text.features}
-                color={text.color1}
-                size={size}
-              />
-            </div>
-            <div className={css.learned}>
-              <ProjectCard
-                text={text.learned}
-                color={text.color2}
-                size={size}
-              />
+            <div className={css.cards}>
+              <div className={css.features}>
+                <ProjectCard
+                  text={text.features}
+                  color={text.color1}
+                  size={size}
+                />
+              </div>
+              <div className={css.learned}>
+                <ProjectCard
+                  text={text.learned}
+                  color={text.color2}
+                  size={size}
+                />
+              </div>
             </div>
 
             <div className={css.button1}>

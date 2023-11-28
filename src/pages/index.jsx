@@ -10,22 +10,26 @@ import {
   project3Text,
 } from '../utils/language-objects';
 import Break from '../components/break/break';
+import Footer from '../components/footer/footer';
 
 export default function Home() {
   return (
     <main className={css.container}>
       <h1 className={css.jobTitle}>Junior front-end developer</h1>
+      <Break id="about" />
 
       <AboutSection />
-      <Break />
+      <Break id="skills" />
       <SkillsSection />
-
+      <Break id="projects" />
       <ProjectsSectionHeader />
-      <Project text={project1Text} size="sizeS" />
+      <Project text={project1Text} />
       <Break />
-      <Project text={project2Text} size="sizeM" />
+      <Project text={project2Text} />
       <Break />
-      <Project text={project3Text} size="sizeL" />
+      <Project text={project3Text} />
+      <Break />
+      <Footer />
     </main>
   );
 }

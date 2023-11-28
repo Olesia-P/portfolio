@@ -5,7 +5,7 @@
     width: 55%;
     @include mb ($asphalt);
     border-radius: $standart-b-radius;
-    margin: 1rem 10rem 1rem 0;
+    margin: 0rem 10rem 0rem 0;
     padding: 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
@@ -175,6 +175,14 @@
             }
         }
 
+        .cards {
+            height: max-content;
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 2rem;
+        }
+
         .screenshot {
             grid-column: span 2;
         }
@@ -186,7 +194,7 @@
 @include ultra {
     .card {
         max-width: 50%;
-        margin: 1rem 18rem 1rem 0;
+        margin: 0rem 18rem 0rem 0;
 
         .topSection {
             .pokemonImgWrap {
@@ -214,7 +222,7 @@
 @include laptop {
     .card {
         width: 70%;
-        margin: 1rem 12rem 1rem 0;
+        margin: 0rem 12rem 0rem 0;
 
 
         .topSection {
@@ -243,7 +251,7 @@
 @include tablet {
     .card {
         width: 90%;
-        margin: 1rem;
+        margin: 0 1rem;
 
         .bottomSection {
             .tvMobile {

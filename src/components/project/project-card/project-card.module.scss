@@ -3,21 +3,8 @@
 .container {
     border-radius: $standart-b-radius;
     margin: 1rem;
-    // height: 32rem;
     position: relative;
-
-
-    &.sizeS {
-        height: 26rem;
-    }
-
-    &.sizeM {
-        height: 34rem;
-    }
-
-    &.sizeL {
-        height: 42rem;
-    }
+    height: 100%;
 
     .card {
         border-radius: $standart-b-radius;

@@ -19,7 +19,7 @@ export default function ProjectsSectionHeader() {
   const ref = useIntersectionObserver(handleIntersection, undefined, 0);
 
   return (
-    <header className={css.projectsSectionHeaderWrap} ref={ref} id="projects">
+    <header className={css.projectsSectionHeaderWrap} ref={ref}>
       <div className={css.headerWrap}>
         <h2 className={css.projectsHeader}>Projects</h2>
       </div>

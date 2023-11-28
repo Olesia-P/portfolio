@@ -1,0 +1,68 @@
+@import "../../styles/main";
+
+.container {
+    min-height: 5rem;
+    background-color: $grey;
+    width: 100%;
+    margin: 0 auto;
+
+    .notch {
+        background-color: white;
+        width: 80%;
+        height: 1rem;
+        margin: 0 auto;
+        position: relative;
+
+        &:before,
+        &:after {
+            top: -0.1rem;
+            content: " ";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-radius: $standart-b-radius;
+            border-bottom: 1.5rem solid $grey;
+        }
+
+        &:before {
+            left: -0.1rem;
+            border-right: 1.5rem solid transparent;
+        }
+
+        &:after {
+            right: -0.1rem;
+            border-left: 1.5rem solid transparent;
+        }
+    }
+
+    .textWrap {
+        width: 100%;
+        @include dfc;
+        margin-top: 0.7rem;
+
+        .quote {
+            font-size: $size-small-header;
+            font-family: $font-code;
+            @include dfc;
+            line-height: 1;
+            background-color: $asphalt;
+            font-weight: 600;
+            color: white;
+            padding: 0.5rem;
+            border-radius: $standart-b-radius;
+            box-shadow: $main-shadow;
+            cursor: pointer;
+        }
+    }
+}
+
+@include lowTablet {
+    .container {
+        .textWrap {
+            .link {
+                font-size: calc($size-small-header - 2pt);
+                padding: 1rem;
+            }
+        }
+    }
+}

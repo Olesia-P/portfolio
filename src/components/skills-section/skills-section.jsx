@@ -31,7 +31,7 @@ export default function SkillsSection() {
   const skillsRef = useIntersectionObserver(handleIntersection, undefined, 0.1);
 
   return (
-    <section className={css.card} ref={skillsRef} id="skills">
+    <section className={css.card} ref={skillsRef}>
       <article>
         <h2 className={css.headerSkills}>Skills</h2>
         <div className={css.commentWrapper}>
