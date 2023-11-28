@@ -1,12 +1,15 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import cx from 'classnames';
 import css from './navbar.module.scss';
-import { navEng } from '../../utils/language-objects';
+// import { navEng } from '../../utils/language-objects';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import LangSwitch from './lang-switch/lang-switch';
 import NavbarMobile from './navbar-mobile/navbar-mobile';
 
 export default function Navbar() {
+  const { content } = useSelector(({ mixedPurpose }) => mixedPurpose);
+
   const tablet = useMediaQuery(1024);
   const scrollToSection = (sectionId) => {
     if (document) {
@@ -26,7 +29,7 @@ export default function Navbar() {
         <div className={css.container}>
           <nav aria-label="primary-navigation">
             <ul>
-              {navEng.navLinks.map((element) => (
+              {content.navigation.navLinks.map((element) => (
                 <li
                   key={element.name}
                   className={cx(css[element.color], css.navLink)}
@@ -38,19 +41,19 @@ export default function Navbar() {
                 </li>
               ))}
               <a
-                href={navEng.cv.pdf}
+                href={content.navigation.cv.pdf}
                 target="_blank"
                 rel="noreferrer"
-                className={cx(css[navEng.cv.color], css.navLink)}
+                className={cx(css[content.navigation.cv.color], css.navLink)}
               >
-                {navEng.cv.name}
+                {content.navigation.cv.name}
               </a>
               <LangSwitch />
             </ul>
           </nav>
         </div>
       )}
-      {tablet && <NavbarMobile text={navEng} />}
+      {tablet && <NavbarMobile />}
     </header>
   );
 }

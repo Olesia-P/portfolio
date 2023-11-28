@@ -5,7 +5,9 @@ import { changeIsMobileMenuOpen } from '../../../store/modules/openings-slice';
 import css from './navbar-mobile.module.scss';
 import LangSwitchMobile from '../lang-switch-mobile/lang-switch-mobile';
 
-export default function NavbarMobile({ text }) {
+export default function NavbarMobile() {
+  const { content } = useSelector(({ mixedPurpose }) => mixedPurpose);
+
   const { isMobileMenuOpen } = useSelector(({ openings }) => openings);
   const dispatch = useDispatch();
   const scrollToSection = (sectionId) => {
@@ -43,7 +45,7 @@ export default function NavbarMobile({ text }) {
         className={cx(isMobileMenuOpen && css.open)}
       >
         <ul>
-          {text.navLinks.map((element) => (
+          {content.navigation.navLinks.map((element) => (
             <li
               key={element.name}
               className={cx(css[element.color], css.navLink)}
@@ -55,12 +57,12 @@ export default function NavbarMobile({ text }) {
             </li>
           ))}
           <a
-            href={text.cv.pdf}
+            href={content.navigation.cv.pdf}
             target="_blank"
             rel="noreferrer"
-            className={cx(css[text.cv.color], css.navLink)}
+            className={cx(css[content.navigation.cv.color], css.navLink)}
           >
-            {text.cv.name}
+            {content.navigation.cv.name}
           </a>
           <LangSwitchMobile />
         </ul>

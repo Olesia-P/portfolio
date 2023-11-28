@@ -1,8 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { eng } from '../../utils/language-objects';
 
 const initialState = {
   tvSection: ' ',
   language: 'en',
+  content: eng,
 };
 
 export const mixedPurposeSlice = createSlice({
@@ -18,12 +20,19 @@ export const mixedPurposeSlice = createSlice({
     changeLangauge: (state, action) => {
       return {
         ...state,
-        name: action.payload.name,
+        language: action.payload,
+      };
+    },
+    changeContent: (state, action) => {
+      return {
+        ...state,
+        content: action.payload,
       };
     },
   },
 });
 
-export const { changeTvSection, changeLangauge } = mixedPurposeSlice.actions;
+export const { changeTvSection, changeLangauge, changeContent } =
+  mixedPurposeSlice.actions;
 
 export default mixedPurposeSlice.reducer;

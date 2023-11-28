@@ -6,7 +6,7 @@ import css from './project-mobile.module.scss';
 import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 import ScreenshotMobile from '../../screenshot/screenshot-mobile/screenshot-mobile';
 
-export default function ProjectMobile({ text }) {
+export default function ProjectMobile({ content }) {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleIntersection = () => {
@@ -19,12 +19,12 @@ export default function ProjectMobile({ text }) {
     <>
       <section className={css.topSection}>
         <div className={css.headerWrap}>
-          <h2 className={css.level}>{text.level}</h2>
+          <h2 className={css.level}>{content.level}</h2>
 
-          <h3 className={css.projectTitle}>{text.title}</h3>
+          <h3 className={css.projectTitle}>{content.title}</h3>
           <aside className={css.usedSkills}>
             <ul className={css.skillsList}>
-              {text.skills.map((element) => (
+              {content.skills.map((element) => (
                 <li key={element.id} className={css.skillItem}>
                   <img
                     src={element.icon}
@@ -40,10 +40,10 @@ export default function ProjectMobile({ text }) {
 
         <figure className={css.pokemonImgWrap} ref={ref}>
           <img
-            src={text.pokemonImg}
+            src={content.pokemonImg}
             className={cx(
               css.pokemonImg,
-              css[text.pokemonImgSize],
+              css[content.pokemonImgSize],
               isAnimated && css.animated,
             )}
             alt="pokemon"
@@ -58,26 +58,34 @@ export default function ProjectMobile({ text }) {
       </section>
       <section className={css.bottomSection}>
         <div className={css.description}>
-          {text.description.map((element) => (
+          {content.description.map((element) => (
             <p key={element}>{element}</p>
           ))}
         </div>
 
         <div className={css.screenshot}>
-          <ScreenshotMobile screenshot={text.screenshot} />
+          <ScreenshotMobile screenshot={content.screenshot} />
         </div>
         <div className={css.features}>
-          <ProjectCard text={text.features} color={text.color1} />
+          <ProjectCard text={content.features} color={content.color1} />
         </div>
         <div className={css.learned}>
-          <ProjectCard text={text.learned} color={text.color2} />
+          <ProjectCard text={content.learned} color={content.color2} />
         </div>
 
         <div className={css.button1}>
-          <ProjectButton text="CODE" color={text.color1} href={text.codeLink} />
+          <ProjectButton
+            text={content.btn1}
+            color={content.color1}
+            href={content.codeLink}
+          />
         </div>
         <div className={css.button2}>
-          <ProjectButton text="SITE" color={text.color2} href={text.siteLink} />
+          <ProjectButton
+            text={content.btn2}
+            color={content.color2}
+            href={content.siteLink}
+          />
         </div>
       </section>
     </>

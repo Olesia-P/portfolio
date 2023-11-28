@@ -1,42 +1,45 @@
 import React from 'react';
-import { qualitiesEng } from '../../../utils/language-objects';
 import css from './about-section-mobile.module.scss';
 
-export default function AboutSectionMobile() {
+export default function AboutSectionMobile({ aboutContent }) {
   return (
     <article className={css.cardMobile}>
       <section className={css.mobileSection}>
         <p className={css.age}>26</p>
         <img src="/ua-icon.png" className={css.flag} alt="ua-flag" />
-        <h2 className={css.name}>Olesia Pryhun</h2>
+        <h2 className={css.name}>{aboutContent.name}</h2>
         <img src="/avatar.png" alt="my-avatar" className={css.avatar} />
         <div className={css.textWrap}>
-          <h3 className={css.title}>Background:</h3>
-          <p className={css.text}>
-            I had <strong>worked as a teacher</strong> for a few years before
-            getting into web development. I am still good at explaining things
-            :)
-          </p>
-          <hr />
-          <h3 className={css.title}>My studying journey:</h3>
-          <p className={css.text}>
-            I finished a front-end course, then I continued my studies with
-            <strong> a mentor</strong> (experienced web developer). He provided
-            me with support and guidance throughout the whole process.
-          </p>
-          <hr />
-          <h3 className={css.title}> How did I learn?</h3>
-          <p className={css.text}>
-            I learned through
-            <strong> building projects,</strong> making{' '}
-            <strong> mistakes</strong> and <strong> fixing them</strong>. I used
-            all tools possible: from docs and forums to YouTube and chat GPT.
-          </p>
+          <h3 className={css.title}>{aboutContent.background.header}</h3>
+          <p
+            className={css.text}
+            dangerouslySetInnerHTML={{
+              __html: aboutContent.background.text,
+            }}
+          />
+          <hr className={css.divider} />
+          <h3 className={css.title}>{aboutContent.studies.header}</h3>
+          <p
+            className={css.text}
+            dangerouslySetInnerHTML={{
+              __html: aboutContent.studies.text,
+            }}
+          />
+          <hr className={css.divider} />
+          <h3 className={css.title}>{aboutContent.learning.header}</h3>
+          <p
+            className={css.text}
+            dangerouslySetInnerHTML={{
+              __html: aboutContent.learning.text,
+            }}
+          />
         </div>
         <aside className={css.qualities}>
-          <h3 className={css.qualitiesHeader}>Personal qualities:</h3>
+          <h3 className={css.qualitiesHeader}>
+            {aboutContent.qualities.header}
+          </h3>
           <ul className={css.qualitiesList}>
-            {qualitiesEng.map((element) => (
+            {aboutContent.qualities.qualitiesList.map((element) => (
               <li className={css.qualitiesListItem} key={element.icon}>
                 <img
                   src={element.icon}

@@ -59,9 +59,10 @@
 @include lowTablet {
     .container {
         .textWrap {
-            .link {
+            .quote {
                 font-size: calc($size-small-header - 2pt);
                 padding: 1rem;
+
             }
         }
     }

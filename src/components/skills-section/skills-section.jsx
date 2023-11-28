@@ -2,22 +2,13 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import cx from 'classnames';
 import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
-
 import css from './skills-section.module.scss';
 import GraphicList from '../graphic-list/graphic-list';
-import {
-  frontSkills,
-  endSkills,
-  otherSkills,
-  frontSkillsMobile,
-  endSkillsMobile,
-  otherSkillsMobile,
-} from '../../utils/language-objects';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import GraphicListMobile from '../graphic-list-mobile/graphic-list-mobile';
 
-export default function SkillsSection() {
+export default function SkillsSection({ skillsContent }) {
   const [isAnimated, setIsAnimated] = useState(false);
   const dispatch = useDispatch();
 
@@ -33,20 +24,19 @@ export default function SkillsSection() {
   return (
     <section className={css.card} ref={skillsRef}>
       <article>
-        <h2 className={css.headerSkills}>Skills</h2>
+        <h2 className={css.headerSkills}>{skillsContent.header}</h2>
         <div className={css.commentWrapper}>
           <p className={cx(css.comment)} lang="en">
-            In the fast-paced and ever-evolving world of web development, I
-            believe that{' '}
+            {skillsContent.comment[0]}{' '}
             <strong className={cx(css.strong1, isAnimated && css.animated)}>
-              adaptability
+              {skillsContent.comment[1]}
             </strong>{' '}
-            is a key. I am{' '}
+            {skillsContent.comment[2]}{' '}
             <strong className={cx(css.strong2, isAnimated && css.animated)}>
               {' '}
-              ready to learn new and old ways
+              {skillsContent.comment[3]}
             </strong>{' '}
-            - whatever it takes to create a competitive product!
+            {skillsContent.comment[4]}
           </p>
         </div>
         <section className={css.skillsWrap}>
@@ -54,21 +44,21 @@ export default function SkillsSection() {
             <>
               <GraphicList
                 category="Front-end"
-                list={frontSkills}
+                list={skillsContent.frontSkills}
                 coveredItemsNumber="seven"
                 meterColor="green"
                 isAnimated={isAnimated}
               />
               <GraphicList
                 category="Back-end"
-                list={endSkills}
+                list={skillsContent.backSkills}
                 coveredItemsNumber="two"
                 meterColor="blue"
                 isAnimated={isAnimated}
               />
               <GraphicList
                 category="Other"
-                list={otherSkills}
+                list={skillsContent.otherSkills}
                 coveredItemsNumber="four"
                 meterColor="darkblue"
                 isAnimated={isAnimated}
@@ -79,17 +69,17 @@ export default function SkillsSection() {
             <>
               <GraphicListMobile
                 category="Front-end"
-                list={frontSkillsMobile}
+                list={skillsContent.frontSkillsMobile}
                 meterColor="green"
               />
               <GraphicListMobile
                 category="Back-end"
-                list={endSkillsMobile}
+                list={skillsContent.backSkillsMobile}
                 meterColor="blue"
               />
               <GraphicListMobile
                 category="Other"
-                list={otherSkillsMobile}
+                list={skillsContent.otherSkillsMobile}
                 meterColor="darkblue"
               />
             </>
