@@ -519,7 +519,7 @@ export const ua = {
     navLinks: [
       { name: 'Про мене', color: 'red', sectionId: 'about' },
       { name: 'Навички', color: 'orange', sectionId: 'skills' },
-      { name: 'Проекти', color: 'yellow', sectionId: 'projects' },
+      { name: 'Проєкти', color: 'yellow', sectionId: 'projects' },
       { name: 'Контакти', color: 'green', sectionId: 'about' },
     ],
 

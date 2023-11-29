@@ -14,7 +14,7 @@ export default function LangPopUp() {
           <h3 className={css.header}>Choose language</h3>
           <div className={css.flagsWrapper}>
             <img
-              src="ua-lang.png"
+              src="ua-icon.png"
               className={css.flag}
               onClick={() => {
                 dispatch(changeLangauge('ua'));
@@ -23,7 +23,7 @@ export default function LangPopUp() {
               alt="ua flag"
             />
             <img
-              src="uk-lang.png"
+              src="en-icon.png"
               className={css.flag}
               onClick={() => {
                 dispatch(changeLangauge('en'));
