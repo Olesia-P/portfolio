@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import css from './projects-section-header.module.scss';
 import Typewriter from '../typewriter/typewriter';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
@@ -8,6 +8,7 @@ import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
 
 export default function ProjectsSectionHeader() {
   const [isAnimated, setIsAnimated] = useState(false);
+  const { content } = useSelector(({ mixedPurpose }) => mixedPurpose);
 
   const dispatch = useDispatch();
 
@@ -25,7 +26,7 @@ export default function ProjectsSectionHeader() {
       </div>
       <p className={css.projectsCaption}>
         <Typewriter
-          text="Pokemons evolve... so do developers!"
+          text={content.projects.header}
           delay={60}
           isAnimated={isAnimated}
         />

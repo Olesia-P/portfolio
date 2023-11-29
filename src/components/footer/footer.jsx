@@ -8,7 +8,7 @@ export default function Footer({ footerContent }) {
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * footerContent.quotes.length);
     setQuote(footerContent.quotes[randomIndex]);
-  }, [click]);
+  }, [click, footerContent]);
 
   return (
     <footer className={css.container}>

@@ -1,0 +1,73 @@
+@import "../../styles/main";
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.586);
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    .card {
+        z-index: 11;
+        padding: 1rem;
+        margin: 15% auto;
+        width: 40%;
+
+        height: max-content;
+        background-color: $light-grey;
+        border: 0.7rem solid $asphalt;
+        outline: 0.2rem solid black;
+        border-radius: $standart-b-radius;
+
+        .header {
+            font-size: 48pt;
+            text-align: center;
+            font-family: $font-big-pixel;
+            margin: 0.5rem;
+        }
+
+        .flagsWrapper {
+            @include dfc;
+            justify-content: space-evenly;
+            padding: 1.5rem;
+
+            .flag {
+                height: 4rem;
+                width: 6rem;
+                margin: 0 0.5rem;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .container {
+        .card {
+            width: 80%;
+            margin: 40% auto;
+        }
+    }
+}
+
+@include mobile {
+    .container {
+        .card {
+            width: 90%;
+            margin: 60% auto;
+
+            .flagsWrapper {
+                flex-direction: column;
+
+                .flag {
+                    margin: 1rem 0;
+                }
+            }
+
+            .header {
+                font-size: 40pt;
+            }
+        }
+    }
+}

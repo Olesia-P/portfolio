@@ -37,13 +37,11 @@
 
     .textWrap {
         width: 100%;
-        @include dfc;
         margin-top: 0.7rem;
 
         .quote {
             font-size: $size-small-header;
             font-family: $font-code;
-            @include dfc;
             line-height: 1;
             background-color: $asphalt;
             font-weight: 600;
@@ -52,6 +50,7 @@
             border-radius: $standart-b-radius;
             box-shadow: $main-shadow;
             cursor: pointer;
+            text-align: center;
         }
     }
 }

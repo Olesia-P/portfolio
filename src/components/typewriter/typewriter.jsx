@@ -1,9 +1,11 @@
+/* eslint-disable no-console */
 import React, { useEffect, useState } from 'react';
 import css from './typewriter.module.scss';
 
 export default function Typewriter({ text, delay, isAnimated }) {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
+  console.log('text', text);
 
   // eslint-disable-next-line consistent-return
   useEffect(() => {

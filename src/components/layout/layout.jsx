@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Navbar from '../navbar/navbar';
 import Tv from '../tv/tv';
-import { eng } from '../../utils/language-objects';
+import { en, ua } from '../../utils/language-objects';
 import { changeContent } from '../../store/modules/mixed-purpose-slice';
+import LangPopUp from '../lang-pop-up/lang-pop-up';
 
 // import css from './layout.module.scss';
 
@@ -14,7 +15,10 @@ export default function layout({ children }) {
 
   useEffect(() => {
     if (language === 'en') {
-      dispatch(changeContent(eng));
+      dispatch(changeContent(en));
+    }
+    if (language === 'ua') {
+      dispatch(changeContent(ua));
     }
   }, [language]);
 
@@ -22,6 +26,7 @@ export default function layout({ children }) {
     content !== undefined && (
       <>
         <Navbar />
+        <LangPopUp />
         <Tv />
         {children}{' '}
       </>

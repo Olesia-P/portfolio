@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { eng } from '../../utils/language-objects';
+import { en } from '../../utils/language-objects';
 
 const initialState = {
   tvSection: ' ',
   language: 'en',
-  content: eng,
+  content: en,
 };
 
 export const mixedPurposeSlice = createSlice({

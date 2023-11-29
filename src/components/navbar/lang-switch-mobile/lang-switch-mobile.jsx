@@ -7,6 +7,7 @@ import { changeLangauge } from '../../../store/modules/mixed-purpose-slice';
 export default function LangSwitchMobile() {
   const { language } = useSelector(({ mixedPurpose }) => mixedPurpose);
   const dispatch = useDispatch();
+
   return (
     <li className={css.mobileLangSwitchContainer}>
       <img
