@@ -22,11 +22,13 @@ export default function ProjectsSectionHeader() {
   return (
     <header className={css.projectsSectionHeaderWrap} ref={ref}>
       <div className={css.headerWrap}>
-        <h2 className={css.projectsHeader}>Projects</h2>
+        <h2 className={css.projectsHeader}>
+          {content.projects.projectsSectionHeader.header}
+        </h2>
       </div>
       <p className={css.projectsCaption}>
         <Typewriter
-          text={content.projects.header}
+          text={content.projects.projectsSectionHeader.text}
           delay={60}
           isAnimated={isAnimated}
         />

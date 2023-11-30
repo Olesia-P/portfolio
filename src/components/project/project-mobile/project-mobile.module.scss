@@ -8,7 +8,7 @@
 
         .level {
             font-family: $font-game;
-            font-size: 38pt;
+            font-size: 36pt;
             margin: 0;
             line-height: 1;
             text-align: center;
@@ -16,7 +16,7 @@
 
         .projectTitle {
             font-family: $font-angular;
-            font-size: $size-huge;
+            font-size: calc($size-huge - 2pt);
             margin: 0 0.8rem 1rem 0;
             font-weight: 600;
             background-image: url("/paper.png");
@@ -42,7 +42,7 @@
 
                 .skillItem {
                     list-style: none;
-                    font-size: $size-small-header;
+                    font-size: calc($size-small-header - 2pt);
                     font-family: $font-main;
                     font-weight: 600;
                     display: flex;
@@ -60,8 +60,8 @@
                         padding: 0.1rem;
                         border-radius: 50%;
                         border: 2px solid black;
-                        height: 2rem;
-                        width: 2rem;
+                        height: 1.7rem;
+                        width: 1.7rem;
                         margin: 0 0.5rem;
                     }
                 }
@@ -130,12 +130,12 @@
     .description {
         // grid-column: span 2;
         font-weight: 600;
-        font-size: $size-header;
+        font-size: $size-small-header;
         background: none;
         background-color: $white;
         border: 0.5rem outset $light-grey;
-        margin: 1rem 0;
-        padding: 1rem;
+        margin: 0;
+        padding: 0.5rem;
         border-radius: $standart-b-radius;
         background: linear-gradient(90deg, rgb(214, 210, 210) 0%, rgb(255, 255, 255) 7%, rgb(255, 255, 255) 88%, rgb(214, 210, 210) 100%);
         outline: 0.1rem solid black;
@@ -174,7 +174,7 @@
                 }
 
                 &.sizeM {
-                    width: 17rem;
+                    width: 16rem;
                 }
             }
         }
@@ -187,16 +187,27 @@
         .headerWrap {
 
             .level {
-                font-size: 36pt;
+                font-size: 34pt;
             }
 
             .projectTitle {
                 padding: 2rem 0rem 0 0.7rem;
                 margin: 0 0.7rem 1rem 0rem;
-                font-size: calc($size-huge - 2pt);
+                font-size: calc($size-huge - 4pt);
+
             }
         }
 
 
+    }
+
+    .bottomSection {
+        .description {
+            font-size: $size-p;
+
+            p {
+                margin: 0.7rem 0;
+            }
+        }
     }
 }

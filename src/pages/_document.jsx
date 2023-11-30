@@ -7,7 +7,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* <title>Portfolio Junior Developer Olesia Pryhun</title> */}
           {/* Add your meta tags, link tags, and other head content here */}
         </Head>
         <body>

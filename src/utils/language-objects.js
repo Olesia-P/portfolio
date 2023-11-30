@@ -273,7 +273,10 @@ export const en = {
   },
 
   projects: {
-    header: 'Pokemons evolve... so do developers!',
+    projectsSectionHeader: {
+      header: 'Projects',
+      text: 'Pokemons evolve... so do developers!',
+    },
     project1Content: {
       color1: 'yellow',
       color2: 'orange',
@@ -549,7 +552,7 @@ export const ua = {
 
     learning: {
       header: 'Як я вчилась?',
-      text: ' Я навчалась за допомогою <strong> написання проектів,</strong> допускання <strong> помилок</strong> та <strong> їх виправлення</strong>. Я використала всі можливі інструменти: від документації та форумів до YouTube та chat GPT.',
+      text: ' Я навчалась за допомогою <strong> написання проєктів,</strong> допускання <strong> помилок</strong> та <strong> їх виправлення</strong>. Я використала всі можливі інструменти: від документації та форумів до YouTube та chat GPT.',
     },
   },
 
@@ -789,7 +792,10 @@ export const ua = {
   },
 
   projects: {
-    header: 'Покемони еволюціонують... як і розробники!',
+    projectsSectionHeader: {
+      header: 'Проєкти',
+      text: 'Покемони еволюціонують... як і розробники!',
+    },
     project1Content: {
       color1: 'yellow',
       color2: 'orange',
@@ -824,7 +830,7 @@ export const ua = {
         },
       ],
       description: [
-        'З чогось треба починати! Мій перший React проект - простий, стильний... не дуже корисний, але працює!',
+        'З чогось треба починати! Мій перший React проєкт - простий, стильний... не дуже корисний, але працює!',
       ],
 
       learned: {
