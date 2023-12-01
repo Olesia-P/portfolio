@@ -4,12 +4,23 @@ import cx from 'classnames';
 import { changeIsMobileMenuOpen } from '../../../store/modules/openings-slice';
 import css from './navbar-mobile.module.scss';
 import LangSwitchMobile from '../lang-switch-mobile/lang-switch-mobile';
+import useClickOutsideClose from '../../../hooks/useOutsideClickClose';
+import { content } from '../../../utils/language-objects';
 
 export default function NavbarMobile() {
-  const { content } = useSelector(({ mixedPurpose }) => mixedPurpose);
-
+  const { language } = useSelector(({ mixedPurpose }) => mixedPurpose);
   const { isMobileMenuOpen } = useSelector(({ openings }) => openings);
   const dispatch = useDispatch();
+
+  const changeMobileWithDispatch = (value) => {
+    dispatch(changeIsMobileMenuOpen(value));
+  };
+
+  const navMobRef = useClickOutsideClose(
+    changeMobileWithDispatch,
+    isMobileMenuOpen,
+  );
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -19,7 +30,7 @@ export default function NavbarMobile() {
     }
   };
   return (
-    <div className={css.containerMobile}>
+    <div className={css.containerMobile} ref={navMobRef}>
       <i
         className={cx(css.iconContainer, isMobileMenuOpen && css.open)}
         onClick={() => dispatch(changeIsMobileMenuOpen(!isMobileMenuOpen))}
@@ -45,7 +56,7 @@ export default function NavbarMobile() {
         className={cx(isMobileMenuOpen && css.open)}
       >
         <ul>
-          {content.navigation.navLinks.map((element) => (
+          {content[language].navigation.navLinks.map((element) => (
             <li
               key={element.name}
               className={cx(css[element.color], css.navLink)}
@@ -57,12 +68,15 @@ export default function NavbarMobile() {
             </li>
           ))}
           <a
-            href={content.navigation.cv.pdf}
+            href={content[language].navigation.cv.pdf}
             target="_blank"
             rel="noreferrer"
-            className={cx(css[content.navigation.cv.color], css.navLink)}
+            className={cx(
+              css[content[language].navigation.cv.color],
+              css.navLink,
+            )}
           >
-            {content.navigation.cv.name}
+            {content[language].navigation.cv.name}
           </a>
           <LangSwitchMobile />
         </ul>

@@ -56,13 +56,13 @@
                     left: 0;
                 }
 
-                &.strong1 {
+                &:first-of-type {
                     &::before {
                         background: radial-gradient(rgb(113, 160, 167) 0%, rgb(89, 89, 89) 100%);
                     }
                 }
 
-                &.strong2 {
+                &:last-of-type {
                     &::before {
                         background: radial-gradient(rgb(171, 108, 159) 0%, rgb(89, 89, 89) 100%);
                     }

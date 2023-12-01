@@ -5,10 +5,11 @@ import Typewriter from '../typewriter/typewriter';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 // import useMediaQuery from '../../hooks/useMediaQuery';
 import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
+import { content } from '../../utils/language-objects';
 
 export default function ProjectsSectionHeader() {
   const [isAnimated, setIsAnimated] = useState(false);
-  const { content } = useSelector(({ mixedPurpose }) => mixedPurpose);
+  const { language } = useSelector(({ mixedPurpose }) => mixedPurpose);
 
   const dispatch = useDispatch();
 
@@ -23,12 +24,12 @@ export default function ProjectsSectionHeader() {
     <header className={css.projectsSectionHeaderWrap} ref={ref}>
       <div className={css.headerWrap}>
         <h2 className={css.projectsHeader}>
-          {content.projects.projectsSectionHeader.header}
+          {content[language].projects.projectsSectionHeader.header}
         </h2>
       </div>
       <p className={css.projectsCaption}>
         <Typewriter
-          text={content.projects.projectsSectionHeader.text}
+          text={content[language].projects.projectsSectionHeader.text}
           delay={60}
           isAnimated={isAnimated}
         />

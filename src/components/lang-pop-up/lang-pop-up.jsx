@@ -10,6 +10,13 @@ export default function LangPopUp() {
   return (
     isPopUpOpen && (
       <section className={css.container}>
+        <style jsx global>
+          {`
+            html {
+              overflow: hidden;
+            }
+          `}
+        </style>
         <article className={css.card}>
           <h3 className={css.header}>Choose language</h3>
           <div className={css.flagsWrapper}>

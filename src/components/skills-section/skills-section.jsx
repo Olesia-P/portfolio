@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import cx from 'classnames';
 import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
@@ -21,23 +21,25 @@ export default function SkillsSection({ skillsContent }) {
 
   const skillsRef = useIntersectionObserver(handleIntersection, undefined, 0.1);
 
+  useEffect(() => {
+    if (isAnimated) {
+      const strongElements = document.querySelectorAll(
+        `.${css.comment} strong`,
+      );
+      if (strongElements) {
+        strongElements.forEach((element) => {
+          element.classList.add(css.animated);
+        });
+      }
+    }
+  }, [isAnimated, skillsContent]);
+
   return (
     <section className={css.card} ref={skillsRef}>
       <article>
         <h2 className={css.headerSkills}>{skillsContent.header}</h2>
         <div className={css.commentWrapper}>
-          <p className={cx(css.comment)} lang="en">
-            {skillsContent.comment[0]}{' '}
-            <strong className={cx(css.strong1, isAnimated && css.animated)}>
-              {skillsContent.comment[1]}
-            </strong>{' '}
-            {skillsContent.comment[2]}{' '}
-            <strong className={cx(css.strong2, isAnimated && css.animated)}>
-              {' '}
-              {skillsContent.comment[3]}
-            </strong>{' '}
-            {skillsContent.comment[4]}
-          </p>
+          <p className={cx(css.comment)}>{skillsContent.comment()}</p>
         </div>
         <section className={css.skillsWrap}>
           {!isLowTablet && (

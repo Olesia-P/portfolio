@@ -52,16 +52,13 @@
         "declaration": false,
         "assignment": false
       }
+    ],
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": ["jsx", "global"]
+      }
     ]
-    // "no-param-reassign": [
-    //   "error",
-    //   {
-    //     "props": true,
-    //     "ignorePropertyModificationsFor": ["state"]
-    //   }
-    // ]
-
-    // Add more rules or override Airbnb"s rules here
   },
   "env": {
     "browser": true,

@@ -11,28 +11,14 @@ export default function AboutSectionMobile({ aboutContent }) {
         <img src="/avatar.png" alt="my-avatar" className={css.avatar} />
         <div className={css.textWrap}>
           <h3 className={css.title}>{aboutContent.background.header}</h3>
-          <p
-            className={css.text}
-            dangerouslySetInnerHTML={{
-              __html: aboutContent.background.text,
-            }}
-          />
+          <p className={css.text}> {aboutContent.background.text()} </p>
+
           <hr className={css.divider} />
           <h3 className={css.title}>{aboutContent.studies.header}</h3>
-          <p
-            className={css.text}
-            dangerouslySetInnerHTML={{
-              __html: aboutContent.studies.text,
-            }}
-          />
+          <p className={css.text}>{aboutContent.studies.text()}</p>
           <hr className={css.divider} />
           <h3 className={css.title}>{aboutContent.learning.header}</h3>
-          <p
-            className={css.text}
-            dangerouslySetInnerHTML={{
-              __html: aboutContent.learning.text,
-            }}
-          />
+          <p className={css.text}>{aboutContent.learning.text()}</p>
         </div>
         <aside className={css.qualities}>
           <h3 className={css.qualitiesHeader}>

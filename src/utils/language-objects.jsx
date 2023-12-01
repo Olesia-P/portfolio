@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const en = {
   navigation: {
     navLinks: [
@@ -24,28 +26,47 @@ export const en = {
     },
     background: {
       header: 'Background:',
-      text: 'I had <strong>worked as a teacher</strong> for a few years before getting into web development. I am still good at explaining things :)',
+      text: () => (
+        <>
+          I had <strong>worked as a teacher</strong> for a few years before
+          getting into web development. I am still good at explaining things :)
+        </>
+      ),
     },
     studies: {
       header: 'My studying journey:',
-      text: 'I finished a front-end course, then I continued my studies  with <strong> a mentor</strong> (experienced web developer). He provided me with support and guidance throughout the whole process.',
+      text: () => (
+        <>
+          I finished a front-end course, then I continued my studies with{' '}
+          <strong> a mentor</strong> (experienced web developer). He provided me
+          with support and guidance throughout the whole process.
+        </>
+      ),
     },
 
     learning: {
       header: ' How did I learn?',
-      text: ' I learned through <strong> building projects,</strong> making <strong> mistakes</strong> and <strong> fixing them</strong>. I used all tools possible: from docs and forums to YouTube and chat GPT.',
+      text: () => (
+        <>
+          {' '}
+          I learned through <strong> building projects,</strong> making{' '}
+          <strong> mistakes</strong> and <strong> fixing them</strong>. I used
+          all tools possible: from docs and forums to YouTube and chat GPT.
+        </>
+      ),
     },
   },
 
   skills: {
     header: 'Skills',
-    comment: [
-      ' In the fast-paced and ever-evolving world of web development, I believe that',
-      'adaptability',
-      'is a key. I am',
-      ' ready to learn new and old ways',
-      ' - whatever it takes to create a competitive product!',
-    ],
+    comment: () => (
+      <>
+        In the fast-paced and ever-evolving world of web development, I believe
+        that <strong> adaptability </strong> is a key. I am{' '}
+        <strong> ready to learn new and old ways </strong> - whatever it takes
+        to create a competitive product!
+      </>
+    ),
     frontSkills: [
       { icon: '/empty.png ', name: '', iconStyle: 'empty', id1: 'f1' },
       { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'f2' },
@@ -517,6 +538,7 @@ export const en = {
     ],
   },
 };
+
 export const ua = {
   navigation: {
     navLinks: [
@@ -543,28 +565,49 @@ export const ua = {
     },
     background: {
       header: 'Про мене:',
-      text: 'Перед тим як попасти у веб девелопмент, я кілька років <strong>працювала вчителем</strong>. Я все ще досить гарно пояснюю речі :)',
+      text: () => (
+        <>
+          {' '}
+          Перед тим як попасти у веб девелопмент, я кілька років{' '}
+          <strong>працювала вчителем</strong>. Я все ще досить гарно пояснюю
+          речі :)
+        </>
+      ),
     },
     studies: {
       header: 'Мій шлях навчання:',
-      text: 'Я закінчила фронт-енд курси, після цього я продовжила навчання з <strong> ментором</strong> (досвіченим веб девелопером). Він підтримував мене та допомагав з навчанням протягом усього процесу.',
+      text: () => (
+        <>
+          Я закінчила фронт-енд курси, після цього я продовжила навчання з{' '}
+          <strong> ментором</strong> (досвіченим веб девелопером). Він
+          підтримував мене та допомагав з навчанням протягом усього процесу.
+        </>
+      ),
     },
 
     learning: {
       header: 'Як я вчилась?',
-      text: ' Я навчалась за допомогою <strong> написання проєктів,</strong> допускання <strong> помилок</strong> та <strong> їх виправлення</strong>. Я використала всі можливі інструменти: від документації та форумів до YouTube та chat GPT.',
+      text: () => (
+        <>
+          Я навчалась за допомогою <strong> написання проєктів,</strong>{' '}
+          допускання <strong> помилок</strong> та{' '}
+          <strong> їх виправлення</strong>. Я використала всі можливі
+          інструменти: від документації та форумів до YouTube та chat GPT.
+        </>
+      ),
     },
   },
 
   skills: {
     header: 'Навички',
-    comment: [
-      'У швидкоплинному світі веб-розробки, який постійно розвивається, я вірю що',
-      'здатність пристосовуватися',
-      'є ключовою. Я',
-      ' готова вивчати класичні та нові методології',
-      ' - будь-що, щоб створити конкурентоспроможний продукт!',
-    ],
+    comment: () => (
+      <>
+        У швидкоплинному світі веб-розробки, який постійно розвивається, я вірю
+        що <strong> здатність пристосовуватися</strong> є ключовою. Я{' '}
+        <strong> готова вивчати класичні та нові методології</strong> - будь-що,
+        щоб створити конкурентоспроможний продукт!
+      </>
+    ),
     frontSkills: [
       { icon: '/empty.png ', name: '', iconStyle: 'empty', id1: 'f1' },
       { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'f2' },
@@ -1036,4 +1079,9 @@ export const ua = {
       'Якщо код вас не турбує, не турбуйте його.',
     ],
   },
+};
+
+export const content = {
+  en,
+  ua,
 };
