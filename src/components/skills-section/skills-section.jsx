@@ -32,7 +32,7 @@ export default function SkillsSection({ skillsContent }) {
         });
       }
     }
-  }, [isAnimated, skillsContent]);
+  }, [isAnimated]);
 
   return (
     <section className={css.card} ref={skillsRef}>

@@ -24,7 +24,7 @@ export default function Meta() {
       <meta property="og:description" content="Pet projects are pokemons! " />
       <meta
         property="og:image"
-        content="https://metatags.io/images/meta-tags.png"
+        content="projects-screenshots/portfolio-screenshot.png"
       />
 
       <meta property="twitter:card" content="summary_large_image" />
@@ -42,7 +42,7 @@ export default function Meta() {
       />
       <meta
         property="twitter:image"
-        content="https://metatags.io/images/meta-tags.png"
+        content="projects-screenshots/portfolio-screenshot.png"
       />
     </Head>
   );
