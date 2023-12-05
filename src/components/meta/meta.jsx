@@ -1,9 +1,8 @@
 import React from 'react';
-import Head from 'next/head';
 
 export default function Meta() {
   return (
-    <Head>
+    <>
       <title>Portfolio Junior Developer Olesia Pryhun</title>
 
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -44,6 +43,6 @@ export default function Meta() {
         property="twitter:image"
         content="projects-screenshots/portfolio-screenshot.png"
       />
-    </Head>
+    </>
   );
 }

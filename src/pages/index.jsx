@@ -12,6 +12,12 @@ import { content } from '../utils/language-objects';
 export default function Home() {
   const { language } = useSelector(({ mixedPurpose }) => mixedPurpose);
 
+  const projectsContent = [
+    { id: 'project1', content: content[language].projects.project1Content },
+    { id: 'project2', content: content[language].projects.project2Content },
+    { id: 'project3', content: content[language].projects.project3Content },
+  ];
+
   return (
     <main className={css.container}>
       <h1 className={css.jobTitle}>Junior front-end developer</h1>
@@ -23,12 +29,13 @@ export default function Home() {
       <Break id="projects" />
 
       <ProjectsSectionHeader projectsContent={content[language].projects} />
-      <Project content={content[language].projects.project1Content} />
-      <Break />
-      <Project content={content[language].projects.project2Content} />
-      <Break />
-      <Project content={content[language].projects.project3Content} />
-      <Break />
+      {projectsContent.map((element) => (
+        <>
+          <Project content={element.content} key={element.content} />
+          <Break key={element.id} />
+        </>
+      ))}
+
       <Footer footerContent={content[language].footer} />
     </main>
   );

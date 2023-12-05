@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaGithub } from 'react-icons/fa';
 import css from './footer.module.scss';
 
 export default function Footer({ footerContent }) {
@@ -13,6 +14,16 @@ export default function Footer({ footerContent }) {
   return (
     <footer className={css.container}>
       <div className={css.notch}> </div>
+      <a
+        className={css.link}
+        href="https://github.com/Olesia-P/portfolio"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span className={css.text1}> This portfolio </span>&nbsp;
+        <FaGithub className={css.icon} /> &nbsp;
+        <span className={css.text2}> description and code →</span>
+      </a>
       <div className={css.textWrap} onClick={() => setClick(!click)}>
         <p className={css.quote}>{quote} (c)</p>{' '}
       </div>

@@ -35,6 +35,32 @@
         }
     }
 
+    .link {
+        font-size: $size-header;
+        font-family: $font-code;
+        line-height: 1;
+        text-align: center;
+        font-weight: 600;
+        display: block;
+        padding: 1rem 0 0.5rem 0;
+        @include dfc;
+
+        &:hover {
+            .text1 {
+                color: $red
+            }
+
+            .text2 {
+                color: $white
+            }
+        }
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
     .textWrap {
         width: 100%;
         margin-top: 0.7rem;
@@ -61,7 +87,6 @@
             .quote {
                 font-size: calc($size-small-header - 2pt);
                 padding: 1rem;
-
             }
         }
     }
