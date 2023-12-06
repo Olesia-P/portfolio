@@ -560,7 +560,7 @@ export const ua = {
       { name: 'Про мене', color: 'red', sectionId: 'about' },
       { name: 'Навички', color: 'orange', sectionId: 'skills' },
       { name: 'Проєкти', color: 'yellow', sectionId: 'projects' },
-      { name: 'Контакти', color: 'green', sectionId: 'about' },
+      { name: 'Контакти', color: 'green', sectionId: 'contacts' },
     ],
 
     cv: { name: 'Резюме', color: 'blue', pdf: '/cv/template.pdf' },

@@ -28,6 +28,9 @@ export default function Tv() {
       case 'project3':
         setTvImage('/gifs/pikachu.gif');
         break;
+      case 'contacts':
+        setTvImage('/gifs/hug.gif');
+        break;
       default:
         setTvImage('/gifs/white-noise.gif');
     }

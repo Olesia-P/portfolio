@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import css from './lang-pop-up.module.scss';
 import { changeLangauge } from '../../store/modules/mixed-purpose-slice';
-import { getCookie } from '../../utils/cookie';
+import { getCookie, setCookie } from '../../utils/cookie';
 
 export default function LangPopUp() {
   const [isPopUpOpen, setIsPopUpOpen] = useState(true);
@@ -16,6 +16,12 @@ export default function LangPopUp() {
     // eslint-disable-next-line no-console
     console.log('storedLanguage', storedLanguage);
   }, [isPopUpOpen]);
+
+  const handleClick = (lang) => {
+    dispatch(changeLangauge(lang));
+    setIsPopUpOpen(false);
+    setCookie('language', lang, 1);
+  };
 
   return (
     isPopUpOpen && (
@@ -34,8 +40,7 @@ export default function LangPopUp() {
               src="ua-icon.png"
               className={css.flag}
               onClick={() => {
-                dispatch(changeLangauge('ua'));
-                setIsPopUpOpen(false);
+                handleClick('ua');
               }}
               alt="ua flag"
             />
@@ -43,8 +48,7 @@ export default function LangPopUp() {
               src="en-icon.png"
               className={css.flag}
               onClick={() => {
-                dispatch(changeLangauge('en'));
-                setIsPopUpOpen(false);
+                handleClick('en');
               }}
               alt="uk flag"
             />
