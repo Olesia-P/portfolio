@@ -4,7 +4,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import cx from 'classnames';
 import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
-import css from './contacts.module.scss';
+import css from './contacts-section.module.scss';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 export default function Contacts({ contactsContent }) {

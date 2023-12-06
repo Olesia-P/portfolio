@@ -47,18 +47,21 @@
         text-decoration: underline;
 
         &:hover {
-            span:first-child {
+            span:first-of-type {
                 color: $red
             }
 
-            span:last-child {
+            span:last-of-type {
                 color: $white
             }
         }
 
-        span:nth-child(2) {
-            font-size: $size-huge;
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
         }
+
     }
 
     .textWrap {
@@ -83,11 +86,23 @@
 
 @include lowTablet {
     .container {
+
+        .link {
+            text-decoration: none;
+
+            .icon {
+                margin: 0;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
         .textWrap {
             .quote {
                 font-size: calc($size-small-header - 2pt);
                 padding: 1rem;
             }
         }
+
     }
 }

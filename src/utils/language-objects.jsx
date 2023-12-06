@@ -522,13 +522,16 @@ export const en = {
     link: () => (
       <>
         <span> This portfolio </span> &nbsp;
-        <span>
-          <FaGithub />
-        </span>{' '}
-        &nbsp;
         <span> description and code →</span>
       </>
     ),
+    linkMobile: () => (
+      <>
+        {' '}
+        This portfolio description and code → &nbsp; <FaGithub />{' '}
+      </>
+    ),
+
     quotes: [
       'There is always one more bug to fix.',
       'If debugging is the process of removing bugs, then programming must be the process of putting them in.',
