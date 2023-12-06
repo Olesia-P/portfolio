@@ -5,14 +5,19 @@ import { changeLangauge } from '../../store/modules/mixed-purpose-slice';
 import { getCookie, setCookie } from '../../utils/cookie';
 
 export default function LangPopUp() {
-  const [isPopUpOpen, setIsPopUpOpen] = useState(true);
+  const [isPopUpOpen, setIsPopUpOpen] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
     const storedLanguage = getCookie('language');
     if (storedLanguage) {
       setIsPopUpOpen(false);
+      dispatch(changeLangauge(storedLanguage));
     }
+    if (!storedLanguage) {
+      setIsPopUpOpen(true);
+    }
+
     // eslint-disable-next-line no-console
     console.log('storedLanguage', storedLanguage);
   }, [isPopUpOpen]);
