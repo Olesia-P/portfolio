@@ -42,22 +42,22 @@
         text-align: center;
         font-weight: 600;
         display: block;
-        padding: 1rem 0 0.5rem 0;
+        padding: 1rem 1rem 0.5rem 1rem;
         @include dfc;
+        text-decoration: underline;
 
         &:hover {
-            .text1 {
+            span:first-child {
                 color: $red
             }
 
-            .text2 {
+            span:last-child {
                 color: $white
             }
         }
 
-        .icon {
-            width: 2rem;
-            height: 2rem;
+        span:nth-child(2) {
+            font-size: $size-huge;
         }
     }
 
@@ -72,7 +72,7 @@
             background-color: $asphalt;
             font-weight: 600;
             color: white;
-            padding: 0.5rem;
+            padding: 1.5rem;
             border-radius: $standart-b-radius;
             box-shadow: $main-shadow;
             cursor: pointer;

@@ -6,7 +6,7 @@ export default function Meta() {
       <title>Portfolio Junior Developer Olesia Pryhun</title>
 
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
 
       <meta name="title" content="Portfolio Junior Developer Olesia Pryhun" />
       <meta name="description" content="Pet projects are pokemons! " />

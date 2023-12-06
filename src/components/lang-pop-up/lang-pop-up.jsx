@@ -1,11 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import css from './lang-pop-up.module.scss';
 import { changeLangauge } from '../../store/modules/mixed-purpose-slice';
+import { getCookie } from '../../utils/cookie';
 
 export default function LangPopUp() {
   const [isPopUpOpen, setIsPopUpOpen] = useState(true);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    const storedLanguage = getCookie('language');
+    if (storedLanguage) {
+      setIsPopUpOpen(false);
+    }
+    // eslint-disable-next-line no-console
+    console.log('storedLanguage', storedLanguage);
+  }, [isPopUpOpen]);
 
   return (
     isPopUpOpen && (

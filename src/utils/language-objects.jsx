@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
 
 export const en = {
   navigation: {
@@ -6,7 +7,7 @@ export const en = {
       { name: 'About me', color: 'red', sectionId: 'about' },
       { name: 'Skills', color: 'orange', sectionId: 'skills' },
       { name: 'Projects', color: 'yellow', sectionId: 'projects' },
-      { name: 'Contacts', color: 'green', sectionId: 'about' },
+      { name: 'Contacts', color: 'green', sectionId: 'contacts' },
     ],
 
     cv: { name: 'CV', color: 'blue', pdf: '/cv/template.pdf' },
@@ -518,6 +519,16 @@ export const en = {
   },
 
   footer: {
+    link: () => (
+      <>
+        <span> This portfolio </span> &nbsp;
+        <span>
+          <FaGithub />
+        </span>{' '}
+        &nbsp;
+        <span> description and code →</span>
+      </>
+    ),
     quotes: [
       'There is always one more bug to fix.',
       'If debugging is the process of removing bugs, then programming must be the process of putting them in.',
@@ -536,6 +547,10 @@ export const en = {
       'There is only one thing more painful than learning from experience and that is not learning from experience.',
       'If the code doesn`t bother you, don`t bother it.',
     ],
+  },
+
+  contancts: {
+    header: 'Contacts',
   },
 };
 
@@ -1060,6 +1075,16 @@ export const ua = {
   },
 
   footer: {
+    link: () => (
+      <>
+        <span> Опис та код </span> &nbsp;
+        <span>
+          <FaGithub />
+        </span>{' '}
+        &nbsp;
+        <span> цього портфоліо →</span>
+      </>
+    ),
     quotes: [
       'Завжди є ще одна помилка, яку потрібно виправити.',
       'Якщо дебагінг — це процес усунення помилок, то програмування мабуть процес їх впровадження.',
@@ -1078,6 +1103,9 @@ export const ua = {
       'Є лише одна річ, більш болюча, ніж навчання на досвіді, і це не навчання на досвіді.',
       'Якщо код вас не турбує, не турбуйте його.',
     ],
+  },
+  contancts: {
+    header: 'Контакти',
   },
 };
 

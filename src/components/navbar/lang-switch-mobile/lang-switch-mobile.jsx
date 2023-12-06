@@ -3,10 +3,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import cx from 'classnames';
 import css from './lang-switch-mobile.module.scss';
 import { changeLangauge } from '../../../store/modules/mixed-purpose-slice';
+import { setCookie } from '../../../utils/cookie';
 
 export default function LangSwitchMobile() {
   const { language } = useSelector(({ mixedPurpose }) => mixedPurpose);
   const dispatch = useDispatch();
+
+  const handleLanguageChange = (lang) => {
+    dispatch(changeLangauge(lang));
+    setCookie('language', lang, 1);
+  };
 
   return (
     <li className={css.mobileLangSwitchContainer}>
@@ -15,7 +21,7 @@ export default function LangSwitchMobile() {
         src="/ua-lang.png"
         alt="ua lang"
         onClick={() => {
-          dispatch(changeLangauge('ua'));
+          handleLanguageChange('ua');
         }}
       />
 
@@ -24,7 +30,7 @@ export default function LangSwitchMobile() {
         src="/en-lang.png"
         alt="en lang"
         onClick={() => {
-          dispatch(changeLangauge('en'));
+          handleLanguageChange('en');
         }}
       />
     </li>

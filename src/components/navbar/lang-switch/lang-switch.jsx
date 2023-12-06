@@ -4,12 +4,19 @@ import cx from 'classnames';
 import css from './lang-switch.module.scss';
 import useClickOutsideClose from '../../../hooks/useOutsideClickClose';
 import { changeLangauge } from '../../../store/modules/mixed-purpose-slice';
+import { setCookie } from '../../../utils/cookie';
 
 export default function LangSwitch() {
   const { language } = useSelector(({ mixedPurpose }) => mixedPurpose);
   const dispatch = useDispatch();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const ref = useClickOutsideClose(setIsDropdownOpen, isDropdownOpen);
+
+  const handleLanguageChange = (lang) => {
+    dispatch(changeLangauge(lang));
+    setCookie('language', lang, 1);
+    setIsDropdownOpen(false);
+  };
 
   return (
     <li className={css.langSwitchContainer} ref={ref}>
@@ -32,8 +39,7 @@ export default function LangSwitch() {
           src="/ua-lang.png"
           alt="ua lang"
           onClick={() => {
-            dispatch(changeLangauge('ua'));
-            setIsDropdownOpen(false);
+            handleLanguageChange('ua');
           }}
         />
         <img
@@ -41,8 +47,7 @@ export default function LangSwitch() {
           src="/en-lang.png"
           alt="en lang"
           onClick={() => {
-            dispatch(changeLangauge('en'));
-            setIsDropdownOpen(false);
+            handleLanguageChange('en');
           }}
         />
       </div>

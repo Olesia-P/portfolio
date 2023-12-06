@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub } from 'react-icons/fa';
+
 import css from './footer.module.scss';
 
 export default function Footer({ footerContent }) {
@@ -20,9 +20,7 @@ export default function Footer({ footerContent }) {
         target="_blank"
         rel="noreferrer"
       >
-        <span className={css.text1}> This portfolio </span>&nbsp;
-        <FaGithub className={css.icon} /> &nbsp;
-        <span className={css.text2}> description and code →</span>
+        {footerContent.link()}
       </a>
       <div className={css.textWrap} onClick={() => setClick(!click)}>
         <p className={css.quote}>{quote} (c)</p>{' '}

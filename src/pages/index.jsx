@@ -8,6 +8,7 @@ import ProjectsSectionHeader from '../components/projects-section-header/project
 import Break from '../components/break/break';
 import Footer from '../components/footer/footer';
 import { content } from '../utils/language-objects';
+import Contacts from '../components/contacts/contacts';
 
 export default function Home() {
   const { language } = useSelector(({ mixedPurpose }) => mixedPurpose);
@@ -30,12 +31,11 @@ export default function Home() {
 
       <ProjectsSectionHeader projectsContent={content[language].projects} />
       {projectsContent.map((element) => (
-        <>
-          <Project content={element.content} key={element.content} />
-          <Break key={element.id} />
-        </>
+        <Project content={element.content} key={element.id} />
       ))}
 
+      <Contacts contactsContent={content[language].contancts} />
+      <Break />
       <Footer footerContent={content[language].footer} />
     </main>
   );

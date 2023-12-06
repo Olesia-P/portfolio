@@ -1,0 +1,171 @@
+@import "../../styles/main";
+
+.card {
+    background-color: $blue;
+    width: 55%;
+    height: 40rem;
+    border-radius: $standart-b-radius;
+    @include mb($asphalt);
+    margin: 0 10rem 1rem 0;
+    padding: 1rem;
+    box-shadow: $main-shadow;
+    font-family: $font-main;
+    position: relative;
+    outline: 1px solid black;
+    background-image: url("/pixel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .island {
+        width: 10rem;
+        position: absolute;
+
+        &.islandEmail {
+            top: 25%;
+            right: 12%;
+        }
+
+        &.islandPhone {
+            top: 50%;
+            left: 45%;
+        }
+
+        &.islandLinkedin {
+            top: 70%;
+            left: 10%;
+        }
+    }
+
+    .headerContacts {
+        font-size: 42pt;
+        font-family: $font-angular;
+        margin: 0.5rem 2rem;
+        color: white;
+        text-shadow: $text-shadow;
+        background-color: $light-blue;
+        width: max-content;
+        padding: 0.5rem 1rem;
+        border-radius: $standart-b-radius;
+    }
+
+    .listWrap {
+        list-style: none;
+        font-family: $font-main;
+
+        li {
+            display: flex;
+            line-height: 1;
+
+            a {
+                font-weight: 600;
+                @include dfc;
+                position: absolute;
+                background-color: rgb(238, 205, 20);
+                padding: 0.5rem;
+                border-radius: $standart-b-radius;
+                @include sb(black);
+                @include shiningAnimation;
+
+                .icon {
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: 1rem;
+
+                }
+
+                .name {
+                    font-size: $size-header;
+                }
+
+                &.contactEmail {
+                    top: 12%;
+                    right: 5%;
+                }
+
+                &.contactPhone {
+                    top: 39%;
+                    left: 40%;
+                }
+
+                &.contactLinkedin {
+                    top: 57%;
+                    left: 8%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@include ultra {
+    .card {
+        max-width: 50%;
+        margin: 0 18rem 0rem 0;
+
+
+
+
+    }
+}
+
+@include laptop {
+    .card {
+        width: 70%;
+        margin: 0 12rem 0rem 0;
+
+
+    }
+}
+
+@include tablet {
+    .card {
+        width: 90%;
+        margin: 0 1rem 0rem 1rem;
+        height: 55rem;
+
+
+
+        .listWrap {
+            li {
+                a {
+                    .name {
+                        font-size: $size-small-header;
+
+
+                    }
+
+                    .icon {
+                        width: 1.5rem;
+                        height: 1.5rem;
+
+
+                    }
+
+                    &.contactEmail {
+                        top: 17%;
+
+                    }
+
+
+
+                    &.contactLinkedin {
+                        top: 62%;
+
+                        left: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .card {
+        .headerContacts {
+            font-size: 30pt;
+
+        }
+    }
+}
