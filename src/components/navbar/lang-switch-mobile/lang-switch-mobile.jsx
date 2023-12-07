@@ -11,7 +11,7 @@ export default function LangSwitchMobile() {
 
   const handleLanguageChange = (lang) => {
     dispatch(changeLangauge(lang));
-    setCookie('language', lang, 1);
+    setCookie('language', lang, 3);
   };
 
   return (

@@ -20,12 +20,12 @@ export default function LangPopUp() {
 
     // eslint-disable-next-line no-console
     console.log('storedLanguage', storedLanguage);
-  }, [isPopUpOpen]);
+  }, []);
 
   const handleClick = (lang) => {
     dispatch(changeLangauge(lang));
     setIsPopUpOpen(false);
-    setCookie('language', lang, 1);
+    setCookie('language', lang, 3);
   };
 
   return (

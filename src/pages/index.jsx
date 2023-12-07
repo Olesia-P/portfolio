@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useSelector } from 'react-redux';
 import css from '../styles/styles-for-pages/index.module.scss';
 import AboutSection from '../components/about-section/about-section';
@@ -31,7 +31,9 @@ export default function Home() {
 
       <ProjectsSectionHeader projectsContent={content[language].projects} />
       {projectsContent.map((element) => (
-        <Project content={element.content} key={element.id} />
+        <Fragment key={element.id}>
+          <Project content={element.content} />
+        </Fragment>
       ))}
 
       <Contacts contactsContent={content[language].contancts} />
