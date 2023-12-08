@@ -8,6 +8,8 @@ export default function Typewriter({ text, delay, isAnimated }) {
 
   useEffect(() => {
     setIsActive(true);
+    setCurrentText('');
+    setCurrentIndex(0);
   }, [text]);
 
   // eslint-disable-next-line consistent-return
@@ -33,7 +35,6 @@ export default function Typewriter({ text, delay, isAnimated }) {
     <>
       <span>{currentText}</span>
       <span className={css.cursor}>_</span>
-      {/* <btn onClick={() => setIsActive(!isActive)}>button</btn> */}
     </>
   );
 }
