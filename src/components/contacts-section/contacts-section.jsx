@@ -18,7 +18,7 @@ export default function Contacts({ contactsContent }) {
     0.1,
   );
   return (
-    <div className={css.card} id="contacts" ref={contactsRef}>
+    <div className={css.card} ref={contactsRef}>
       <article>
         <h2 className={css.headerContacts}>{contactsContent.header}</h2>
 

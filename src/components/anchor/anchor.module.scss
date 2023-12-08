@@ -1,0 +1,11 @@
+@import "../../styles/main";
+
+.container {
+    position: relative;
+
+    .anchor {
+        position: absolute;
+        height: 6rem;
+        top: -6rem;
+    }
+}

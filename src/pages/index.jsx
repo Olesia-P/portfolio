@@ -9,15 +9,10 @@ import Break from '../components/break/break';
 import Footer from '../components/footer/footer';
 import { content } from '../utils/language-objects';
 import Contacts from '../components/contacts-section/contacts-section';
+import Anchor from '../components/anchor/anchor';
 
 export default function Home() {
   const { language } = useSelector(({ mixedPurpose }) => mixedPurpose);
-
-  const projectsContent = [
-    { id: 'project1', content: content[language].projects.project1Content },
-    { id: 'project2', content: content[language].projects.project2Content },
-    { id: 'project3', content: content[language].projects.project3Content },
-  ];
 
   return (
     <main className={css.container}>
@@ -34,12 +29,13 @@ export default function Home() {
       <ProjectsSectionHeader projectsContent={content[language].projects} />
 
       <section className={css.mainContentWrapper}>
-        {projectsContent.map((element) => (
-          <Fragment key={element.id}>
-            <Project content={element.content} />
+        {content[language].projects.projectsArray.map((element) => (
+          <Fragment key={element.title}>
+            <Project content={element} />
+            <Break />
           </Fragment>
         ))}
-
+        <Anchor id="contacts" />
         <Contacts contactsContent={content[language].contancts} />
         <Break />
       </section>

@@ -68,227 +68,174 @@ export const en = {
       </>
     ),
     frontSkills: [
-      { icon: '/empty.png ', name: '', iconStyle: 'empty', id1: 'f1' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'f2' },
+      { icon: '/empty.png ', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
 
       {
         icon: '/skills-icons/redux-icon.svg',
         name: 'Redux',
         iconStyle: 'circled',
-        id1: 'f9',
       },
       {
         icon: '/skills-icons/nextjs-icon.png',
         name: 'Next.js',
         iconStyle: 'circled',
-        id1: 'f8',
       },
       {
         icon: '/skills-icons/react-icon.png',
         name: 'React',
         iconStyle: 'circled',
-        id1: 'f7',
       },
       {
         icon: '/skills-icons/sass-icon.png',
         name: 'Sass/Scss',
         iconStyle: 'circled',
-        id1: 'f6',
       },
       {
         icon: '/skills-icons/js-icon.png',
         name: 'Java Script',
         iconStyle: 'circled',
-        id1: 'f5',
       },
       {
         icon: '/skills-icons/css-icon.png',
         name: 'CSS',
         iconStyle: 'circled',
-        id1: 'f4',
       },
       {
         icon: '/skills-icons/html-icon.png',
         name: 'HTML',
         iconStyle: 'circled',
-        id1: 'f3',
       },
     ],
 
     backSkills: [
-      { icon: '/empty.png ', name: '', iconStyle: 'empty', id1: 'e1' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e2' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e3' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e4' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e5' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e6' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e7' },
+      { icon: '/empty.png ', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
       {
         icon: '/skills-icons/nodejs-icon.png',
         name: ' Node.js',
         iconStyle: 'circled',
-        id1: 'e8',
       },
       {
         icon: '/skills-icons/nextjs2-icon.png',
         name: 'Next.js API',
         iconStyle: 'circled',
-        id1: 'e9',
       },
     ],
     otherSkills: [
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'o1' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'o2' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'o3' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
       {
         icon: '/empty.png',
-        name: '',
+        name: ' ',
         iconStyle: 'empty',
-        id1: 'o8',
       },
       {
         icon: '/empty.png',
-        name: '',
+        name: ' ',
         iconStyle: 'empty',
-        id1: 'o6',
       },
       {
         icon: '/skills-icons/bootstrap-icon.png',
         name: 'Bootstrap',
         iconStyle: 'circled',
-        id1: 'o4',
       },
       {
         icon: '/skills-icons/eslint-icon.png',
         name: 'ESLint',
         iconStyle: 'circled',
-        id1: 'o5',
       },
       {
         icon: '/skills-icons/postman-icon.png',
         name: 'Postman',
         iconStyle: 'circled',
-        id1: 'o7',
       },
 
       {
         icon: '/skills-icons/git-icon.png',
         name: 'Git + Bash',
         iconStyle: 'circled',
-        id1: 'o9',
       },
     ],
 
     frontSkillsMobile: [
-      // { icon: '/empty.png ', name: '', iconStyle: 'empty', id2: 'ff1' },
-      // { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ff2' },
-
       {
         icon: '/skills-icons/redux-icon.svg',
         name: 'Redux',
         iconStyle: 'circled',
-        id2: 'ff9',
       },
       {
         icon: '/skills-icons/nextjs-icon.png',
         name: 'Next.js',
         iconStyle: 'circled',
-        id2: 'ff8',
       },
       {
         icon: '/skills-icons/react-icon.png',
         name: 'React',
         iconStyle: 'circled',
-        id2: 'ff7',
       },
       {
         icon: '/skills-icons/sass-icon.png',
         name: 'Sass/Scss',
         iconStyle: 'circled',
-        id2: 'ff6',
       },
       {
         icon: '/skills-icons/js-icon.png',
         name: 'Java Script',
         iconStyle: 'circled',
-        id2: 'ff5',
       },
       {
         icon: '/skills-icons/css-icon.png',
         name: 'CSS',
         iconStyle: 'circled',
-        id2: 'ff4',
       },
       {
         icon: '/skills-icons/html-icon.png',
         name: 'HTML',
         iconStyle: 'circled',
-        id2: 'ff3',
       },
     ],
 
     backSkillsMobile: [
-      //   { icon: '/empty.png ', name: '', iconStyle: 'empty', id2: 'ee1' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee2' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee3' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee4' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee5' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee6' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee7' },
       {
         icon: '/skills-icons/nodejs-icon.png',
         name: ' Node.js',
         iconStyle: 'circled',
-        id2: 'ee8',
       },
       {
         icon: '/skills-icons/nextjs2-icon.png',
         name: 'Next.js API',
         iconStyle: 'circled',
-        id2: 'ee9',
       },
     ],
 
     otherSkillsMobile: [
-      // { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'oo1' },
-      // { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'oo2' },
-      // { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'oo3' },
-      // {
-      //   icon: '/empty.png',
-      //   name: '',
-      //   iconStyle: 'empty',
-      //   id2: 'oo8',
-      // },
-      // {
-      //   icon: '/empty.png',
-      //   name: '',
-      //   iconStyle: 'empty',
-      //   id2: 'oo6',
-      // },
       {
         icon: '/skills-icons/bootstrap-icon.png',
         name: 'Bootstrap',
         iconStyle: 'circled',
-        id2: 'oo4',
       },
       {
         icon: '/skills-icons/eslint-icon.png',
         name: 'ESLint',
         iconStyle: 'circled',
-        id2: 'oo5',
       },
       {
         icon: '/skills-icons/postman-icon.png',
         name: 'Postman',
         iconStyle: 'circled',
-        id2: 'oo7',
       },
 
       {
         icon: '/skills-icons/git-icon.png',
         name: 'Git + Bash',
         iconStyle: 'circled',
-        id2: 'oo9',
       },
     ],
   },
@@ -298,223 +245,212 @@ export const en = {
       header: 'Projects',
       text: 'Pokemons evolve... so do developers!',
     },
-    project1Content: {
-      color1: 'yellow',
-      color2: 'orange',
-      btn1: 'CODE',
-      btn2: 'SITE',
-      pokemonImg: '/pokeball.png',
-      pokemonImgSize: 'sizeS',
-      tv: 'project1',
-      screenshot: {
-        link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
-        screenshotImg:
-          '/projects-screenshots/weather-project-screenshot-small.jpg',
-      },
-      level: 'Level 1: Pokeball',
-      title: 'Project: Weather-App',
-      skills: [
-        {
-          icon: '/skills-icons/react-icon.png',
-          name: 'React',
-          id: 'p1s1',
+    projectsArray: [
+      {
+        color1: 'yellow',
+        color2: 'orange',
+        btn1: 'CODE',
+        btn2: 'SITE',
+        pokemonImg: '/pokeball.png',
+        pokemonImgSize: 'sizeS',
+        tv: 'project1',
+        screenshot: {
+          link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+          screenshotImg:
+            '/projects-screenshots/weather-project-screenshot-small.jpg',
         },
+        level: 'Level 1: Pokeball',
+        title: 'Project: Weather-App',
+        skills: [
+          {
+            icon: '/skills-icons/react-icon.png',
+            name: 'React',
+          },
 
-        {
-          icon: '/skills-icons/sass-icon.png',
-          name: 'Sass/Scss',
-          id: 'p1s3',
-        },
-        {
-          icon: '/skills-icons/git-icon.png',
-          name: 'Git + Bash',
-          id: 'p1s2',
-        },
-      ],
-      description: [
-        'You have to start somewhere! My first React project - simple, stylish... well, merely usefuls, but working!',
-      ],
+          {
+            icon: '/skills-icons/sass-icon.png',
+            name: 'Sass/Scss',
+          },
+          {
+            icon: '/skills-icons/git-icon.png',
+            name: 'Git + Bash',
+          },
+        ],
+        description: [
+          'You have to start somewhere! My first React project - simple, stylish... well, merely usefuls, but working!',
+        ],
 
-      learned: {
-        title: 'What did I learn?',
-        list: [
-          'Making independent and reusable components;',
-          'Using external API;',
-          'Making HTTP requests using Axios;',
-          'Using SCSS and CSS modules;',
-          'Creating responsive layouts;',
-          'Using libraries (e.g. "classnames", "react-animated-weather")',
-        ],
-      },
-      features: {
-        title: 'Features',
-        list: [
-          "Type a city name to check today's weather and the weather forecast for 6 days;",
-          'You can switch between Fahrenheit and Celsius;',
-          'Error pop-up shows if the city is typed wrong;',
-          'Submit button is disabled if input field is empty.',
-        ],
-      },
-      codeLink: 'https://github.com/Olesia-P/weather-react',
-      siteLink: 'https://courageous-zuccutto-ed2e98.netlify.app/',
-    },
-    project2Content: {
-      color1: 'green',
-      color2: 'blue',
-      btn1: 'CODE',
-      btn2: 'SITE',
-      pokemonImg: '/pichu.png',
-      pokemonImgSize: 'sizeS',
-      tv: 'project2',
-      screenshot: {
-        link: 'https://superlative-kleicha-ac1778.netlify.app/',
-        screenshotImg:
-          '/projects-screenshots/rozetka-project-screenshot-small.png',
-      },
-      level: 'Level 2: Pichu',
-      title: 'Project: Visual "Rozetka" homepage copy',
-      skills: [
-        {
-          icon: '/skills-icons/nextjs-icon.png',
-          name: 'Next.js',
-          id: 'p2s1',
+        learned: {
+          title: 'What did I learn?',
+          list: [
+            'Making independent and reusable components;',
+            'Using external API;',
+            'Making HTTP requests using Axios;',
+            'Using SCSS and CSS modules;',
+            'Creating responsive layouts;',
+            'Using libraries (e.g. "classnames", "react-animated-weather")',
+          ],
         },
+        features: {
+          title: 'Features',
+          list: [
+            "Type a city name to check today's weather and the weather forecast for 6 days;",
+            'You can switch between Fahrenheit and Celsius;',
+            'Error pop-up shows if the city is typed wrong;',
+            'Submit button is disabled if input field is empty.',
+          ],
+        },
+        codeLink: 'https://github.com/Olesia-P/weather-react',
+        siteLink: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+      },
 
-        {
-          icon: '/skills-icons/sass-icon.png',
-          name: 'Sass/Scss',
-          id: 'p2s2',
+      {
+        color1: 'green',
+        color2: 'blue',
+        btn1: 'CODE',
+        btn2: 'SITE',
+        pokemonImg: '/pichu.png',
+        pokemonImgSize: 'sizeS',
+        tv: 'project2',
+        screenshot: {
+          link: 'https://superlative-kleicha-ac1778.netlify.app/',
+          screenshotImg:
+            '/projects-screenshots/rozetka-project-screenshot-small.png',
         },
-        {
-          icon: '/skills-icons/redux-icon.svg',
-          name: 'Redux',
-          id: 'p2s3',
-        },
-        {
-          icon: '/skills-icons/git-icon.png',
-          name: 'Git + Bash',
-          id: 'p2s4',
-        },
-      ],
-      description: [
-        'Rozetka.com.ua is a famous Ukrainian online shopping website.',
-        'I used its homepage as a template for practicing reproducing a VISUAL layout as close to the original as possible.',
-        'Original “Rozetka” website is often updated and has design changes. This project was made some time ago, so it can look a bit different from the original now.',
-      ],
+        level: 'Level 2: Pichu',
+        title: 'Project: Visual "Rozetka" homepage copy',
+        skills: [
+          {
+            icon: '/skills-icons/nextjs-icon.png',
+            name: 'Next.js',
+          },
 
-      learned: {
-        title: 'What did I learn?',
-        list: [
-          'Building complex adaptive layouts (for devices ranging from smartphones to large desktop screens);',
-          'Implementing "hamburger" menu navigation;',
-          'Providing  cross-browser compatibility;',
-          'Using advanced React features, like HOCs and custom hooks;',
-          'Creating pop-ups;',
-          'Using Redux for global state management.',
+          {
+            icon: '/skills-icons/sass-icon.png',
+            name: 'Sass/Scss',
+          },
+          {
+            icon: '/skills-icons/redux-icon.svg',
+            name: 'Redux',
+          },
+          {
+            icon: '/skills-icons/git-icon.png',
+            name: 'Git + Bash',
+          },
         ],
-      },
-      features: {
-        title: 'Features',
-        list: [
-          'It is a VISUAL copy! But I added some functionality as an opportunity to practise;',
-          'You can add products to the cart using “buy” button under the product picture;',
-          'You can increase or decrease the amount of products in the cart;',
-          'You can delete products from the cart;',
-          'Note: This website has the Ukrainian language version only.',
+        description: [
+          'Rozetka.com.ua is a famous Ukrainian online shopping website.',
+          'I used its homepage as a template for practicing reproducing a VISUAL layout as close to the original as possible.',
+          'Original “Rozetka” website is often updated and has design changes. This project was made some time ago, so it can look a bit different from the original now.',
         ],
-      },
-      codeLink: 'https://github.com/Olesia-P/rozetka',
-      siteLink: 'https://superlative-kleicha-ac1778.netlify.app/',
-    },
 
-    project3Content: {
-      color1: 'purple',
-      color2: 'red',
-      btn1: 'CODE',
-      btn2: 'SITE',
-      pokemonImg: '/pikachu.png',
-      pokemonImgSize: 'sizeM',
-      tv: 'project3',
-      screenshot: {
-        link: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
-        screenshotImg:
-          '/projects-screenshots/screenshot-project-fake-shop-small.png',
+        learned: {
+          title: 'What did I learn?',
+          list: [
+            'Building complex adaptive layouts (for devices ranging from smartphones to large desktop screens);',
+            'Implementing "hamburger" menu navigation;',
+            'Providing  cross-browser compatibility;',
+            'Using advanced React features, like HOCs and custom hooks;',
+            'Creating pop-ups;',
+            'Using Redux for global state management.',
+          ],
+        },
+        features: {
+          title: 'Features',
+          list: [
+            'It is a VISUAL copy! But I added some functionality as an opportunity to practise;',
+            'You can add products to the cart using “buy” button under the product picture;',
+            'You can increase or decrease the amount of products in the cart;',
+            'You can delete products from the cart;',
+            'Note: This website has the Ukrainian language version only.',
+          ],
+        },
+        codeLink: 'https://github.com/Olesia-P/rozetka',
+        siteLink: 'https://superlative-kleicha-ac1778.netlify.app/',
       },
-      level: 'Level 3: Pikachu',
-      title: 'Project: Fake online shop',
-      skills: [
-        {
-          icon: '/skills-icons/nextjs-icon.png',
-          name: 'Next.js',
-          id: 'p3s1',
-        },
-        {
-          icon: '/skills-icons/nextjs2-icon.png',
-          name: 'Next.js API',
-          iconStyle: 'circled',
-          id: 'p3s2',
-        },
-        {
-          icon: '/skills-icons/postman-icon.png',
-          name: 'Postman',
-          iconStyle: 'circled',
-          id: 'p3s3',
-        },
-        {
-          icon: '/skills-icons/sass-icon.png',
-          name: 'Sass/Scss',
-          id: 'p3s4',
-        },
-        {
-          icon: '/skills-icons/redux-icon.svg',
-          name: 'Redux',
-          id: 'p3s5',
-        },
-        {
-          icon: '/skills-icons/git-icon.png',
-          name: 'Git + Bash',
-          id: 'p3s6',
-        },
-        {
-          icon: '/skills-icons/eslint-icon.png',
-          name: 'ESLint',
-          iconStyle: 'circled',
-          id: 'p3s7',
-        },
-      ],
-      description: [
-        'This fake shop imitates real online shopping experience. You don’t pay, and you will never get your order, but all other things look and function quite the way they are supposed to.',
-        'Products objects are received from the external API. Cart and order logic is implemented using custom-built local Next.js API.',
-      ],
 
-      learned: {
-        title: 'What did I learn?',
-        list: [
-          'Comprehensive processing of external API data;',
-          'Building a small local Next.js API;',
-          'Using Redux Toolkit for queries and data management;',
-          'Implementing a simple search engine;',
-          'Creating and managing URL hierarchy using Next Router;',
-          'Implementing query-based catalog filtering;',
-          'Building input forms with thorough validation;',
-          'Configuring ESlint ruleset;',
-          'Implementing ‘Husky’ pre-commit check.',
+      {
+        color1: 'purple',
+        color2: 'red',
+        btn1: 'CODE',
+        btn2: 'SITE',
+        pokemonImg: '/pikachu.png',
+        pokemonImgSize: 'sizeM',
+        tv: 'project3',
+        screenshot: {
+          link: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
+          screenshotImg:
+            '/projects-screenshots/screenshot-project-fake-shop-small.png',
+        },
+        level: 'Level 3: Pikachu',
+        title: 'Project: Fake online shop',
+        skills: [
+          {
+            icon: '/skills-icons/nextjs-icon.png',
+            name: 'Next.js',
+          },
+          {
+            icon: '/skills-icons/nextjs2-icon.png',
+            name: 'Next.js API',
+            iconStyle: 'circled',
+          },
+          {
+            icon: '/skills-icons/postman-icon.png',
+            name: 'Postman',
+            iconStyle: 'circled',
+          },
+          {
+            icon: '/skills-icons/sass-icon.png',
+            name: 'Sass/Scss',
+          },
+          {
+            icon: '/skills-icons/redux-icon.svg',
+            name: 'Redux',
+          },
+          {
+            icon: '/skills-icons/git-icon.png',
+            name: 'Git + Bash',
+          },
+          {
+            icon: '/skills-icons/eslint-icon.png',
+            name: 'ESLint',
+            iconStyle: 'circled',
+          },
         ],
-      },
-      features: {
-        title: 'Features',
-        list: [
-          'Navigate the catalog using filters (category, name, limit) or type the product’s name in the “search” field;',
-          'Click on a product to read the full description;',
-          'Add products to the cart. In the cart you can delete them, increase or decrease the amount (the final cost will be calculated accordingly);',
-          'Click “Go to checkout”, fill in the delivery information and submit the order;',
-          'The project has responsive layout (available for devices ranging from smartphones to large desktop screens);',
-          'All UI components are custom-made.',
+        description: [
+          'This fake shop imitates real online shopping experience. You don’t pay, and you will never get your order, but all other things look and function quite the way they are supposed to.',
+          'Products objects are received from the external API. Cart and order logic is implemented using custom-built local Next.js API.',
         ],
+
+        learned: {
+          title: 'What did I learn?',
+          list: [
+            'Comprehensive processing of external API data;',
+            'Building a small local Next.js API;',
+            'Using Redux Toolkit for queries and data management;',
+            'Implementing a simple search engine;',
+            'Creating and managing URL hierarchy using Next Router;',
+            'Implementing query-based catalog filtering;',
+            'Building input forms with thorough validation;',
+            'Configuring ESlint ruleset;',
+            'Implementing ‘Husky’ pre-commit check.',
+          ],
+        },
+        features: {
+          title: 'Features',
+          list: [
+            'Navigate the catalog using filters (category, name, limit) or type the product’s name in the “search” field;',
+            'Click on a product to read the full description;',
+            'Add products to the cart. In the cart you can delete them, increase or decrease the amount (the final cost will be calculated accordingly);',
+            'Click “Go to checkout”, fill in the delivery information and submit the order;',
+            'The project has responsive layout (available for devices ranging from smartphones to large desktop screens);',
+            'All UI components are custom-made.',
+          ],
+        },
+        codeLink: 'https://github.com/Olesia-P/fake-shop',
+        siteLink: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
       },
-      codeLink: 'https://github.com/Olesia-P/fake-shop',
-      siteLink: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
-    },
+    ],
   },
 
   footer: {
@@ -615,227 +551,174 @@ export const ua = {
       </>
     ),
     frontSkills: [
-      { icon: '/empty.png ', name: '', iconStyle: 'empty', id1: 'f1' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'f2' },
+      { icon: '/empty.png ', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png', name: '', iconStyle: 'empty' },
 
       {
         icon: '/skills-icons/redux-icon.svg',
         name: 'Redux',
         iconStyle: 'circled',
-        id1: 'f9',
       },
       {
         icon: '/skills-icons/nextjs-icon.png',
         name: 'Next.js',
         iconStyle: 'circled',
-        id1: 'f8',
       },
       {
         icon: '/skills-icons/react-icon.png',
         name: 'React',
         iconStyle: 'circled',
-        id1: 'f7',
       },
       {
         icon: '/skills-icons/sass-icon.png',
         name: 'Sass/Scss',
         iconStyle: 'circled',
-        id1: 'f6',
       },
       {
         icon: '/skills-icons/js-icon.png',
         name: 'Java Script',
         iconStyle: 'circled',
-        id1: 'f5',
       },
       {
         icon: '/skills-icons/css-icon.png',
         name: 'CSS',
         iconStyle: 'circled',
-        id1: 'f4',
       },
       {
         icon: '/skills-icons/html-icon.png',
         name: 'HTML',
         iconStyle: 'circled',
-        id1: 'f3',
       },
     ],
 
     backSkills: [
-      { icon: '/empty.png ', name: '', iconStyle: 'empty', id1: 'e1' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e2' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e3' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e4' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e5' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e6' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'e7' },
+      { icon: '/empty.png ', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png', name: '', iconStyle: 'empty' },
       {
         icon: '/skills-icons/nodejs-icon.png',
         name: ' Node.js',
         iconStyle: 'circled',
-        id1: 'e8',
       },
       {
         icon: '/skills-icons/nextjs2-icon.png',
         name: 'Next.js API',
         iconStyle: 'circled',
-        id1: 'e9',
       },
     ],
     otherSkills: [
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'o1' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'o2' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty', id1: 'o3' },
+      { icon: '/empty.png', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png', name: '', iconStyle: 'empty' },
       {
         icon: '/empty.png',
         name: '',
         iconStyle: 'empty',
-        id1: 'o8',
       },
       {
         icon: '/empty.png',
         name: '',
         iconStyle: 'empty',
-        id1: 'o6',
       },
       {
         icon: '/skills-icons/bootstrap-icon.png',
         name: 'Bootstrap',
         iconStyle: 'circled',
-        id1: 'o4',
       },
       {
         icon: '/skills-icons/eslint-icon.png',
         name: 'ESLint',
         iconStyle: 'circled',
-        id1: 'o5',
       },
       {
         icon: '/skills-icons/postman-icon.png',
         name: 'Postman',
         iconStyle: 'circled',
-        id1: 'o7',
       },
 
       {
         icon: '/skills-icons/git-icon.png',
         name: 'Git + Bash',
         iconStyle: 'circled',
-        id1: 'o9',
       },
     ],
 
     frontSkillsMobile: [
-      // { icon: '/empty.png ', name: '', iconStyle: 'empty', id2: 'ff1' },
-      // { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ff2' },
-
       {
         icon: '/skills-icons/redux-icon.svg',
         name: 'Redux',
         iconStyle: 'circled',
-        id2: 'ff9',
       },
       {
         icon: '/skills-icons/nextjs-icon.png',
         name: 'Next.js',
         iconStyle: 'circled',
-        id2: 'ff8',
       },
       {
         icon: '/skills-icons/react-icon.png',
         name: 'React',
         iconStyle: 'circled',
-        id2: 'ff7',
       },
       {
         icon: '/skills-icons/sass-icon.png',
         name: 'Sass/Scss',
         iconStyle: 'circled',
-        id2: 'ff6',
       },
       {
         icon: '/skills-icons/js-icon.png',
         name: 'Java Script',
         iconStyle: 'circled',
-        id2: 'ff5',
       },
       {
         icon: '/skills-icons/css-icon.png',
         name: 'CSS',
         iconStyle: 'circled',
-        id2: 'ff4',
       },
       {
         icon: '/skills-icons/html-icon.png',
         name: 'HTML',
         iconStyle: 'circled',
-        id2: 'ff3',
       },
     ],
 
     backSkillsMobile: [
-      //   { icon: '/empty.png ', name: '', iconStyle: 'empty', id2: 'ee1' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee2' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee3' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee4' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee5' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee6' },
-      //   { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'ee7' },
       {
         icon: '/skills-icons/nodejs-icon.png',
         name: ' Node.js',
         iconStyle: 'circled',
-        id2: 'ee8',
       },
       {
         icon: '/skills-icons/nextjs2-icon.png',
         name: 'Next.js API',
         iconStyle: 'circled',
-        id2: 'ee9',
       },
     ],
 
     otherSkillsMobile: [
-      // { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'oo1' },
-      // { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'oo2' },
-      // { icon: '/empty.png', name: '', iconStyle: 'empty', id2: 'oo3' },
-      // {
-      //   icon: '/empty.png',
-      //   name: '',
-      //   iconStyle: 'empty',
-      //   id2: 'oo8',
-      // },
-      // {
-      //   icon: '/empty.png',
-      //   name: '',
-      //   iconStyle: 'empty',
-      //   id2: 'oo6',
-      // },
       {
         icon: '/skills-icons/bootstrap-icon.png',
         name: 'Bootstrap',
         iconStyle: 'circled',
-        id2: 'oo4',
       },
       {
         icon: '/skills-icons/eslint-icon.png',
         name: 'ESLint',
         iconStyle: 'circled',
-        id2: 'oo5',
       },
       {
         icon: '/skills-icons/postman-icon.png',
         name: 'Postman',
         iconStyle: 'circled',
-        id2: 'oo7',
       },
 
       {
         icon: '/skills-icons/git-icon.png',
         name: 'Git + Bash',
         iconStyle: 'circled',
-        id2: 'oo9',
       },
     ],
   },
@@ -845,224 +728,212 @@ export const ua = {
       header: 'Проєкти',
       text: 'Покемони еволюціонують... як і розробники!',
     },
-    project1Content: {
-      color1: 'yellow',
-      color2: 'orange',
-      btn1: 'КОД',
-      btn2: 'САЙТ',
-      pokemonImg: '/pokeball.png',
-      pokemonImgSize: 'sizeS',
-      tv: 'project1',
-      screenshot: {
-        link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
-        screenshotImg:
-          '/projects-screenshots/weather-project-screenshot-small.jpg',
-      },
-      level: 'Рівень 1: Покебол',
-      title: 'Проєкт: Погода',
-      skills: [
-        {
-          icon: '/skills-icons/react-icon.png',
-          name: 'React',
-          id: 'p1s1',
+    projectsArray: [
+      {
+        color1: 'yellow',
+        color2: 'orange',
+        btn1: 'КОД',
+        btn2: 'САЙТ',
+        pokemonImg: '/pokeball.png',
+        pokemonImgSize: 'sizeS',
+        tv: 'project1',
+        screenshot: {
+          link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+          screenshotImg:
+            '/projects-screenshots/weather-project-screenshot-small.jpg',
         },
+        level: 'Рівень 1: Покебол',
+        title: 'Проєкт: Погода',
+        skills: [
+          {
+            icon: '/skills-icons/react-icon.png',
+            name: 'React',
+          },
 
-        {
-          icon: '/skills-icons/sass-icon.png',
-          name: 'Sass/Scss',
-          id: 'p1s3',
-        },
-        {
-          icon: '/skills-icons/git-icon.png',
-          name: 'Git + Bash',
-          id: 'p1s2',
-        },
-      ],
-      description: [
-        'З чогось треба починати! Мій перший React проєкт - простий, стильний... не дуже корисний, але працює!',
-      ],
-
-      learned: {
-        title: 'Чого я навчилась?',
-        list: [
-          'Створювати незалежні компоненти багаторазового використання;',
-          'Використовувати зовнішній API;',
-          'Робити HTTP запити використовуючи Axios;',
-          'Використовувати SCSS та CSS модулі;',
-          'Реалізовувати адаптивні дизайни;',
-          'Використовувати бібліотеки (напр. "classnames", "react-animated-weather")',
+          {
+            icon: '/skills-icons/sass-icon.png',
+            name: 'Sass/Scss',
+          },
+          {
+            icon: '/skills-icons/git-icon.png',
+            name: 'Git + Bash',
+          },
         ],
-      },
-      features: {
-        title: 'Функціонал',
-        list: [
-          'Введіть назву міста, щоб перевірити сьогоднішню погоду та прогноз погоди на 6 днів;',
-          'Ви можете перемикатися між Фаренгейтом та Цельсієм;',
-          'Якщо місто введено невірно, спливає вікно з повідомленням про помилку;',
-          'Кнопка пошуку не активна, якщо поле введення порожнє.',
+        description: [
+          'З чогось треба починати! Мій перший React проєкт - простий, стильний... не дуже корисний, але працює!',
         ],
-      },
-      codeLink: 'https://github.com/Olesia-P/weather-react',
-      siteLink: 'https://courageous-zuccutto-ed2e98.netlify.app/',
-    },
 
-    project2Content: {
-      color1: 'green',
-      color2: 'blue',
-      btn1: 'КОД',
-      btn2: 'САЙТ',
-      pokemonImg: '/pichu.png',
-      pokemonImgSize: 'sizeS',
-      tv: 'project2',
-      screenshot: {
-        link: 'https://superlative-kleicha-ac1778.netlify.app/',
-        screenshotImg:
-          '/projects-screenshots/rozetka-project-screenshot-small.png',
+        learned: {
+          title: 'Чого я навчилась?',
+          list: [
+            'Створювати незалежні компоненти багаторазового використання;',
+            'Використовувати зовнішній API;',
+            'Робити HTTP запити використовуючи Axios;',
+            'Використовувати SCSS та CSS модулі;',
+            'Реалізовувати адаптивні дизайни;',
+            'Використовувати бібліотеки (напр. "classnames", "react-animated-weather")',
+          ],
+        },
+        features: {
+          title: 'Функціонал',
+          list: [
+            'Введіть назву міста, щоб перевірити сьогоднішню погоду та прогноз погоди на 6 днів;',
+            'Ви можете перемикатися між Фаренгейтом та Цельсієм;',
+            'Якщо місто введено невірно, спливає вікно з повідомленням про помилку;',
+            'Кнопка пошуку не активна, якщо поле введення порожнє.',
+          ],
+        },
+        codeLink: 'https://github.com/Olesia-P/weather-react',
+        siteLink: 'https://courageous-zuccutto-ed2e98.netlify.app/',
       },
-      level: 'Рівень 2: Пічу',
-      title: 'Проєкт: Візуальна копія "Розетки"',
-      skills: [
-        {
-          icon: '/skills-icons/nextjs-icon.png',
-          name: 'Next.js',
-          id: 'p2s1',
-        },
 
-        {
-          icon: '/skills-icons/sass-icon.png',
-          name: 'Sass/Scss',
-          id: 'p2s2',
+      {
+        color1: 'green',
+        color2: 'blue',
+        btn1: 'КОД',
+        btn2: 'САЙТ',
+        pokemonImg: '/pichu.png',
+        pokemonImgSize: 'sizeS',
+        tv: 'project2',
+        screenshot: {
+          link: 'https://superlative-kleicha-ac1778.netlify.app/',
+          screenshotImg:
+            '/projects-screenshots/rozetka-project-screenshot-small.png',
         },
-        {
-          icon: '/skills-icons/redux-icon.svg',
-          name: 'Redux',
-          id: 'p2s3',
-        },
-        {
-          icon: '/skills-icons/git-icon.png',
-          name: 'Git + Bash',
-          id: 'p2s4',
-        },
-      ],
-      description: [
-        'Rozetka.com.ua — це відомий український сайт для покупок онлайн.',
-        'Я використала його ДОМАШНЮ СТОРІНКУ як шаблон для практики відтворення ВІЗУАЛЬНОГО дизайну, намагаючись отримати результат максимально ідентичний оригіналу.',
-        'Оригінальний сайт "Розетка" часто оновлюється та змінює свій дизайн. Цей проєкт було створено деякий час тому, і зараз він може виглядати трохи інакше, ніж оригінал.',
-      ],
-      learned: {
-        title: 'Чого я навчилась?',
-        list: [
-          'Реалізація комплексних адаптивних дизайнів (для пристроїв від смартфонів до великих моніторів);',
-          'Створення меню навігацї по типу "hamburger";',
-          'Забезпечення кросбраузерної сумісності;',
-          'Використання просунутих засобів React, таких як HOC та custom hooks;',
-          'Створення спливаючих вікон;',
-          'Використання Redux для глобального менеджменту стейтів.',
+        level: 'Рівень 2: Пічу',
+        title: 'Проєкт: Візуальна копія "Розетки"',
+        skills: [
+          {
+            icon: '/skills-icons/nextjs-icon.png',
+            name: 'Next.js',
+          },
+
+          {
+            icon: '/skills-icons/sass-icon.png',
+            name: 'Sass/Scss',
+          },
+          {
+            icon: '/skills-icons/redux-icon.svg',
+            name: 'Redux',
+          },
+          {
+            icon: '/skills-icons/git-icon.png',
+            name: 'Git + Bash',
+          },
         ],
-      },
-      features: {
-        title: 'Функціонал',
-        list: [
-          'Це ВІЗУАЛЬНА копія! Але я додала деякий функціонал, щоб скористатися можливістю потренуватися;',
-          'Ви можете додати товари в кошик, натиснувши кнопку «купити» під зображенням продукту;',
-          'Ви можете збільшити або зменшити кількість продуктів у кошику;',
-          'Ви можете видалити продукти з кошика;',
-          'Примітка: Цей сайт має лише україномовну версію.',
+        description: [
+          'Rozetka.com.ua — це відомий український сайт для покупок онлайн.',
+          'Я використала його ДОМАШНЮ СТОРІНКУ як шаблон для практики відтворення ВІЗУАЛЬНОГО дизайну, намагаючись отримати результат максимально ідентичний оригіналу.',
+          'Оригінальний сайт "Розетка" часто оновлюється та змінює свій дизайн. Цей проєкт було створено деякий час тому, і зараз він може виглядати трохи інакше, ніж оригінал.',
         ],
+        learned: {
+          title: 'Чого я навчилась?',
+          list: [
+            'Реалізація комплексних адаптивних дизайнів (для пристроїв від смартфонів до великих моніторів);',
+            'Створення меню навігацї по типу "hamburger";',
+            'Забезпечення кросбраузерної сумісності;',
+            'Використання просунутих засобів React, таких як HOC та custom hooks;',
+            'Створення спливаючих вікон;',
+            'Використання Redux для глобального менеджменту стейтів.',
+          ],
+        },
+        features: {
+          title: 'Функціонал',
+          list: [
+            'Це ВІЗУАЛЬНА копія! Але я додала деякий функціонал, щоб скористатися можливістю потренуватися;',
+            'Ви можете додати товари в кошик, натиснувши кнопку «купити» під зображенням продукту;',
+            'Ви можете збільшити або зменшити кількість продуктів у кошику;',
+            'Ви можете видалити продукти з кошика;',
+            'Примітка: Цей сайт має лише україномовну версію.',
+          ],
+        },
+        codeLink: 'https://github.com/Olesia-P/rozetka',
+        siteLink: 'https://superlative-kleicha-ac1778.netlify.app/',
       },
-      codeLink: 'https://github.com/Olesia-P/rozetka',
-      siteLink: 'https://superlative-kleicha-ac1778.netlify.app/',
-    },
 
-    project3Content: {
-      color1: 'purple',
-      color2: 'red',
-      btn1: 'КОД',
-      btn2: 'САЙТ',
-      pokemonImg: '/pikachu.png',
-      pokemonImgSize: 'sizeM',
-      tv: 'project3',
-      screenshot: {
-        link: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
-        screenshotImg:
-          '/projects-screenshots/screenshot-project-fake-shop-small.png',
-      },
-      level: 'Рівень 3: Пікачу',
-      title: 'Проєкт: Імітація інтернет-магазину',
-      skills: [
-        {
-          icon: '/skills-icons/nextjs-icon.png',
-          name: 'Next.js',
-          id: 'p3s1',
+      {
+        color1: 'purple',
+        color2: 'red',
+        btn1: 'КОД',
+        btn2: 'САЙТ',
+        pokemonImg: '/pikachu.png',
+        pokemonImgSize: 'sizeM',
+        tv: 'project3',
+        screenshot: {
+          link: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
+          screenshotImg:
+            '/projects-screenshots/screenshot-project-fake-shop-small.png',
         },
-        {
-          icon: '/skills-icons/nextjs2-icon.png',
-          name: 'Next.js API',
-          iconStyle: 'circled',
-          id: 'p3s2',
-        },
-        {
-          icon: '/skills-icons/postman-icon.png',
-          name: 'Postman',
-          iconStyle: 'circled',
-          id: 'p3s3',
-        },
-        {
-          icon: '/skills-icons/sass-icon.png',
-          name: 'Sass/Scss',
-          id: 'p3s4',
-        },
-        {
-          icon: '/skills-icons/redux-icon.svg',
-          name: 'Redux',
-          id: 'p3s5',
-        },
-        {
-          icon: '/skills-icons/git-icon.png',
-          name: 'Git + Bash',
-          id: 'p3s6',
-        },
-        {
-          icon: '/skills-icons/eslint-icon.png',
-          name: 'ESLint',
-          iconStyle: 'circled',
-          id: 'p3s7',
-        },
-      ],
-      description: [
-        'Цей штучний магазин імітує справжній досвід онлайн-покупок. Ви не платите і ніколи не отримаєте своє замовлення, але всі інші речі виглядають і працюють цілком так, як повинні.',
-        'Об’єкти продуктів отримуються із зовнішнього API. Логіка кошика та замовлення реалізована за допомогою написаного мною маленького локального Next.js API.',
-      ],
-
-      learned: {
-        title: 'Чого я навчилась?',
-        list: [
-          'Комплексної обробки даних, отриманих із зовнішнього API;',
-          'Створення невеликого локального Next.js API;',
-          'Використання RTK Query для запитів та керування даними;',
-          'Реалізація простої пошукової системи;',
-          'Створення ієрархії URL-адрес і керування нею за допомогою Next Router;',
-          'Реалізація query-based фільтрації каталогу;',
-          'Створення input forms з ретельною валідацією;',
-          'Налаштування правил ESlint;',
-
-          'Реалізація ‘Husky’ pre-commit check.',
+        level: 'Рівень 3: Пікачу',
+        title: 'Проєкт: Імітація інтернет-магазину',
+        skills: [
+          {
+            icon: '/skills-icons/nextjs-icon.png',
+            name: 'Next.js',
+          },
+          {
+            icon: '/skills-icons/nextjs2-icon.png',
+            name: 'Next.js API',
+            iconStyle: 'circled',
+          },
+          {
+            icon: '/skills-icons/postman-icon.png',
+            name: 'Postman',
+            iconStyle: 'circled',
+          },
+          {
+            icon: '/skills-icons/sass-icon.png',
+            name: 'Sass/Scss',
+          },
+          {
+            icon: '/skills-icons/redux-icon.svg',
+            name: 'Redux',
+          },
+          {
+            icon: '/skills-icons/git-icon.png',
+            name: 'Git + Bash',
+          },
+          {
+            icon: '/skills-icons/eslint-icon.png',
+            name: 'ESLint',
+            iconStyle: 'circled',
+          },
         ],
-      },
-      features: {
-        title: 'Функціонал',
-        list: [
-          'Для підбору продуктів скористуйтесь фільтрами у каталозі (категорія, алфавіт, ліміт) або введіть назву продукту в полі "пошук;"',
-          'Натисніть на продукт, щоб прочитати повний опис;',
-          'Додайте продукти в кошик. У кошику їх можна видалити, збільшити або зменшити кількість (кінцева вартість буде розрахована відповідно);',
-          'Натисніть  “Go to checkout”, заповніть інформацію про доставку та підтвердіть замовлення;',
-          'Проєкт має адаптивний дизайн (доступний для пристроїв від смартфонів до великих моніторів);',
-          'Усі UI компоненти інтерфейсу створено самостійно.',
+        description: [
+          'Цей штучний магазин імітує справжній досвід онлайн-покупок. Ви не платите і ніколи не отримаєте своє замовлення, але всі інші речі виглядають і працюють цілком так, як повинні.',
+          'Об’єкти продуктів отримуються із зовнішнього API. Логіка кошика та замовлення реалізована за допомогою написаного мною маленького локального Next.js API.',
         ],
+
+        learned: {
+          title: 'Чого я навчилась?',
+          list: [
+            'Комплексної обробки даних, отриманих із зовнішнього API;',
+            'Створення невеликого локального Next.js API;',
+            'Використання RTK Query для запитів та керування даними;',
+            'Реалізація простої пошукової системи;',
+            'Створення ієрархії URL-адрес і керування нею за допомогою Next Router;',
+            'Реалізація query-based фільтрації каталогу;',
+            'Створення input forms з ретельною валідацією;',
+            'Налаштування правил ESlint;',
+
+            'Реалізація ‘Husky’ pre-commit check.',
+          ],
+        },
+        features: {
+          title: 'Функціонал',
+          list: [
+            'Для підбору продуктів скористуйтесь фільтрами у каталозі (категорія, алфавіт, ліміт) або введіть назву продукту в полі "пошук;"',
+            'Натисніть на продукт, щоб прочитати повний опис;',
+            'Додайте продукти в кошик. У кошику їх можна видалити, збільшити або зменшити кількість (кінцева вартість буде розрахована відповідно);',
+            'Натисніть  “Go to checkout”, заповніть інформацію про доставку та підтвердіть замовлення;',
+            'Проєкт має адаптивний дизайн (доступний для пристроїв від смартфонів до великих моніторів);',
+            'Усі UI компоненти інтерфейсу створено самостійно.',
+          ],
+        },
+        codeLink: 'https://github.com/Olesia-P/fake-shop',
+        siteLink: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
       },
-      codeLink: 'https://github.com/Olesia-P/fake-shop',
-      siteLink: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
-    },
+    ],
   },
 
   footer: {

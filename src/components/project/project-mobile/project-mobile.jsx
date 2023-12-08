@@ -25,7 +25,7 @@ export default function ProjectMobile({ content }) {
           <aside className={css.usedSkills}>
             <ul className={css.skillsList}>
               {content.skills.map((element) => (
-                <li key={element.id} className={css.skillItem}>
+                <li key={element.name} className={css.skillItem}>
                   <img
                     src={element.icon}
                     className={css.skillIcon}
