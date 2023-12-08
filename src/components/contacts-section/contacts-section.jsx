@@ -1,11 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { FaLinkedin } from 'react-icons/fa';
-import { AiOutlineMail } from 'react-icons/ai';
-import cx from 'classnames';
 import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
 import css from './contacts-section.module.scss';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import Lightbulb from './lightbulb/lightbulb';
 
 export default function Contacts({ contactsContent }) {
   const dispatch = useDispatch();
@@ -24,40 +22,23 @@ export default function Contacts({ contactsContent }) {
       <article>
         <h2 className={css.headerContacts}>{contactsContent.header}</h2>
 
-        <img
-          src="/island.png"
-          className={cx(css.island, css.islandEmail)}
-          alt="island"
-        />
-        <img
-          src="/island.png"
-          className={cx(css.island, css.islandPhone)}
-          alt="island"
-        />
-        <img
-          src="/island.png"
-          className={cx(css.island, css.islandLinkedin)}
-          alt="island"
-        />
-
-        <ul className={css.listWrap}>
-          <li>
-            <a href="/" className={cx(css.contactLinkedin, css.contact)}>
-              <span>
-                <FaLinkedin className={css.icon} />
-              </span>
-              <span className={css.name}>LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <div href="/" className={cx(css.contactEmail, css.contact)}>
-              <span>
-                <AiOutlineMail className={css.icon} />
-              </span>
-              <span className={css.name}>pryhun.o.o@ukr.net</span>
-            </div>
-          </li>
-        </ul>
+        <section className={css.contacts}>
+          <div className={css.bulbWapper}>
+            <Lightbulb caption="LinkedIn" isLink link="/" icon="linkedin" />{' '}
+          </div>
+          <div className={css.bulbWapper}>
+            {' '}
+            <Lightbulb
+              // eslint-disable-next-line quotes
+              caption={`pryhun.o.o\n@ukr.net`}
+              isLink={false}
+              icon="email"
+            />
+          </div>
+          <div className={css.bulbWapper}>
+            <Lightbulb caption="Skype" isLink link="/" icon="skype" />
+          </div>{' '}
+        </section>
       </article>
     </div>
   );

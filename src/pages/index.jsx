@@ -37,6 +37,7 @@ export default function Home() {
       ))}
 
       <Contacts contactsContent={content[language].contancts} />
+      <Break />
 
       <Footer footerContent={content[language].footer} />
     </main>

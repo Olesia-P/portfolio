@@ -1,0 +1,101 @@
+@import "../../../styles/main";
+
+.container {
+    @include dfcc;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0;
+
+    .img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .pikachu {
+        width: 8rem;
+        margin: 2rem 0;
+    }
+
+    .caption {
+        font-size: 22pt;
+        font-family: $font-main;
+        font-weight: 600;
+        @include dfc;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 4rem;
+        text-align: center;
+
+        .icon {
+            height: max-content;
+            margin-right: 1rem;
+        }
+
+        &::before,
+        &::after {
+            content: " ";
+            border-bottom: 0.4rem solid black;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+        }
+
+        &::before {
+
+            bottom: -0.3rem;
+        }
+
+        &::after {
+            top: -0.3rem;
+
+        }
+
+        &.isAnimated {
+
+            &::before,
+            &::after {
+                opacity: 1;
+                @include highlightingAnimation;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .container {
+        .img {
+            height: 9rem;
+            width: 9rem;
+        }
+
+        .pikachu {
+            width: 6rem;
+        }
+
+        .caption {
+            font-size: $size-header;
+        }
+
+    }
+}
+
+@include lowTablet {
+    .container {
+        .img {
+            height: 12rem;
+            width: 12rem;
+        }
+
+        .pikachu {
+            width: 10rem;
+        }
+
+        .caption {
+            font-size: 24pt;
+            height: auto;
+        }
+
+    }
+}
