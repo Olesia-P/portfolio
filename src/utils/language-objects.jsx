@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
 
 export const en = {
   navigation: {
@@ -519,18 +518,7 @@ export const en = {
   },
 
   footer: {
-    link: () => (
-      <>
-        <span> This portfolio </span> &nbsp;
-        <span> description and code →</span>
-      </>
-    ),
-    linkMobile: () => (
-      <>
-        {' '}
-        This portfolio description and code → &nbsp; <FaGithub />{' '}
-      </>
-    ),
+    link: 'This portfolio description and code →',
 
     quotes: [
       'There is always one more bug to fix.',
@@ -1078,16 +1066,7 @@ export const ua = {
   },
 
   footer: {
-    link: () => (
-      <>
-        <span> Опис та код </span> &nbsp;
-        <span>
-          <FaGithub />
-        </span>{' '}
-        &nbsp;
-        <span> цього портфоліо →</span>
-      </>
-    ),
+    link: 'Опис та код цього портфоліо →',
     quotes: [
       'Завжди є ще одна помилка, яку потрібно виправити.',
       'Якщо дебагінг — це процес усунення помилок, то програмування мабуть процес їх впровадження.',

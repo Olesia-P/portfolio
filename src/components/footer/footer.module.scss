@@ -47,13 +47,7 @@
         text-decoration: underline;
 
         &:hover {
-            span:first-of-type {
-                color: $red
-            }
-
-            span:last-of-type {
-                color: $white
-            }
+            color: rgb(2, 211, 248);
         }
 
         .icon {
@@ -88,12 +82,9 @@
     .container {
 
         .link {
-            text-decoration: none;
 
             .icon {
-                margin: 0;
-                width: 3rem;
-                height: 3rem;
+                display: none;
             }
         }
 
