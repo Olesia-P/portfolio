@@ -23,21 +23,26 @@ export default function Home() {
     <main className={css.container}>
       <h1 className={css.jobTitle}>Junior front-end developer</h1>
 
-      <Break id="about" />
-      <AboutSection aboutContent={content[language].about} />
-      <Break id="skills" />
-      <SkillsSection skillsContent={content[language].skills} />
-      <Break id="projects" />
+      <section className={css.mainContentWrapper}>
+        <Break id="about" />
+        <AboutSection aboutContent={content[language].about} />
+        <Break id="skills" />
+        <SkillsSection skillsContent={content[language].skills} />
+        <Break id="projects" />
+      </section>
 
       <ProjectsSectionHeader projectsContent={content[language].projects} />
-      {projectsContent.map((element) => (
-        <Fragment key={element.id}>
-          <Project content={element.content} />
-        </Fragment>
-      ))}
 
-      <Contacts contactsContent={content[language].contancts} />
-      <Break />
+      <section className={css.mainContentWrapper}>
+        {projectsContent.map((element) => (
+          <Fragment key={element.id}>
+            <Project content={element.content} />
+          </Fragment>
+        ))}
+
+        <Contacts contactsContent={content[language].contancts} />
+        <Break />
+      </section>
 
       <Footer footerContent={content[language].footer} />
     </main>

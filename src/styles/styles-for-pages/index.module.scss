@@ -35,6 +35,31 @@
     }
 
 
+    .mainContentWrapper {
+        width: 55%;
+        margin: 0rem 10rem 0rem 0;
+    }
+
+}
+
+
+@include ultra {
+    .container {
+        .mainContentWrapper {
+            width: 50%;
+            margin: 0rem 18rem 0rem 0;
+        }
+    }
+}
+
+
+@include laptop {
+    .container {
+        .mainContentWrapper {
+            width: 70%;
+            margin: 0rem 12rem 0rem 0;
+        }
+    }
 }
 
 @include tablet {
@@ -50,8 +75,15 @@
                 left: 15%;
             }
         }
+
+        .mainContentWrapper {
+            width: 90%;
+            margin: 0 1rem;
+        }
     }
 }
+
+
 
 @include lowTablet {
     .container {

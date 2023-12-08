@@ -2,9 +2,9 @@
 
 .card {
     background-color: $asphalt;
-    width: 55%;
+    width: 100%;
     border-radius: $standart-b-radius;
-    margin: 0 10rem 1rem 0;
+
     padding: 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
@@ -99,8 +99,7 @@
 
 @include ultra {
     .card {
-        max-width: 50%;
-        margin: 0 18rem 0rem 0;
+
 
         .headerSkills {
             font-size: calc($size-huge + 4pt);
@@ -116,8 +115,7 @@
 
 @include laptop {
     .card {
-        width: 70%;
-        margin: 0 12rem 0rem 0;
+
 
         .pokemonPyramidWrap {
             .pokemonPyramid {
@@ -127,12 +125,6 @@
     }
 }
 
-@include tablet {
-    .card {
-        width: 90%;
-        margin: 0 1rem 0rem 1rem;
-    }
-}
 
 @include lowTablet {
     .card {

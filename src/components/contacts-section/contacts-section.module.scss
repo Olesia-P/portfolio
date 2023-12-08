@@ -2,10 +2,10 @@
 
 .card {
     background-color: white;
-    width: 55%;
+    width: 100%;
     border-radius: $standart-b-radius;
     @include mb($asphalt);
-    margin: 0 10rem 0rem 0;
+
     padding: 0.7rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
@@ -43,26 +43,13 @@
     }
 }
 
-@include ultra {
-    .card {
-        max-width: 50%;
-        margin: 0 18rem 0rem 0;
-    }
-}
-
-@include laptop {
-    .card {
-        width: 70%;
-        margin: 0 12rem 0rem 0;
 
 
-    }
-}
+
 
 @include tablet {
     .card {
-        width: 90%;
-        margin: 0 1rem 4rem 1rem;
+
 
         .headerContacts {
             font-size: 30pt;

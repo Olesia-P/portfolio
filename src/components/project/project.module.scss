@@ -2,16 +2,12 @@
 
 .card {
     background-color: $light-grey;
-    width: 55%;
+    width: 100%;
     @include mb ($asphalt);
     border-radius: $standart-b-radius;
-    margin: 0rem 10rem 0rem 0;
     padding: 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
-    // background-image: url("/comics-pattern.png");
-    // background-size: cover;
-    // background-repeat: no-repeat;
     background-image: url("/comix-pattern-mobile.png");
     background-size: contain;
     background-repeat: repeat;
@@ -193,8 +189,6 @@
 
 @include ultra {
     .card {
-        max-width: 50%;
-        margin: 0rem 18rem 0rem 0;
 
         .topSection {
             .pokemonImgWrap {
@@ -221,8 +215,6 @@
 
 @include laptop {
     .card {
-        width: 70%;
-        margin: 0rem 12rem 0rem 0;
 
 
         .topSection {
@@ -250,8 +242,6 @@
 
 @include tablet {
     .card {
-        width: 90%;
-        margin: 0 1rem;
 
         .bottomSection {
             .tvMobile {
@@ -262,16 +252,9 @@
     }
 }
 
-// @include lowTablet {
-//     .card {
 
-//         padding: 2rem;
-//     }
-// }
 @include lowTablet {
     .card {
-        width: 90%;
-        margin: 0rem;
         padding: 1rem;
     }
 }

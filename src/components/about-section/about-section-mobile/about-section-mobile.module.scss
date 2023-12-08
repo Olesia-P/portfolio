@@ -2,7 +2,7 @@
 
 .cardMobile {
     background-color: $white;
-    max-width: 90%;
+    width: 100%;
     border: 0.5rem solid $asphalt;
     border-radius: $standart-b-radius;
     padding: 1rem;
@@ -110,11 +110,5 @@
                 }
             }
         }
-    }
-}
-
-@include mobile {
-    .cardMobile {
-        max-width: 90%;
     }
 }

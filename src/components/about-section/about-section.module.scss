@@ -2,10 +2,10 @@
 
 .card {
     background-color: $white;
-    width: 55%;
+    width: 100%;
     @include mb ($asphalt);
     border-radius: $standart-b-radius;
-    margin: 0rem 10rem 0rem 0;
+
     padding: 2rem 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
@@ -140,8 +140,7 @@
 
 @include ultra {
     .card {
-        max-width: 50%;
-        margin: 0rem 18rem 0rem 0;
+
 
         .container {
             .leftSection {
@@ -176,19 +175,5 @@
                 }
             }
         }
-    }
-}
-
-@include laptop {
-    .card {
-        width: 70%;
-        margin: 0rem 12rem 0rem 0;
-    }
-}
-
-@include tablet {
-    .card {
-        width: 90%;
-        margin: 0 1rem;
     }
 }
