@@ -1,7 +1,6 @@
 @import "../main";
 
 .container {
-    // height: 500rem;
     padding-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -9,6 +8,7 @@
     background-image: url("/forms-pattern.png");
     background-repeat: repeat;
     position: relative;
+
 
     .jobTitle {
         position: relative;
@@ -38,6 +38,7 @@
     .mainContentWrapper {
         width: 55%;
         margin: 0rem 10rem 0rem 0;
+        // padding: 0 27% 0 19%;
     }
 
 }

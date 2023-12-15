@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import cx from 'classnames';
 import { FaLinkedin, FaSkype } from 'react-icons/fa';
 import css from './lightbulb.module.scss';
@@ -7,10 +7,7 @@ import useMediaQuery from '../../../hooks/useMediaQuery';
 import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 
 export default function Lightbulb({ caption, icon, link }) {
-  const [isHovered, setIsHovered] = useState(false);
   const [isAnimated, setIsAnimated] = useState(false);
-
-  console.log('isHovered', isHovered);
 
   const decideIcon = () => {
     if (icon === 'linkedin') {
@@ -23,29 +20,22 @@ export default function Lightbulb({ caption, icon, link }) {
     return null;
   };
 
-  const handleMouseOver = () => {
-    setIsHovered(true);
-    setIsAnimated(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovered(false);
-    setIsAnimated(false);
-  };
-
-  // const imageSource = isHovered ? 'lightbulb-on.png' : 'lightbulb-off.png';
   const isLowTablet = useMediaQuery(767);
 
   const handleIntersection = () => {
     if (isLowTablet) {
-      setIsHovered(true);
+      setTimeout(() => {
+        setIsAnimated(true);
+      }, 500);
     }
   };
 
   const handleOutsideIntersection = () => {
-    if (!isLowTablet) {
-      setIsHovered(false);
-    }
+    setTimeout(() => {
+      if (!isLowTablet) {
+        setIsAnimated(false);
+      }
+    }, 500);
   };
 
   const contactRef = useIntersectionObserver(
@@ -54,25 +44,14 @@ export default function Lightbulb({ caption, icon, link }) {
     1,
   );
 
-  useEffect(() => {
-    setIsHovered(false);
-  }, [isLowTablet]);
-
-  console.log('isLowTablet', isLowTablet);
+  // console.log('isLowTablet', isLowTablet);
+  console.log('isAnimated', isAnimated);
 
   return (
     <a href={link} target="_blank" rel="noreferrer">
-      <figure
-        className={css.container}
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-        onFocus={handleMouseOver}
-        onBlur={handleMouseOut}
-      >
+      <figure className={css.container}>
         <div
-          // src={imageSource}
-          // alt="lightbulb"
-          className={cx(css.img, isHovered && css.isIntersecting)}
+          className={cx(css.img, isAnimated && css.isIntersecting)}
           ref={contactRef}
         />
         <img

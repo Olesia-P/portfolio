@@ -1,7 +1,7 @@
 @import "../../styles/main";
 
 .card {
-    background-color: white;
+    background-color: $blue;
     width: 100%;
     border-radius: $standart-b-radius;
     @include mb($asphalt);
@@ -28,6 +28,10 @@
             background-color: rgba(255, 255, 255, 0.635);
             flex-wrap: wrap;
             margin: 0.5rem;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.746);
+            }
         }
     }
 

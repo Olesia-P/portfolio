@@ -30,9 +30,9 @@ export default function Contacts({ contactsContent }) {
             {' '}
             <Lightbulb
               // eslint-disable-next-line quotes
-              caption={`pryhun.o.o\n@ukr.net`}
+              caption={`pryhun.o.o\n@gmail.com`}
               icon="email"
-              link="/"
+              link="mailto:pryhun.o.o@gmail.com"
             />
           </div>
           <div className={css.bulbWapper}>
