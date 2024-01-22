@@ -23,35 +23,31 @@ export default function Lightbulb({ caption, icon, link }) {
   const isLowTablet = useMediaQuery(767);
 
   const handleIntersection = () => {
-    if (isLowTablet) {
-      setTimeout(() => {
-        setIsAnimated(true);
-      }, 500);
-    }
+    setTimeout(() => {
+      setIsAnimated(true);
+    }, 500);
   };
 
   const handleOutsideIntersection = () => {
     setTimeout(() => {
-      if (!isLowTablet) {
-        setIsAnimated(false);
-      }
+      setIsAnimated(false);
     }, 500);
   };
 
   const contactRef = useIntersectionObserver(
     handleIntersection,
     handleOutsideIntersection,
-    1,
+    0.7,
   );
-
-  // console.log('isLowTablet', isLowTablet);
-  console.log('isAnimated', isAnimated);
 
   return (
     <a href={link} target="_blank" rel="noreferrer">
       <figure className={css.container}>
         <div
-          className={cx(css.img, isAnimated && css.isIntersecting)}
+          className={cx(
+            css.img,
+            isAnimated && isLowTablet && css.isIntersecting,
+          )}
           ref={contactRef}
         />
         <img
