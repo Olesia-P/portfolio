@@ -19,11 +19,11 @@ export default function Home() {
       <h1 className={css.jobTitle}>Junior front-end developer</h1>
 
       <section className={css.mainContentWrapper}>
-        <Break id="about" />
+        <Break id="about" isIntersectionNeeded={false} />
         <AboutSection aboutContent={content[language].about} />
-        <Break id="skills" />
+        <Break id="skills" isIntersectionNeeded={false} />
         <SkillsSection skillsContent={content[language].skills} />
-        <Break id="projects" />
+        <Break id="projects" isIntersectionNeeded={false} />
       </section>
 
       <ProjectsSectionHeader projectsContent={content[language].projects} />
@@ -32,12 +32,12 @@ export default function Home() {
         {content[language].projects.projectsArray.map((element) => (
           <Fragment key={element.title}>
             <Project content={element} />
-            <Break />
+            <Break isIntersectionNeeded />
           </Fragment>
         ))}
         <Anchor id="contacts" />
         <Contacts contactsContent={content[language].contancts} />
-        <Break />
+        <Break isIntersectionNeeded={false} />
       </section>
 
       <Footer footerContent={content[language].footer} />

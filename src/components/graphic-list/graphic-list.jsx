@@ -25,7 +25,10 @@ export default function GraphicList({
       <li className={css.whiteItem}> </li>
 
       {list.map((element) => (
-        <li className={css.mainItem} key={(Math.random() * 100000).toFixed(0)}>
+        <li
+          className={css.mainItem}
+          key={(Math.random() * 1000000000).toFixed(0)}
+        >
           <img
             src={element.icon}
             alt={element.name}

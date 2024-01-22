@@ -38,6 +38,8 @@ export default function Tv() {
 
   useEffect(() => {
     decideImage();
+    // eslint-disable-next-line no-console
+    console.log('tvSection', tvSection);
   }, [tvSection]);
 
   const handleMouseEnter = () => {
