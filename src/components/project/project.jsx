@@ -43,9 +43,7 @@ export default function Project({ content, size }) {
                 alt="movement"
               />
             </figure>
-            <figure className={css.circleWrap}>
-              <div className={css.circle}> </div>
-            </figure>
+
             <div className={css.headerWrap}>
               <h2 className={css.level}>{content.level}</h2>
 
@@ -65,6 +63,12 @@ export default function Project({ content, size }) {
                 </ul>
               </aside>
             </div>
+          </section>
+          <section className={css.topSectionFantom}>
+            <figure className={css.circleWrap}>
+              <div className={css.circle}> </div>
+            </figure>
+            <div className={css.fantomHeader} />
           </section>
           <section className={css.bottomSection}>
             <div className={css.description}>

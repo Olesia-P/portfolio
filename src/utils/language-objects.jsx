@@ -51,7 +51,7 @@ export const en = {
           {' '}
           I learned through <strong> building projects,</strong> making{' '}
           <strong> mistakes</strong> and <strong> fixing them</strong>. I used
-          all tools possible: from docs and forums to YouTube and chat GPT.
+          all tools possible: from docs and forums to YouTube and chatGPT.
         </>
       ),
     },
@@ -117,8 +117,8 @@ export const en = {
       { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
       { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
       {
-        icon: '/skills-icons/nodejs-icon.png',
-        name: ' Node.js',
+        icon: '/skills-icons/mongodb-icon.png',
+        name: 'MongoDB',
         iconStyle: 'circled',
       },
       {
@@ -204,8 +204,8 @@ export const en = {
 
     backSkillsMobile: [
       {
-        icon: '/skills-icons/nodejs-icon.png',
-        name: ' Node.js',
+        icon: '/skills-icons/mongodb-icon.png',
+        name: 'MongoDB',
         iconStyle: 'circled',
       },
       {
@@ -277,7 +277,7 @@ export const en = {
           },
         ],
         description: [
-          'You have to start somewhere! My first React project - simple, stylish... well, merely usefuls, but working!',
+          'You have to start somewhere! My first React project - simple, stylish... well, merely useful... but working!',
         ],
 
         learned: {
@@ -392,12 +392,14 @@ export const en = {
           {
             icon: '/skills-icons/nextjs2-icon.png',
             name: 'Next.js API',
-            iconStyle: 'circled',
+          },
+          {
+            icon: '/skills-icons/mongodb-icon.png',
+            name: 'MongoDB',
           },
           {
             icon: '/skills-icons/postman-icon.png',
             name: 'Postman',
-            iconStyle: 'circled',
           },
           {
             icon: '/skills-icons/sass-icon.png',
@@ -414,26 +416,27 @@ export const en = {
           {
             icon: '/skills-icons/eslint-icon.png',
             name: 'ESLint',
-            iconStyle: 'circled',
           },
         ],
         description: [
           'This fake shop imitates real online shopping experience. You don’t pay, and you will never get your order, but all other things look and function quite the way they are supposed to.',
-          'Products objects are received from the external API. Cart and order logic is implemented using custom-built local Next.js API.',
+          'Products objects are received from the external API. Cart and order logic is implemented using a custom-built local Next.js API, that is connected to Mongo Database.',
         ],
 
         learned: {
           title: 'What did I learn?',
           list: [
             'Comprehensive processing of external API data;',
-            'Building a small local Next.js API;',
+            'Building a local Next.js API, that is connected to MongoDB;',
+            'Organizing the data exchange between the app and the database;',
             'Using Redux Toolkit for queries and data management;',
             'Implementing a simple search engine;',
             'Creating and managing URL hierarchy using Next Router;',
             'Implementing query-based catalog filtering;',
             'Building input forms with thorough validation;',
             'Configuring ESlint ruleset;',
-            'Implementing ‘Husky’ pre-commit check.',
+            'Implementing ‘Husky’ pre-commit check;',
+            'Using cookies.',
           ],
         },
         features: {
@@ -600,8 +603,8 @@ export const ua = {
       { icon: '/empty.png', name: '', iconStyle: 'empty' },
       { icon: '/empty.png', name: '', iconStyle: 'empty' },
       {
-        icon: '/skills-icons/nodejs-icon.png',
-        name: ' Node.js',
+        icon: '/skills-icons/mongodb-icon.png',
+        name: 'MongoDB',
         iconStyle: 'circled',
       },
       {
@@ -687,8 +690,8 @@ export const ua = {
 
     backSkillsMobile: [
       {
-        icon: '/skills-icons/nodejs-icon.png',
-        name: ' Node.js',
+        icon: '/skills-icons/mongodb-icon.png',
+        name: 'MongoDB',
         iconStyle: 'circled',
       },
       {
@@ -760,7 +763,7 @@ export const ua = {
           },
         ],
         description: [
-          'З чогось треба починати! Мій перший React проєкт - простий, стильний... не дуже корисний, але працює!',
+          'З чогось треба починати! Мій перший React проєкт - простий, стильний... не дуже корисний... але працює!',
         ],
 
         learned: {
@@ -874,12 +877,14 @@ export const ua = {
           {
             icon: '/skills-icons/nextjs2-icon.png',
             name: 'Next.js API',
-            iconStyle: 'circled',
+          },
+          {
+            icon: '/skills-icons/mongodb-icon.png',
+            name: 'MongoDB',
           },
           {
             icon: '/skills-icons/postman-icon.png',
             name: 'Postman',
-            iconStyle: 'circled',
           },
           {
             icon: '/skills-icons/sass-icon.png',
@@ -896,27 +901,27 @@ export const ua = {
           {
             icon: '/skills-icons/eslint-icon.png',
             name: 'ESLint',
-            iconStyle: 'circled',
           },
         ],
         description: [
-          'Цей штучний магазин імітує справжній досвід онлайн-покупок. Ви не платите і ніколи не отримаєте своє замовлення, але всі інші речі виглядають і працюють цілком так, як повинні.',
-          'Об’єкти продуктів отримуються із зовнішнього API. Логіка кошика та замовлення реалізована за допомогою написаного мною маленького локального Next.js API.',
+          'Цей штучний магазин імітує справжній досвід онлайн-покупок. Ви не платите і ніколи не отримаєте своє замовлення, але все інше виглядає та працює цілком так, як повинно.',
+          'Об’єкти продуктів отримуються із зовнішнього API. Логіка кошика та замовлення реалізована за допомогою написаного мною локального Next.js API, під’єднаного до бази даних MongoDB.',
         ],
 
         learned: {
           title: 'Чого я навчилась?',
           list: [
             'Комплексної обробки даних, отриманих із зовнішнього API;',
-            'Створення невеликого локального Next.js API;',
+            'Створення локального Next.js API, під’єднаного до MongoDB;',
+            'Організації обміну даними між додатком та базою даних;',
             'Використання RTK Query для запитів та керування даними;',
             'Реалізація простої пошукової системи;',
             'Створення ієрархії URL-адрес і керування нею за допомогою Next Router;',
             'Реалізація query-based фільтрації каталогу;',
             'Створення input forms з ретельною валідацією;',
             'Налаштування правил ESlint;',
-
-            'Реалізація ‘Husky’ pre-commit check.',
+            'Реалізація ‘Husky’ pre-commit check;',
+            'Використання кукі.',
           ],
         },
         features: {

@@ -3,10 +3,8 @@
 .container {
     @include dfcc;
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 0;
-
-
 
     .img {
         height: 12rem;
@@ -21,37 +19,47 @@
 
     &:hover {
         .img {
-
             background-image: url('/lightbulb-on.png');
         }
     }
 
-
-
     .pikachu {
         width: 8rem;
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
 
     .caption {
-        font-size: 22pt;
+        font-size: $size-header;
         font-family: $font-main;
-        font-weight: 600;
-        @include dfc;
+        @include dfcc;
         position: relative;
         overflow: hidden;
         box-sizing: border-box;
-        height: 4.5rem;
+        height: 7rem;
         text-align: center;
-        line-height: 1;
+        line-height: 1.2;
 
-        .icon {
-            height: max-content;
-            margin-right: 1rem;
+        .iconWrap {
+            position: relative;
+            top: 0.25rem;
+
+            .icon {
+                margin-right: 0.5rem;
+            }
         }
 
+        .link {
+            font-weight: 600;
+            text-decoration: underline;
 
+            &:hover {
+                color: $orange;
+            }
+        }
 
+        .text {
+            word-break: break-all;
+        }
     }
 }
 
@@ -92,6 +100,5 @@
         &:hover {
             pointer-events: none;
         }
-
     }
 }

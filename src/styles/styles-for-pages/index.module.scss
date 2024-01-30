@@ -9,7 +9,6 @@
     background-repeat: repeat;
     position: relative;
 
-
     .jobTitle {
         position: relative;
         font-size: 28pt;
@@ -23,7 +22,6 @@
         font-family: $font-big-pixel;
         @include hangingAnimation;
 
-
         &::before {
             position: absolute;
             content: '';
@@ -34,14 +32,11 @@
         }
     }
 
-
     .mainContentWrapper {
         width: 55%;
         margin: 0rem 10rem 0rem 0;
     }
-
 }
-
 
 @include ultra {
     .container {
@@ -51,7 +46,6 @@
         }
     }
 }
-
 
 @include laptop {
     .container {
@@ -82,8 +76,6 @@
         }
     }
 }
-
-
 
 @include lowTablet {
     .container {

@@ -24,19 +24,29 @@ export default function Contacts({ contactsContent }) {
 
         <section className={css.contacts}>
           <div className={css.bulbWapper}>
-            <Lightbulb caption="LinkedIn" link="/" icon="linkedin" />{' '}
+            <Lightbulb
+              linkText="LinkedIn"
+              text=""
+              link="https://www.linkedin.com/in/olesia-pryhun-217051247/"
+              icon="linkedin"
+            />{' '}
           </div>
           <div className={css.bulbWapper}>
             {' '}
             <Lightbulb
-              // eslint-disable-next-line quotes
-              caption={`pryhun.o.o\n@gmail.com`}
+              linkText="Email:"
+              text="pryhun.o@gmail.com"
               icon="email"
-              link="mailto:pryhun.o.o@gmail.com"
+              link="mailto:pryhun.o@gmail.com"
             />
           </div>
           <div className={css.bulbWapper}>
-            <Lightbulb caption="Skype" link="/" icon="skype" />
+            <Lightbulb
+              linkText="Skype:"
+              text=" live:.cid.d0b18002aa3e879a"
+              link="https://join.skype.com/invite/kB6BlmG7OSrb"
+              icon="skype"
+            />
           </div>{' '}
         </section>
       </article>

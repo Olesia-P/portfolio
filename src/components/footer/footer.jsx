@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa';
-
 import css from './footer.module.scss';
 
 export default function Footer({ footerContent }) {

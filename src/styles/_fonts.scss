@@ -2,21 +2,18 @@
     font-family: 'Tektur';
     src:
         url('../../public/fonts/Tektur/Tektur Regular.ttf') format('truetype');
-
 }
 
 @font-face {
     font-family: 'Roboto Mono';
     src:
         url('../../public/fonts/RobotoMono/RobotoMono-Regular.ttf') format('truetype');
-
 }
 
 @font-face {
     font-family: 'Onest Regular';
     src:
         url('../../public/fonts/Onest/Onest-Regular.ttf') format('truetype');
-
 }
 
 @font-face {
@@ -48,7 +45,6 @@ $font-angular: 'Tektur';
 $font-game: 'Codename Coder Free 4F';
 $font-code: 'Roboto Mono';
 $font-main: 'Onest Regular';
-
 
 //font sizes
 $size-huge: 26pt;

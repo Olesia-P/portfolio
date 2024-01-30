@@ -1,7 +1,6 @@
 @import "../../styles/main";
 
 .container {
-
     margin: 1rem auto;
     width: 75%;
     position: relative;
@@ -24,13 +23,10 @@
         cursor: pointer;
         transition: 0.1s ease;
         filter: brightness(97%);
-        // display: none;
 
         &:hover {
             filter: brightness(105%);
-
         }
-
     }
 
     .background {
@@ -40,13 +36,8 @@
         left: 27%;
         width: 45%;
         height: 55%;
-        // z-index: 0;
-        // display: none;
     }
 }
-
-
-
 
 @include laptop {
     .container {

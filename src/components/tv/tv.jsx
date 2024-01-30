@@ -5,14 +5,9 @@ import css from './tv.module.scss';
 export default function Tv() {
   const { tvSection } = useSelector(({ mixedPurpose }) => mixedPurpose);
   const [tvImage, setTvImage] = useState('/gifs/white-noise.gif');
-  // eslint-disable-next-line no-console
-  // console.log('tvSection', tvSection);
 
   const decideImage = () => {
     switch (tvSection) {
-      // case 'whitenoise':
-      //   setTvImage('/gifs/white-noise.gif');
-      //   break;
       case 'about':
         setTvImage('/gifs/hey.gif');
         break;
@@ -38,8 +33,6 @@ export default function Tv() {
 
   useEffect(() => {
     decideImage();
-    // eslint-disable-next-line no-console
-    console.log('tvSection', tvSection);
   }, [tvSection]);
 
   const handleMouseEnter = () => {

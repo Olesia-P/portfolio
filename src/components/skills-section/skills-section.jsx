@@ -19,7 +19,7 @@ export default function SkillsSection({ skillsContent }) {
 
   const isLowTablet = useMediaQuery(767);
 
-  const skillsRef = useIntersectionObserver(handleIntersection, undefined, 0.5);
+  const skillsRef = useIntersectionObserver(handleIntersection, undefined, 0.2);
 
   useEffect(() => {
     if (isAnimated) {

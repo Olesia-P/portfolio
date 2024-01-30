@@ -1,21 +1,36 @@
-/* eslint-disable no-console */
 import React, { useState } from 'react';
 import cx from 'classnames';
 import { FaLinkedin, FaSkype } from 'react-icons/fa';
+import { IoMail } from 'react-icons/io5';
 import css from './lightbulb.module.scss';
 import useMediaQuery from '../../../hooks/useMediaQuery';
 import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 
-export default function Lightbulb({ caption, icon, link }) {
+export default function Lightbulb({ linkText, icon, link, text }) {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const decideIcon = () => {
     if (icon === 'linkedin') {
-      return <FaLinkedin className={css.icon} />;
+      return (
+        <span className={css.iconWrap}>
+          <FaLinkedin className={css.icon} />
+        </span>
+      );
     }
 
     if (icon === 'skype') {
-      return <FaSkype className={css.icon} />;
+      return (
+        <span className={css.iconWrap}>
+          <FaSkype className={css.icon} />
+        </span>
+      );
+    }
+    if (icon === 'email') {
+      return (
+        <span className={css.iconWrap}>
+          <IoMail className={css.icon} />
+        </span>
+      );
     }
     return null;
   };
@@ -41,26 +56,19 @@ export default function Lightbulb({ caption, icon, link }) {
   );
 
   return (
-    <a href={link} target="_blank" rel="noreferrer">
-      <figure className={css.container}>
-        <div
-          className={cx(
-            css.img,
-            isAnimated && isLowTablet && css.isIntersecting,
-          )}
-          ref={contactRef}
-        />
-        <img
-          src="pikachu-icon.png"
-          alt="pikachu-icon"
-          className={css.pikachu}
-        />
-        <p className={cx(css.caption, isAnimated && css.isAnimated)}>
+    <figure className={css.container}>
+      <div
+        className={cx(css.img, isAnimated && isLowTablet && css.isIntersecting)}
+        ref={contactRef}
+      />
+      <img src="pikachu-icon.png" alt="pikachu-icon" className={css.pikachu} />
+      <div className={css.caption}>
+        <a href={link} target="_blank" rel="noreferrer" className={css.link}>
           {decideIcon()}
-
-          {caption}
-        </p>
-      </figure>
-    </a>
+          {linkText}
+        </a>
+        <p className={css.text}>{text}</p>
+      </div>
+    </figure>
   );
 }

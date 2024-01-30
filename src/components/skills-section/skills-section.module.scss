@@ -4,7 +4,6 @@
     background-color: $asphalt;
     width: 100%;
     border-radius: $standart-b-radius;
-
     padding: 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
@@ -99,8 +98,6 @@
 
 @include ultra {
     .card {
-
-
         .headerSkills {
             font-size: calc($size-huge + 4pt);
         }
@@ -115,8 +112,6 @@
 
 @include laptop {
     .card {
-
-
         .pokemonPyramidWrap {
             .pokemonPyramid {
                 display: none;
@@ -124,7 +119,6 @@
         }
     }
 }
-
 
 @include lowTablet {
     .card {

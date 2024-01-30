@@ -3,12 +3,7 @@ import cx from 'classnames';
 import css from './project-card.module.scss';
 import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 
-export default function ProjectCard({
-  // cardName,
-  text,
-  color,
-  size,
-}) {
+export default function ProjectCard({ text, color, size }) {
   const [isAnimated, setIsAnimated] = useState(false);
   const handleIntersection = () => {
     setTimeout(() => {

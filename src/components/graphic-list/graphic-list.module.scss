@@ -12,7 +12,6 @@
     li {
         list-style: none;
         padding: 0.2rem;
-
     }
 
     .mainItem {
@@ -30,8 +29,6 @@
             height: 2rem;
             width: 2rem;
             margin: 0 0.5rem;
-
-            // &.empty {}
 
             &.circled {
                 background-color: white;
@@ -84,7 +81,6 @@
             &.animated {
                 @include risingAnimationTwo;
             }
-
         }
 
         &.three {
@@ -93,7 +89,6 @@
             &.animated {
                 @include risingAnimationThree;
             }
-
         }
 
         &.four {
@@ -102,7 +97,6 @@
             &.animated {
                 @include risingAnimationFour;
             }
-
         }
 
         &.five {
@@ -111,7 +105,6 @@
             &.animated {
                 @include risingAnimationFive;
             }
-
         }
 
         &.six {
@@ -120,7 +113,6 @@
             &.animated {
                 @include risingAnimationSix;
             }
-
         }
 
         &.seven {
@@ -129,7 +121,6 @@
             &.animated {
                 @include risingAnimationSeven;
             }
-
         }
 
         &.eight {
@@ -138,7 +129,6 @@
             &.animated {
                 @include risingAnimationEight;
             }
-
         }
 
         &.nine {
@@ -147,7 +137,6 @@
             &.animated {
                 @include risingAnimationNine;
             }
-
         }
 
         @include allColorsBackground;

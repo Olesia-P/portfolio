@@ -5,7 +5,6 @@
     flex-direction: column;
 
     .headerWrap {
-
         .level {
             font-family: $font-game;
             font-size: 36pt;
@@ -72,27 +71,26 @@
     .pokemonImgWrap {
         width: 15rem;
         height: 15rem;
-        @include dfcc;
         position: relative;
         margin: 4.5rem auto;
 
         .pokemonImg {
-            // width: 15rem;
-            position: absolute;
-            top: 0;
+            position: relative;
             left: -100vw;
             z-index: 1;
+            transform: translate(-50%, -50%);
+            top: 50%;
 
             &.sizeS {
                 width: 15rem;
             }
 
             &.sizeM {
-                width: 20rem;
+                width: 18rem;
             }
 
             &.animated {
-                left: 0;
+                left: 50%;
                 transition: left 1s ease-in-out;
             }
         }
@@ -128,7 +126,6 @@
     @include dfcc;
 
     .description {
-        // grid-column: span 2;
         font-weight: 600;
         font-size: $size-small-header;
         background: none;
@@ -146,9 +143,6 @@
         }
     }
 
-    .screenshot {}
-
-
     .features,
     .learned {
         width: 100%;
@@ -158,8 +152,6 @@
     .button2 {
         width: 100%;
     }
-
-
 }
 
 @include mobile {
@@ -170,7 +162,7 @@
 
             .pokemonImg {
                 &.sizeS {
-                    width: 12rem;
+                    width: 13rem;
                 }
 
                 &.sizeM {
@@ -197,8 +189,6 @@
 
             }
         }
-
-
     }
 
     .bottomSection {

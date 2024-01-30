@@ -5,7 +5,6 @@
     width: 100%;
     @include mb ($asphalt);
     border-radius: $standart-b-radius;
-
     padding: 2rem 1rem;
     box-shadow: $main-shadow;
     font-family: $font-main;
@@ -123,7 +122,6 @@
                 .divider {
                     margin: 1.5rem 0;
                 }
-
             }
 
             .flag {
@@ -137,14 +135,10 @@
     }
 }
 
-
 @include ultra {
     .card {
-
-
         .container {
             .leftSection {
-
                 .name {
                     font-size: calc($size-huge + 4pt);
                 }
@@ -164,7 +158,6 @@
                 }
 
                 .textWrap {
-
                     .title {
                         font-size: calc($size-small-header + 4pt);
                     }

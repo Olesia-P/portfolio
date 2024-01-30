@@ -26,8 +26,6 @@
 
     &:hover {
         filter: brightness(110%);
-        // transform: scale(110%);
-        // border: $borderSize solid $borderColor;
     }
 }
 
@@ -54,7 +52,6 @@
         ;
     }
 }
-
 
 @mixin allColorsBackground {
     &.red {
@@ -180,7 +177,6 @@
 @mixin allColorsBorder {
     &.red {
         border: 0.5rem solid $red;
-
     }
 
     &.orange {
@@ -282,7 +278,6 @@
             transform: rotateZ();
         }
     }
-
 }
 
 @mixin movementSlideAnimation {
@@ -327,11 +322,8 @@
             box-shadow: -2px -5px 63px 8px rgba(255, 254, 253, 1);
         }
 
-
         100% {
             box-shadow: -2px -5px 63px 39px rgba(252, 252, 252, 1);
         }
-
-
     }
 }

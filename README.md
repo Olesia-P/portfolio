@@ -16,7 +16,7 @@ This portfolio was created to present my pet projects, which were built during m
 - Enjoy various animations;
 - Get distracted with GIFs in TV;
 - Read dinosaur jokes in the footer;
-- The site has two versions: English and Ukrainian.
+- The site has two versions: English and Ukrainian, your language choice is stored in a cookie.
 
 ## Skills used
 
@@ -31,6 +31,6 @@ This portfolio was created to present my pet projects, which were built during m
 - Creating ~~a lot of~~ animations;
 - Using Intersection Observer to activate animations on scroll;
 - Using semantic HTML;
-- Implementing a two-language interface.
+- Implementing a two-language interface with the use of cookies.
 
 Here you can check the <a href="https://strong-semolina-7a79b1.netlify.app/" target="_blank">deployed site</a>!

@@ -15,33 +15,32 @@
 
     .topSection {
         display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
 
         .pokemonImgWrap {
-            width: 35%;
-            height: 16rem;
-            @include dfcc;
+            width: 15rem;
+            height: 15rem;
             position: relative;
-            top: 1.75rem;
-            left: 4%;
-            margin: 0 2rem 0 0;
+            margin: 0;
 
             .pokemonImg {
-
-                position: absolute;
-                top: 0;
+                position: relative;
                 left: -100vw;
                 z-index: 1;
+                transform: translate(-50%, -50%);
+                top: 50%;
 
                 &.sizeS {
-                    width: 12rem;
+                    width: 13rem;
                 }
 
                 &.sizeM {
-                    width: 15rem;
+                    width: 16rem;
                 }
 
                 &.animated {
-                    left: 0;
+                    left: 50%;
                     transition: left 1s ease-in-out;
                 }
             }
@@ -59,30 +58,9 @@
             }
         }
 
-        .circleWrap {
-            width: 35%;
-            height: 16rem;
-            @include dfcc;
-            position: absolute;
-            top: 1.25rem;
-            left: 3%;
-            margin: 0;
-
-            .circle {
-                height: 15rem;
-                width: 15rem;
-                background-color: $white;
-                border-radius: 50%;
-                @include sb(black);
-                box-shadow: $main-shadow;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-        }
-
         .headerWrap {
             width: 65%;
+            padding-left: 1rem;
 
             .level {
                 font-family: $font-game;
@@ -127,8 +105,6 @@
                         color: white;
                         text-shadow: $text-shadow;
                         margin: 0 0.3rem;
-                        // gap: 0.5rem;
-                        // border-left: 2px solid rgba(255, 255, 255, 0.852);
                         border-right: 2px solid rgba(255, 255, 255, 0.842);
                         padding: 0 0.7rem 0 0;
 
@@ -144,6 +120,39 @@
                     }
                 }
             }
+        }
+    }
+
+    .topSectionFantom {
+        height: 15rem;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0 0 1rem;
+        margin: 1rem 0;
+
+        .circleWrap {
+            width: 15rem;
+            height: 15rem;
+            position: relative;
+            margin: 0;
+
+            .circle {
+                height: 15rem;
+                width: 15rem;
+                background-color: $white;
+                border-radius: 50%;
+                @include sb(black);
+                box-shadow: $main-shadow;
+            }
+        }
+
+        .fantomHeader {
+            width: 65%;
+            padding-left: 1rem;
         }
     }
 
@@ -183,75 +192,18 @@
             grid-column: span 2;
         }
     }
-
-
 }
 
-@include ultra {
-    .card {
-
-        .topSection {
-            .pokemonImgWrap {
-                left: 7%;
-                margin-bottom: 1.5rem;
-
-                .pokemonImg {
-                    width: 13rem;
-                }
-            }
-
-            .circleWrap {
-                left: 6%;
-
-                .circle {
-                    width: 16rem;
-                    height: 16rem;
-                }
-
-            }
-        }
-    }
-}
-
-@include laptop {
-    .card {
-
-
-        .topSection {
-            .pokemonImgWrap {
-                top: 1.6rem;
-                left: 3%;
-                margin: 0;
-
-                .pokemonImg {
-                    transform: scale(95%);
-                }
-            }
-
-            .circleWrap {
-                top: 1rem;
-                left: 2%;
-
-                .circle {
-                    transform: scale(95%);
-                }
-            }
-        }
-    }
-}
 
 @include tablet {
     .card {
-
         .bottomSection {
             .tvMobile {
                 display: block;
             }
         }
-
     }
 }
-
 
 @include lowTablet {
     .card {
@@ -261,7 +213,6 @@
 
 @include mobile {
     .card {
-
         padding: 0.5rem;
     }
 }

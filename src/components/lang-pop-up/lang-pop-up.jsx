@@ -17,9 +17,6 @@ export default function LangPopUp() {
     if (!storedLanguage) {
       setIsPopUpOpen(true);
     }
-
-    // eslint-disable-next-line no-console
-    // console.log('storedLanguage', storedLanguage);
   }, []);
 
   const handleClick = (lang) => {

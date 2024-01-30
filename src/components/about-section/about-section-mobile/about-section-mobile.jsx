@@ -12,7 +12,6 @@ export default function AboutSectionMobile({ aboutContent }) {
         <div className={css.textWrap}>
           <h3 className={css.title}>{aboutContent.background.header}</h3>
           <p className={css.text}> {aboutContent.background.text()} </p>
-
           <hr className={css.divider} />
           <h3 className={css.title}>{aboutContent.studies.header}</h3>
           <p className={css.text}>{aboutContent.studies.text()}</p>

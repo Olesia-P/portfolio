@@ -64,10 +64,7 @@
                 cursor: pointer;
                 box-shadow: $main-shadow;
                 text-shadow: $text-shadow;
-
-                // transition: all ease-in 0.2s;
                 @include hover(6px, $asphalt);
-
                 font-size: $size-header;
 
                 &.red {
@@ -95,7 +92,6 @@
     }
 }
 
-
 @include ultra {
     .container {
         font-size: calc($size-small-header + 4pt);
@@ -108,12 +104,10 @@
 
             &:before {
                 left: -2.3%;
-
             }
 
             &:after {
                 right: -2.3%;
-
             }
 
             ul {
@@ -131,12 +125,10 @@
         nav {
             &:before {
                 left: -3%;
-
             }
 
             &:after {
                 right: -3%;
-
             }
         }
     }
@@ -150,12 +142,10 @@
 
             &:before {
                 left: -3.2%;
-
             }
 
             &:after {
                 right: -3.2%;
-
             }
         }
     }

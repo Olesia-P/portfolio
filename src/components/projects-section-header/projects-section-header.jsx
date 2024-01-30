@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import css from './projects-section-header.module.scss';
 import Typewriter from '../typewriter/typewriter';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
-// import useMediaQuery from '../../hooks/useMediaQuery';
 import { changeTvSection } from '../../store/modules/mixed-purpose-slice';
 import { content } from '../../utils/language-objects';
 
