@@ -458,6 +458,8 @@ export const en = {
 
   footer: {
     link: 'This portfolio description and code →',
+    caption:
+      'Visual design was created by me as well. Many nerve cells were hurt.',
 
     quotes: [
       'There is always one more bug to fix.',
@@ -943,6 +945,8 @@ export const ua = {
 
   footer: {
     link: 'Опис та код цього портфоліо →',
+    caption:
+      'Візуальний дизайн також створено мною. Багато нервових клітин постраждало.',
     quotes: [
       'Завжди є ще одна помилка, яку потрібно виправити.',
       'Якщо дебагінг — це процес усунення помилок, то програмування мабуть процес їх впровадження.',
