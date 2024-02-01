@@ -6,6 +6,8 @@
 
 This portfolio was created to present my pet projects, which were built during my studies.
 
+Visual design was created by me as well.
+
 <img src="public/projects-screenshots/portfolio-screenshot.png" width="430" height="250">
 
 ## Features

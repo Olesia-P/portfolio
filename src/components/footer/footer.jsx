@@ -23,6 +23,9 @@ export default function Footer({ footerContent }) {
         <FaGithub className={css.icon} />
         {footerContent.link}
       </a>
+      <p className={css.caption}>
+        Visual design was created by me as well. Many nerve cells were hurt.
+      </p>
       <div className={css.textWrap} onClick={() => setClick(!click)}>
         <p className={css.quote}>{quote} (c)</p>{' '}
       </div>
