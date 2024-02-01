@@ -10,10 +10,7 @@ export default function Meta() {
       <meta name="description" content="Pet projects are pokemons! " />
 
       <meta property="og:type" content="website" />
-      <meta
-        property="og:url"
-        content="https://strong-semolina-7a79b1.netlify.app/"
-      />
+      <meta property="og:url" content="https://pryhun.me/" />
       <meta
         property="og:title"
         content="Portfolio Junior Developer Olesia Pryhun"
@@ -25,10 +22,7 @@ export default function Meta() {
       />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta
-        property="twitter:url"
-        content="https://strong-semolina-7a79b1.netlify.app/"
-      />
+      <meta property="twitter:url" content="https://pryhun.me/" />
       <meta
         property="twitter:title"
         content="Portfolio Junior Developer Olesia Pryhun"

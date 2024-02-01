@@ -121,6 +121,10 @@
         text-decoration: none;
         color: inherit;
         font-weight: 400;
+
+        &:hover {
+            filter: brightness(130%);
+        }
     }
 }
 

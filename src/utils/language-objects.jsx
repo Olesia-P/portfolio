@@ -255,7 +255,7 @@ export const en = {
         pokemonImgSize: 'sizeS',
         tv: 'project1',
         screenshot: {
-          link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+          link: 'https://weather-app-developer-pryhun.netlify.app/',
           screenshotImg:
             '/projects-screenshots/weather-project-screenshot-small.jpg',
         },
@@ -301,7 +301,7 @@ export const en = {
           ],
         },
         codeLink: 'https://github.com/Olesia-P/weather-react',
-        siteLink: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+        siteLink: 'https://weather-app-developer-pryhun.netlify.app/',
       },
 
       {
@@ -313,7 +313,7 @@ export const en = {
         pokemonImgSize: 'sizeS',
         tv: 'project2',
         screenshot: {
-          link: 'https://superlative-kleicha-ac1778.netlify.app/',
+          link: 'https://rozetka-homepage-visual-copy.netlify.app/',
           screenshotImg:
             '/projects-screenshots/rozetka-project-screenshot-small.png',
         },
@@ -366,7 +366,7 @@ export const en = {
           ],
         },
         codeLink: 'https://github.com/Olesia-P/rozetka',
-        siteLink: 'https://superlative-kleicha-ac1778.netlify.app/',
+        siteLink: 'https://rozetka-homepage-visual-copy.netlify.app/',
       },
 
       {
@@ -378,7 +378,7 @@ export const en = {
         pokemonImgSize: 'sizeM',
         tv: 'project3',
         screenshot: {
-          link: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
+          link: 'https://fake-shop-developer-pryhun.netlify.app/',
           screenshotImg:
             '/projects-screenshots/screenshot-project-fake-shop-small.png',
         },
@@ -451,7 +451,7 @@ export const en = {
           ],
         },
         codeLink: 'https://github.com/Olesia-P/fake-shop',
-        siteLink: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
+        siteLink: 'https://fake-shop-developer-pryhun.netlify.app//',
       },
     ],
   },
@@ -741,7 +741,7 @@ export const ua = {
         pokemonImgSize: 'sizeS',
         tv: 'project1',
         screenshot: {
-          link: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+          link: 'https://weather-app-developer-pryhun.netlify.app/',
           screenshotImg:
             '/projects-screenshots/weather-project-screenshot-small.jpg',
         },
@@ -787,7 +787,7 @@ export const ua = {
           ],
         },
         codeLink: 'https://github.com/Olesia-P/weather-react',
-        siteLink: 'https://courageous-zuccutto-ed2e98.netlify.app/',
+        siteLink: 'https://weather-app-developer-pryhun.netlify.app/',
       },
 
       {
@@ -799,7 +799,7 @@ export const ua = {
         pokemonImgSize: 'sizeS',
         tv: 'project2',
         screenshot: {
-          link: 'https://superlative-kleicha-ac1778.netlify.app/',
+          link: 'https://rozetka-homepage-visual-copy.netlify.app/',
           screenshotImg:
             '/projects-screenshots/rozetka-project-screenshot-small.png',
         },
@@ -851,7 +851,7 @@ export const ua = {
           ],
         },
         codeLink: 'https://github.com/Olesia-P/rozetka',
-        siteLink: 'https://superlative-kleicha-ac1778.netlify.app/',
+        siteLink: 'https://rozetka-homepage-visual-copy.netlify.app/',
       },
 
       {
@@ -863,7 +863,7 @@ export const ua = {
         pokemonImgSize: 'sizeM',
         tv: 'project3',
         screenshot: {
-          link: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
+          link: 'https://fake-shop-developer-pryhun.netlify.app/',
           screenshotImg:
             '/projects-screenshots/screenshot-project-fake-shop-small.png',
         },
@@ -936,7 +936,7 @@ export const ua = {
           ],
         },
         codeLink: 'https://github.com/Olesia-P/fake-shop',
-        siteLink: 'https://main--dazzling-tulumba-1dafaa.netlify.app/',
+        siteLink: 'https://fake-shop-developer-pryhun.netlify.app/',
       },
     ],
   },

@@ -33,4 +33,4 @@ This portfolio was created to present my pet projects, which were built during m
 - Using semantic HTML;
 - Implementing a two-language interface with the use of cookies.
 
-Here you can check the <a href="https://strong-semolina-7a79b1.netlify.app/" target="_blank">deployed site</a>!
+Here you can check the <a href="https://pryhun.me/" target="_blank">deployed site</a>!
