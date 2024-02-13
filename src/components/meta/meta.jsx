@@ -6,16 +6,22 @@ export default function Meta() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="UTF-8" />
 
-      <meta name="title" content="Portfolio Junior Developer Olesia Pryhun" />
-      <meta name="description" content="Pet projects are pokemons! " />
+      <meta
+        name="title"
+        content="Portfolio Junior Developer Olesia Pryhun CV"
+      />
+      <meta name="description" content="Pet projects are pokemons! CV " />
 
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://pryhun.me/" />
       <meta
         property="og:title"
-        content="Portfolio Junior Developer Olesia Pryhun"
+        content="Portfolio Junior Developer Olesia Pryhun CV"
       />
-      <meta property="og:description" content="Pet projects are pokemons! " />
+      <meta
+        property="og:description"
+        content="Pet projects are pokemons! CV "
+      />
       <meta
         property="og:image"
         content="projects-screenshots/portfolio-screenshot.png"
@@ -25,11 +31,11 @@ export default function Meta() {
       <meta property="twitter:url" content="https://pryhun.me/" />
       <meta
         property="twitter:title"
-        content="Portfolio Junior Developer Olesia Pryhun"
+        content="Portfolio Junior Developer Olesia Pryhun CV"
       />
       <meta
         property="twitter:description"
-        content="Pet projects are pokemons! "
+        content="Pet projects are pokemons! CV"
       />
       <meta
         property="twitter:image"
