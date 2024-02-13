@@ -42,10 +42,10 @@ export default function Contacts({ contactsContent }) {
           </div>
           <div className={css.bulbWapper}>
             <Lightbulb
-              linkText="Skype:"
-              text=" live:.cid.d0b18002aa3e879a"
-              link="https://join.skype.com/invite/kB6BlmG7OSrb"
-              icon="skype"
+              linkText="Telegram:"
+              text="@Pryhun_Olesia"
+              link="https://t.me/Pryhun_Olesia"
+              icon="telegram"
             />
           </div>{' '}
         </section>

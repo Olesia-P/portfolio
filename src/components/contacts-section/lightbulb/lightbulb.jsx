@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import cx from 'classnames';
-import { FaLinkedin, FaSkype } from 'react-icons/fa';
+import { FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
 import { IoMail } from 'react-icons/io5';
 import css from './lightbulb.module.scss';
 import useMediaQuery from '../../../hooks/useMediaQuery';
@@ -18,10 +18,10 @@ export default function Lightbulb({ linkText, icon, link, text }) {
       );
     }
 
-    if (icon === 'skype') {
+    if (icon === 'telegram') {
       return (
         <span className={css.iconWrap}>
-          <FaSkype className={css.icon} />
+          <FaTelegramPlane className={css.icon} />
         </span>
       );
     }
