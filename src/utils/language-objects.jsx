@@ -9,7 +9,11 @@ export const en = {
       { name: 'Contacts', color: 'green', sectionId: 'contacts' },
     ],
 
-    cv: { name: 'CV', color: 'blue', pdf: '/cv/template.pdf' },
+    cv: {
+      name: 'CV',
+      color: 'blue',
+      pdf: '/cv/CV-OlesiaPryhun-JuniorFrontEnd(EN_ver).pdf',
+    },
   },
 
   about: {
@@ -495,7 +499,11 @@ export const ua = {
       { name: 'Контакти', color: 'green', sectionId: 'contacts' },
     ],
 
-    cv: { name: 'Резюме', color: 'blue', pdf: '/cv/template.pdf' },
+    cv: {
+      name: 'Резюме',
+      color: 'blue',
+      pdf: '/cv/CV-OlesiaPryhun-JuniorFrontEnd(UA_ver).pdf',
+    },
   },
 
   about: {
@@ -526,7 +534,7 @@ export const ua = {
       text: () => (
         <>
           Я закінчила фронт-енд курси, після цього я продовжила навчання з{' '}
-          <strong> ментором</strong> (досвіченим веб девелопером). Він
+          <strong> ментором</strong> (досвіченим веб-розробником). Він
           підтримував мене та допомагав з навчанням протягом усього процесу.
         </>
       ),
