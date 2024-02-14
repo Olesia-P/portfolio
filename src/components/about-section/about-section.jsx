@@ -39,7 +39,7 @@ export default function AboutSection({ aboutContent }) {
               </aside>
             </section>
             <section className={css.rightSection}>
-              <p className={css.age}>26</p>
+              <p className={css.age}>27</p>
               <div className={css.textWrap}>
                 <h3 className={css.title}>{aboutContent.background.header}</h3>
                 <p className={css.text}> {aboutContent.background.text()} </p>

@@ -55,7 +55,7 @@ export const en = {
           {' '}
           I learned through <strong> building projects,</strong> making{' '}
           <strong> mistakes</strong> and <strong> fixing them</strong>. I used
-          all tools possible: from docs and forums to YouTube and chatGPT.
+          all tools possible: from docs and forums to YouTube and ChatGPT.
         </>
       ),
     },
@@ -547,7 +547,7 @@ export const ua = {
           Я навчалась за допомогою <strong> написання проєктів,</strong>{' '}
           допускання <strong> помилок</strong> та{' '}
           <strong> їх виправлення</strong>. Я використала всі можливі
-          інструменти: від документації та форумів до YouTube та chatGPT.
+          інструменти: від документації та форумів до YouTube та ChatGPT.
         </>
       ),
     },

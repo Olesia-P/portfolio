@@ -5,7 +5,7 @@ export default function AboutSectionMobile({ aboutContent }) {
   return (
     <article className={css.cardMobile}>
       <section className={css.mobileSection}>
-        <p className={css.age}>26</p>
+        <p className={css.age}>27</p>
         <img src="/ua-icon.png" className={css.flag} alt="ua-flag" />
         <h2 className={css.name}>{aboutContent.name}</h2>
         <img src="/avatar.png" alt="my-avatar" className={css.avatar} />
