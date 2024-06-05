@@ -47,7 +47,7 @@ export default function SkillsSection({ skillsContent }) {
               <GraphicList
                 category="Front-end"
                 list={skillsContent.frontSkills}
-                coveredItemsNumber="seven"
+                coveredItemsNumber="eight"
                 meterColor="green"
                 isAnimated={isAnimated}
               />

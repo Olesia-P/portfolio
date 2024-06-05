@@ -73,7 +73,11 @@ export const en = {
     ),
     frontSkills: [
       { icon: '/empty.png ', name: ' ', iconStyle: 'empty' },
-      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      {
+        icon: '/skills-icons/ts-icon.png',
+        name: 'TypeScript',
+        iconStyle: 'circled',
+      },
 
       {
         icon: '/skills-icons/redux-icon.svg',
@@ -97,7 +101,7 @@ export const en = {
       },
       {
         icon: '/skills-icons/js-icon.png',
-        name: 'Java Script',
+        name: 'JavaScript',
         iconStyle: 'circled',
       },
       {
@@ -120,6 +124,7 @@ export const en = {
       { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
       { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
       { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+
       {
         icon: '/skills-icons/mongodb-icon.png',
         name: 'MongoDB',
@@ -135,24 +140,20 @@ export const en = {
       { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
       { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
       { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
       {
         icon: '/empty.png',
         name: ' ',
         iconStyle: 'empty',
       },
       {
-        icon: '/empty.png',
-        name: ' ',
-        iconStyle: 'empty',
-      },
-      {
-        icon: '/skills-icons/bootstrap-icon.png',
-        name: 'Bootstrap',
+        icon: '/skills-icons/graphql-icon.png',
+        name: 'GraphQL',
         iconStyle: 'circled',
       },
       {
-        icon: '/skills-icons/eslint-icon.png',
-        name: 'ESLint',
+        icon: '/skills-icons/chakraui-icon.jpg',
+        name: 'Chakra UI',
         iconStyle: 'circled',
       },
       {
@@ -169,6 +170,12 @@ export const en = {
     ],
 
     frontSkillsMobile: [
+      {
+        icon: '/skills-icons/ts-icon.png',
+        name: 'TypeScript',
+        iconStyle: 'circled',
+      },
+
       {
         icon: '/skills-icons/redux-icon.svg',
         name: 'Redux',
@@ -191,7 +198,7 @@ export const en = {
       },
       {
         icon: '/skills-icons/js-icon.png',
-        name: 'Java Script',
+        name: 'JavaScript',
         iconStyle: 'circled',
       },
       {
@@ -221,13 +228,13 @@ export const en = {
 
     otherSkillsMobile: [
       {
-        icon: '/skills-icons/bootstrap-icon.png',
-        name: 'Bootstrap',
+        icon: '/skills-icons/graphql-icon.png',
+        name: 'GraphQL',
         iconStyle: 'circled',
       },
       {
-        icon: '/skills-icons/eslint-icon.png',
-        name: 'ESLint',
+        icon: '/skills-icons/chakraui-icon.jpg',
+        name: 'Chakra UI',
         iconStyle: 'circled',
       },
       {
@@ -564,8 +571,12 @@ export const ua = {
       </>
     ),
     frontSkills: [
-      { icon: '/empty.png ', name: '', iconStyle: 'empty' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png ', name: ' ', iconStyle: 'empty' },
+      {
+        icon: '/skills-icons/ts-icon.png',
+        name: 'TypeScript',
+        iconStyle: 'circled',
+      },
 
       {
         icon: '/skills-icons/redux-icon.svg',
@@ -589,7 +600,7 @@ export const ua = {
       },
       {
         icon: '/skills-icons/js-icon.png',
-        name: 'Java Script',
+        name: 'JavaScript',
         iconStyle: 'circled',
       },
       {
@@ -605,13 +616,14 @@ export const ua = {
     ],
 
     backSkills: [
-      { icon: '/empty.png ', name: '', iconStyle: 'empty' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png ', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+
       {
         icon: '/skills-icons/mongodb-icon.png',
         name: 'MongoDB',
@@ -624,27 +636,23 @@ export const ua = {
       },
     ],
     otherSkills: [
-      { icon: '/empty.png', name: '', iconStyle: 'empty' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty' },
-      { icon: '/empty.png', name: '', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
+      { icon: '/empty.png', name: ' ', iconStyle: 'empty' },
       {
         icon: '/empty.png',
-        name: '',
+        name: ' ',
         iconStyle: 'empty',
       },
       {
-        icon: '/empty.png',
-        name: '',
-        iconStyle: 'empty',
-      },
-      {
-        icon: '/skills-icons/bootstrap-icon.png',
-        name: 'Bootstrap',
+        icon: '/skills-icons/graphql-icon.png',
+        name: 'GraphQL',
         iconStyle: 'circled',
       },
       {
-        icon: '/skills-icons/eslint-icon.png',
-        name: 'ESLint',
+        icon: '/skills-icons/chakraui-icon.jpg',
+        name: 'Chakra UI',
         iconStyle: 'circled',
       },
       {
@@ -662,6 +670,12 @@ export const ua = {
 
     frontSkillsMobile: [
       {
+        icon: '/skills-icons/ts-icon.png',
+        name: 'TypeScript',
+        iconStyle: 'circled',
+      },
+
+      {
         icon: '/skills-icons/redux-icon.svg',
         name: 'Redux',
         iconStyle: 'circled',
@@ -683,7 +697,7 @@ export const ua = {
       },
       {
         icon: '/skills-icons/js-icon.png',
-        name: 'Java Script',
+        name: 'JavaScript',
         iconStyle: 'circled',
       },
       {
@@ -713,13 +727,13 @@ export const ua = {
 
     otherSkillsMobile: [
       {
-        icon: '/skills-icons/bootstrap-icon.png',
-        name: 'Bootstrap',
+        icon: '/skills-icons/graphql-icon.png',
+        name: 'GraphQL',
         iconStyle: 'circled',
       },
       {
-        icon: '/skills-icons/eslint-icon.png',
-        name: 'ESLint',
+        icon: '/skills-icons/chakraui-icon.jpg',
+        name: 'Chakra UI',
         iconStyle: 'circled',
       },
       {
