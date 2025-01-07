@@ -30,7 +30,7 @@ Visual design was created by me as well.
 
 ## What did I learn
 
-- Creating ~~a lot of~~ animations;
+- Creating animations;
 - Using Intersection Observer to activate animations on scroll;
 - Using semantic HTML;
 - Implementing a two-language interface with the use of cookies.
